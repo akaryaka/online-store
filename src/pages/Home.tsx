@@ -1,11 +1,16 @@
-import Layout from "../components/Layout";
+import Footer from "../components/Footer"
+import Header from "../components/Header"
 
-function Home() {
+const Home = () => {
   return(
     <>
-      <Layout/>
+      <Header />
+      <main>
+        <h1>Главная</h1>
+      </main>
+      <Footer />
     </>
   )
 }
 
-export default Home;
+export default Home
