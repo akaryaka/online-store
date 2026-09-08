@@ -2,6 +2,7 @@ import favoritesIcon from './../assets/favorites.svg'
 import ordersIcon from './../assets/orders.svg'
 import loginIcon from './../assets/log-in.svg'
 import shoppingCartIcon from './../assets/shopping-cart.svg'
+import searchIcon from './../assets/search.svg'
  
 export function Header() {
   return (
@@ -18,8 +19,11 @@ export function Header() {
               </span>
               <span>Каталог</span>
             </button>
-            <div className="search border border-[#70C05B] rounded-[4px]">
-              <input className="p-[8px_16px]" type="text" placeholder="Найти товар"/>
+            <div className="search w-[435px] h-[40px] flex justify-between border border-[#70C05B] p-[8px] rounded-[4px]">
+              <input className="p-[8px_0px] outline-none" type="text" placeholder="Найти товар"/>
+              <button className='cursor-pointer'>
+                <img src={searchIcon} alt="search-icon" />
+              </button>
             </div>
             <ul className="flex items-center gap-[24px]">
               <li>
