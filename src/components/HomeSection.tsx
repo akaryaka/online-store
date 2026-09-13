@@ -1,12 +1,33 @@
 import homeList from './../components/cardList/homeList.json'
-import CardList from './cardList/cardList'
+import cards from './../components/cardList/cards.json';
 
-const HomeSection = () => {
+const Card = () => {
   return (
     <>
-      { homeList.map((item) => <CardList id={item.id} title={item.title} subTitle={item.subTitle} />) }
+      {cards.map(item => {
+        <div key={item.id}>{item.name}</div>
+      })}
     </>
   )
+} 
+
+const List = () => {
+  return (
+    <div>
+      {homeList.map((item) => (
+        <div key={item.id}>{item.title} {item.subTitle} </div>
+      ))}
+    </div>
+  )
+}
+
+const HomeSection = () => {
+  return <Card />
+    // <>
+      {/* <List /> */}
+      
+    // </>
+  
 }
 
 export default HomeSection
