@@ -1,13 +1,13 @@
 import Container from "@/components/container/Container"
 
-const Page_404 = () => {
-  return(
+const Vacancies = () => {
+  return (
     <>
       <Container>
-        <h1>Страница не найдена</h1>
+        <h1>Вакансии</h1>
       </Container>
     </>
   )
 }
 
-export default Page_404
+export default Vacancies

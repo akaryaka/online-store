@@ -1,6 +1,10 @@
+import Container from "@/components/container/Container"
+
 const Contacts = () => {
   return (
-    <>Contacts</>
+    <Container>
+      <h1>Contacts</h1>
+    </Container>
   )
 }
 

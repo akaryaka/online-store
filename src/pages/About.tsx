@@ -1,6 +1,12 @@
+import Container from "@/components/container/Container"
+
 const About = () => {
   return (
-    <>about</>
+    <>
+      <Container>
+        <h1>about</h1>
+      </Container>
+    </>
   )
 }
 

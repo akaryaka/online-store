@@ -1,7 +1,11 @@
+import Container from "@/components/container/Container"
+
 const ShoppingCart = () => {
   return (
     <>
-      <h1>ShoppingCart</h1>
+      <Container>
+        <h1>ShoppingCart</h1>
+      </Container>
     </>
   )
 }

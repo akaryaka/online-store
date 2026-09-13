@@ -1,9 +1,11 @@
-import Layout from "../components/Layout";
+import Container from "@/components/container/Container";
 
 const Catalog = () => {
   return(
     <>
-      <Layout/>
+      <Container>
+        <h1>Каталог</h1>
+      </Container>
     </>
   )
 }

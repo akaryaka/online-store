@@ -1,7 +1,11 @@
+import Container from "@/components/container/Container"
+
 const Orders: any = () => {
   return (
     <>
-      <h1>Orders</h1>
+      <Container>
+        <h1>Orders</h1>  
+      </Container>
     </>
   )
 }
