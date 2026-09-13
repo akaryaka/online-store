@@ -1,5 +1,5 @@
-import HomeSection from "../components/HomeSection"
-import heroIcon from './../assets/hero-icon.png'
+import HomeSection from "@/components/HomeSection"
+import heroIcon from '@/assets/hero-icon.png'
 import Layout from "./Layout"
 
 const Home = () => {

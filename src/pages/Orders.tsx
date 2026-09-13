@@ -1,4 +1,4 @@
-const Orders = () => {
+const Orders: any = () => {
   return (
     <>
       <h1>Orders</h1>
