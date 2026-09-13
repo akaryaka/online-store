@@ -1,14 +1,12 @@
 import Footer from "@/components/Footer"
 import Header from "@/components/Header"
-import type { Props } from "./Layout.props"
+import { Outlet } from "react-router"
 
-const Layout = ( {children}: Props) => {
+const Layout = () => {
   return (
     <>
       <Header />
-      <main>
-        {children}
-      </main>
+      <Outlet />
       <Footer />
     </>
   )
