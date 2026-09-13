@@ -1,6 +1,7 @@
-import favoritesIcon from './../assets/favorites.svg'
-import ordersIcon from './../assets/orders.svg'
-import loginIcon from './../assets/log-in.svg'
+import { Link } from 'react-router';
+import favoritesIcon from '@/assets/favorites.svg'
+import ordersIcon from '@/assets/orders.svg'
+import loginIcon from '@/assets/log-in.svg'
 import shoppingCartIcon from './../assets/shopping-cart.svg'
 import searchIcon from './../assets/search.svg'
  
@@ -10,7 +11,7 @@ export function Header() {
       <header className="bg-[#fff] pt-[20px] pb-[20px] shadow-[2px_4px_8px_rgba(0,0,0,0.1)]">
         <div className="w-[1440px] ml-[auto] mr-[auto]">
           <div className="flex items-center justify-between ">
-            <a className="uppercase" href="#">store</a>
+            <Link className="uppercase" to="/">store</Link>
             <button className="flex gap-[28px] rounded-[4px] p-[8px] text-[#fff] w-[140px] bg-[#70C05B] cursor-pointer">
               <span className="flex flex-col justify-center items-center w-[24px] h-[24px]">
                 <span className="block w-[100%] mb-[8px] h-[1px] bg-[#fff] rounded-[1px]"></span>
@@ -27,22 +28,22 @@ export function Header() {
             </div>
             <ul className="flex items-center gap-[24px]">
               <li>
-                <a className="flex flex-col items-center" href="#">
+                <Link className="flex flex-col items-center" to="/favorites">
                   <img className='mb-[8px]' src={favoritesIcon} alt="favorites" />
                   Избранное
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="flex flex-col items-center" href="#">
+                <Link className="flex flex-col items-center" to="/orders">
                   <img className='mb-[8px]' src={ordersIcon} alt="orders" />
                   Заказы
-                </a>
+                </Link>
               </li>
               <li>
-                <a className="flex flex-col items-center" href="#">
+                <Link className="flex flex-col items-center" to="/shoppingcart">
                   <img className='mb-[8px]' src={shoppingCartIcon} alt="shoppingCart" />
                   Корзина
-                </a>
+                </Link>
                 </li>
               <li>
                 <a className="w-[157px] rounded-[4px] flex justify-center text-[#fff] text-[16px] pt-[8px] pb-[8px] bg-[#FF6633]" href="#">

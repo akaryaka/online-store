@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export function Footer() {
   return (
     <>
@@ -6,9 +8,15 @@ export function Footer() {
           <div className="flex justify-between">
             <a className=" uppercase" href="#">store</a>
             <ul className="flex gap-[5px]">
-              <li><a className="" href="#">О компании</a></li>
-              <li><a className="" href="#">Контакты</a></li>
-              <li><a className="" href="#">Вакансии</a></li>
+              <li>
+                <Link className="" to="/about">О компании</Link>
+              </li>
+              <li>
+                <Link className="" to="/contacts">Контакты</Link>
+              </li>
+              <li>
+                <Link className="" to="/vacancies">Вакансии</Link>
+              </li>
             </ul>
           </div>
         </div>
