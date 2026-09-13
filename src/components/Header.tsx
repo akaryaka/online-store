@@ -1,9 +1,9 @@
 import { Link } from 'react-router';
-import favoritesIcon from '@/assets/favorites.svg'
-import ordersIcon from '@/assets/orders.svg'
-import loginIcon from '@/assets/log-in.svg'
-import shoppingCartIcon from './../assets/shopping-cart.svg'
-import searchIcon from './../assets/search.svg'
+import favoritesIcon from '@images/favorites.svg'
+import ordersIcon from '@images/orders.svg'
+import loginIcon from '@images/log-in.svg'
+import shoppingCartIcon from '@images/shopping-cart.svg'
+import searchIcon from '@images/search.svg'
  
 export function Header() {
   return (

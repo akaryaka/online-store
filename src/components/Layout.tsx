@@ -1,6 +1,5 @@
 import Footer from "./Footer";
 import Header from "./Header";
-// import arrowRight from './../assets/chevron-right.svg'
 
 function Layout() {
   return(

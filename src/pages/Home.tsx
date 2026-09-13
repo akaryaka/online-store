@@ -1,5 +1,5 @@
 import HomeSection from "@/components/HomeSection"
-import heroIcon from '@/assets/hero-icon.png'
+import heroIcon from '@images/hero-icon.png'
 
 const Home = () => {
   return(
