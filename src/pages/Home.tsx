@@ -1,21 +1,71 @@
-import HomeSection from "@/components/HomeSection"
-import heroIcon from '@images/hero-icon.png'
+import Container from '@/components/container/Container'
+import bannerIcon from '@images/banner-icon.png'
 
 const Home = () => {
   return(
     <>
-      <main className="h-[100vh] bg-[#FBF8EC]">
-        <div className="hero h-[200px] bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
-          <div className="container w-[1440px] ml-[auto] mr-[auto]">
-            <div className="hero__innner pr-[69px]  flex justify-between items-center">
-              <img src={heroIcon} alt="hero-icon" />
-              <h1 className="text-[48px]">Доставка бесплатно от 1000 ₽</h1>
+      <div className="banner h-[200px] bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+        <Container>
+          <div className="hero__innner pr-[69px]  flex justify-between items-center">
+            <img src={bannerIcon} alt="hero-icon" />
+            <h1 className="text-[48px]">Доставка бесплатно от 1000 ₽</h1>
+          </div>
+        </Container>
+      </div>
+      <main className="bg-[#FBF8EC] pt-[80px] pb-[80px]">
+        <Container>
+          <div className="ml-[auto] mr-[auto]">
+            <h1 className="text-[64px] font-bold mb-[60px]">Акции</h1>
+            <div className="grid grid-cols-4">
+              <div className="w-[300px] h-[200px] border cursor-pointer rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
             </div>
           </div>
-        </div>
-        <div className="container w-[1440px] ml-[auto] mr-[auto]">
-          <HomeSection />
-        </div>
+          <div className=" pt-[80px] ml-[auto] mr-[auto]">
+            <h1 className="text-[64px] font-bold mb-[60px]">Новинки</h1>
+            <div className="grid grid-cols-4">
+              <div className="w-[300px] h-[200px] border cursor-pointer rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+            </div>
+          </div>
+          <div className="w-[1440px] pt-[80px] ml-[auto] mr-[auto]">
+            <h1 className="text-[64px] font-bold mb-[60px]">Покупали раньше</h1>
+            <div className="grid grid-cols-4">
+              <div className="w-[300px] h-[200px] border cursor-pointer rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+              <div className="w-[300px] h-[200px] border cursor-pointer  rounded-[10px] bg-[blue]">
+                <h2>Молоко, сыр, яйцо</h2>
+              </div>
+            </div>
+          </div>
+        </Container>
       </main>
     </>
   )

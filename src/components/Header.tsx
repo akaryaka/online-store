@@ -4,6 +4,7 @@ import ordersIcon from '@images/orders.svg'
 import loginIcon from '@images/log-in.svg'
 import shoppingCartIcon from '@images/shopping-cart.svg'
 import searchIcon from '@images/search.svg'
+import logo from '@images/logo.png'
  
 export function Header() {
   return (
@@ -11,7 +12,9 @@ export function Header() {
       <header className="bg-[#fff] pt-[20px] pb-[20px] shadow-[2px_4px_8px_rgba(0,0,0,0.1)]">
         <div className="w-[1440px] ml-[auto] mr-[auto]">
           <div className="flex items-center justify-between ">
-            <Link className="uppercase" to="/">store</Link>
+            <Link className="uppercase" to="/">
+              <img src={logo} alt="logo" />
+            </Link>
             <button className="flex gap-[28px] rounded-[4px] p-[8px] text-[#fff] w-[140px] bg-[#70C05B] cursor-pointer">
               <span className="flex flex-col justify-center items-center w-[24px] h-[24px]">
                 <span className="block w-[100%] mb-[8px] h-[1px] bg-[#fff] rounded-[1px]"></span>
