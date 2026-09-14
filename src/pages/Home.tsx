@@ -1,10 +1,14 @@
 import Container from '@/components/container/Container'
 import bannerIcon from '@images/banner-icon.png'
+import bannerBg from '@images/banner-bg.png'
 
 const Home = () => {
   return(
     <>
-      <div className="banner h-[200px] bg-[url('/hero-bg.png')] bg-cover bg-center bg-no-repeat">
+      <div 
+        className="banner h-[200px] bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url('${bannerBg}')`}}
+      >
         <Container>
           <div className="hero__innner pr-[69px]  flex justify-between items-center">
             <img src={bannerIcon} alt="hero-icon" />

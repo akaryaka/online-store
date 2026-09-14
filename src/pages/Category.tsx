@@ -1,7 +1,11 @@
+import Container from "@/components/container/Container"
+
 const Category = () => {
   return (
     <>
-      Category
+      <Container>
+        Category
+      </Container>
     </>
   )
 }

@@ -42,7 +42,7 @@ export function Footer() {
               <img src={logo} alt="logo" />
             </Link>
             <ul className="flex gap-[40px]">
-              { menu.map(item => <li key={item.id}><Link to={item.link}>{item.title}</Link></li>)}
+              { menu.map(item => <li key={item.id}><Link className="hover:text-[#FF6633] transition-all" to={item.link}>{item.title}</Link></li>)}
             </ul>
             <div className="social flex gap-[16px]">
               <a href="/">
