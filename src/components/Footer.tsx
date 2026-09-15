@@ -1,36 +1,36 @@
 import { Link } from "react-router";
-import logo from '@images/logo.png'
-import vkIcon from '@images/vk.svg'
-import okIcon from '@images/ok.svg'
-import phoneIcon from '@images/phone.svg'
+import logo from "@images/logo.png";
+import vkIcon from "@images/vk.svg";
+import okIcon from "@images/ok.svg";
+import phoneIcon from "@images/phone.svg";
 
 const menu = [
   {
     id: 1,
-    title: 'О компании',
-    link: '/about'
+    title: "О компании",
+    link: "/about",
   },
   {
     id: 2,
-    title: 'Контакты',
-    link: '/contacts'
+    title: "Контакты",
+    link: "/contacts",
   },
   {
     id: 3,
-    title: 'Вакансии',
-    link: '/vacancies'
+    title: "Вакансии",
+    link: "/vacancies",
   },
   {
     id: 4,
-    title: 'Статьи',
-    link: '/vacancies'
+    title: "Статьи",
+    link: "/vacancies",
   },
   {
     id: 5,
-    title: 'Политика обработки персональных данных',
-    link: '/vacancies'
-  }
-]
+    title: "Политика обработки персональных данных",
+    link: "/vacancies",
+  },
+];
 
 export function Footer() {
   return (
@@ -42,7 +42,16 @@ export function Footer() {
               <img src={logo} alt="logo" />
             </Link>
             <ul className="flex gap-[40px]">
-              { menu.map(item => <li key={item.id}><Link className="hover:text-[#FF6633] transition-all" to={item.link}>{item.title}</Link></li>)}
+              {menu.map((item) => (
+                <li key={item.id}>
+                  <Link
+                    className="hover:text-[#FF6633] transition-all"
+                    to={item.link}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
             </ul>
             <div className="social flex gap-[16px]">
               <a href="/">
@@ -62,7 +71,7 @@ export function Footer() {
         </div>
       </footer>
     </>
-  )
+  );
 }
 
 export default Footer;

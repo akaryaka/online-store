@@ -1,11 +1,14 @@
-import Container from "@/components/container/Container"
+import Container from "@/components/container/Container";
+import Crumbs from "@/components/crumbs/Crumbs";
+import Title from "@/components/title/Title";
 
 const Contacts = () => {
   return (
     <Container>
-      <h1>Contacts</h1>
+      <Crumbs />
+      <Title>Контакты</Title>
     </Container>
-  )
-}
+  );
+};
 
-export default Contacts
+export default Contacts;
