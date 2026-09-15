@@ -1,7 +1,16 @@
-const Favorites = () => {
+import type { Props } from "./Favorites.props";
+import cn from "classnames";
+
+const Favorites = ({ status, className, ...props }: Props) => {
   return (
     <>
-      <div className="bg-[#F3F2F1]">
+      <div
+        className={cn(
+          "bg-[#F3F2F1] p-[4px] rounded-[4px] opacity-[0.5]",
+          className,
+          { ...props },
+        )}
+      >
         <svg
           width="24"
           height="24"
