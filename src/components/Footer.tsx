@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import logo from "@images/logo.png";
 import vkIcon from "@images/vk.svg";
 import okIcon from "@images/ok.svg";
+import bgFooter from "@images/bg-footer.png";
 import phoneIcon from "@images/phone.svg";
 
 const menu = [
@@ -35,7 +36,10 @@ const menu = [
 export function Footer() {
   return (
     <>
-      <footer className="bg-[#F9F4E2] bg-[url('/bg-footer.png')] pt-[37px] pb-[37px] shadow-[2px_-4px_8px_rgba(0,0,0,0.1)]">
+      <footer
+        className="bg-[#F9F4E2] pt-[37px] pb-[37px] shadow-[2px_-4px_8px_rgba(0,0,0,0.1)]"
+        style={{ backgroundImage: `url('${bgFooter}')` }}
+      >
         <div className="w-[1440px] ml-[auto] mr-[auto]">
           <div className="flex justify-between">
             <Link className="uppercase" to="/">
