@@ -1,13 +1,13 @@
 import type { Props } from "./Button.props";
 
-const Button = ({ children }: Props) => {
+const ButtonGreyscale = ({ children }: Props) => {
   return (
     <>
-      <button className="border border-[#70C05B] text-[16px] font-[Rubik] w-[100%] p-[8px] bg-[#fff] text-[#70C05B] rounded-[4px] hover:text-[#fff] hover:bg-[#FF6633] hover:border-[#FF6633] transition-all cursor-pointer">
+      <button className="text-[16px] font-[Rubik] p-[8px_16px] bg-[#F3F2F1] text-[#606060] rounded-[4px] transition-all cursor-pointer">
         {children}
       </button>
     </>
   );
 };
 
-export default Button;
+export default ButtonGreyscale;
