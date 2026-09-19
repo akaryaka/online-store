@@ -12,7 +12,7 @@ const Contacts = () => {
     <div className="bg-[#FBF8EC] pb-[80px]">
       <Container>
         <div className="p-[24px_0px]">
-          <Crumbs />
+          <Crumbs page="Контакты" />
         </div>
         <Title className="mb-[40px]">Контакты</Title>
         <div className="flex mb-[120px] gap-[80px]">
