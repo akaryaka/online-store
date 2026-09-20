@@ -1,15 +1,17 @@
-import { Outlet } from "react-router"
-import Footer from "@/components/Footer"
-import Header from "@/components/Header"
+import { Outlet } from "react-router";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <Outlet />
+      <main className="bg-[#F9F4E2]">
+        <Outlet />
+      </main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

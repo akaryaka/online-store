@@ -9,7 +9,7 @@ import Title from "@/components/title/Title";
 
 const Contacts = () => {
   return (
-    <div className="bg-[#FBF8EC] pb-[80px]">
+    <div className="pb-[80px]">
       <Container>
         <div className="p-[24px_0px]">
           <Crumbs page="Контакты" />

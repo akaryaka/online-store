@@ -26,7 +26,7 @@ const Home = () => {
           </div>
         </Container>
       </div>
-      <main className="bg-[#FBF8EC] pt-[84px] pb-[80px]">
+      <div className="pt-[84px] pb-[80px]">
         <Container>
           <div className="ml-[auto] mr-[auto]">
             <header className="flex justify-between items-center mb-[40px] pr-[7px]">
@@ -201,7 +201,7 @@ const Home = () => {
             </div>
           </div>
         </Container>
-      </main>
+      </div>
     </>
   );
 };

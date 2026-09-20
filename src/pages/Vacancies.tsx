@@ -1,13 +1,17 @@
-import Container from "@/components/container/Container"
+import Container from "@/components/container/Container";
+import Crumbs from "@/components/crumbs/Crumbs";
 
 const Vacancies = () => {
   return (
     <>
-      <Container>
-        <h1>Вакансии</h1>
-      </Container>
+      <div>
+        <Container>
+          <Crumbs page="Вакансии" />
+          <h1>Вакансии</h1>
+        </Container>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Vacancies
+export default Vacancies;
