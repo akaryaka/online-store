@@ -1,13 +1,17 @@
 import Container from "@/components/container/Container";
 import Crumbs from "@/components/crumbs/Crumbs";
+import Title from "@/components/title/Title";
 
 const Vacancies = () => {
   return (
     <>
-      <div>
+      <div className="pt-[24px] pb-[80px]">
         <Container>
-          <Crumbs page="Вакансии" />
-          <h1>Вакансии</h1>
+          <div className="mb-[24px]">
+            <Crumbs page="Вакансии" />
+          </div>
+
+          <Title>Вакансии</Title>
         </Container>
       </div>
     </>

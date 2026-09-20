@@ -1,13 +1,18 @@
-import Container from "@/components/container/Container"
+import Container from "@/components/container/Container";
+import Title from "@/components/title/Title";
 
 const Page_404 = () => {
-  return(
+  return (
     <>
-      <Container>
-        <h1>Страница не найдена</h1>
-      </Container>
+      <div className="pt-[24px] pb-[80px]">
+        <Container>
+          <div className="flex items-center justify-center h-[75vh]">
+            <Title>Страница не найдена</Title>
+          </div>
+        </Container>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Page_404
+export default Page_404;
