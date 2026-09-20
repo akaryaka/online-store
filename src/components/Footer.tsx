@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import logo from "@images/logo.png";
+import logoFooter from "@images/logo-footer.png";
 import vkIcon from "@images/vk.svg";
 import okIcon from "@images/ok.svg";
 import bgFooter from "@images/bg-footer.png";
@@ -41,9 +41,9 @@ export function Footer() {
         style={{ backgroundImage: `url('${bgFooter}')` }}
       >
         <div className="w-[1440px] ml-[auto] mr-[auto]">
-          <div className="flex justify-between">
+          <div className="flex items-center justify-between">
             <Link className="uppercase" to="/">
-              <img src={logo} alt="logo" />
+              <img src={logoFooter} alt="logo-footer" />
             </Link>
             <ul className="flex gap-[40px]">
               {menu.map((item) => (
