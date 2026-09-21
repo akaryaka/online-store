@@ -49,7 +49,7 @@ export function Footer() {
               {menu.map((item) => (
                 <li key={item.id}>
                   <Link
-                    className="hover:text-[#FF6633] transition-all"
+                    className="hover:text-primary transition-all"
                     to={item.link}
                   >
                     {item.title}

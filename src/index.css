@@ -7,7 +7,8 @@ body {
 }
 
 @theme {
-  --color-primary: '#FF6633';
-  --secondary-color: '#70C05B';
-  --color-mint-500: oklch(0.72 0.11 178);
+  --color-primary: #FF6633;
+  --color-secondary: #70C05B;
+  --color-secondary-muted: #E5FFDE;
+  --color-greyscale: #F3F2F1;
 }
