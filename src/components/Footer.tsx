@@ -21,16 +21,6 @@ const menu = [
     title: "Вакансии",
     link: "/vacancies",
   },
-  {
-    id: 4,
-    title: "Статьи",
-    link: "/vacancies",
-  },
-  {
-    id: 5,
-    title: "Политика обработки персональных данных",
-    link: "/vacancies",
-  },
 ];
 
 export function Footer() {
