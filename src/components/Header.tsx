@@ -7,6 +7,24 @@ import OrdersIcon from "./icons/OrdersIcon";
 import ShoppingCart from "./icons/ShoppingCart";
 import LogInIcon from "./icons/LogInIcon";
 
+const menu = [
+  {
+    id: 1,
+    title: "Избранное",
+    icon: <FavoritesIcon />,
+  },
+  {
+    id: 2,
+    title: "Заказы",
+    icon: <OrdersIcon />,
+  },
+  {
+    id: 3,
+    title: "Корзина",
+    icon: <ShoppingCart />,
+  },
+];
+
 export function Header() {
   return (
     <>
@@ -32,44 +50,26 @@ export function Header() {
               />
               <SearchIcon />
             </div>
-            <ul className="flex items-center gap-[24px]">
-              <li>
-                <Link
-                  className="flex flex-col items-center text-[12px] hover:text-[#FF6633] transition-all"
-                  to="/favorites"
-                >
-                  <FavoritesIcon />
-                  <span>Избранное</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="flex flex-col items-center text-[12px] hover:text-[#FF6633] transition-all"
-                  to="/orders"
-                >
-                  <OrdersIcon />
-                  <span>Заказы</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  className="flex flex-col text-[12px] items-center hover:text-[#FF6633] transition-all"
-                  to="/shoppingcart"
-                >
-                  <ShoppingCart />
-                  <span>Корзина</span>
-                </Link>
-              </li>
-              <li>
-                <a
-                  className="w-[157px] h-[40px] rounded-[4px] flex gap-[42px] text-[#fff] text-[16px] pl-[40px] pt-[8px] pb-[8px] pr-[8px] bg-[#FF6633]"
-                  href="#"
-                >
-                  <span>Войти</span>
-                  <LogInIcon />
-                </a>
-              </li>
+            <ul className="flex items-center gap-[24px] mr-[24px]">
+              {menu.map((item) => (
+                <li key={item.id}>
+                  <Link
+                    className="flex flex-col items-center text-[12px] hover:text-primary transition-all"
+                    to="/favorites"
+                  >
+                    {item.icon}
+                    <span>{item.title}</span>
+                  </Link>
+                </li>
+              ))}
             </ul>
+            <a
+              className="w-[157px] h-[40px] rounded-[4px] flex gap-[42px] text-[#fff] text-[16px] pl-[40px] pt-[8px] pb-[8px] pr-[8px] bg-primary"
+              href="#"
+            >
+              <span>Войти</span>
+              <LogInIcon />
+            </a>
           </div>
         </Container>
       </header>

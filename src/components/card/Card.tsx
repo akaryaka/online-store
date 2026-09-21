@@ -2,14 +2,14 @@ import Button from "../button/Button";
 import Favorites from "../favorites/Favorites";
 import Sales from "../sales/Sales";
 import Stars from "../stars/Stars";
-import cackeCard from "@images/cacke.png";
+import type { Props } from "./Card.props";
 
-const Card = () => {
+const Card = ({ img, rating }: Props) => {
   return (
     <>
       <div className="hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
         <header className="relative">
-          <img src={cackeCard} alt="cacke" />
+          <img src={img} alt="cacke" />
           <Sales className="absolute bottom-[10px] left-[10px]">-50%</Sales>
           <Favorites status={true} className="absolute top-[8px] right-[8px]" />
         </header>
@@ -31,7 +31,7 @@ const Card = () => {
             </div>
           </div>
           <h3 className="mb-[8px]">Г/Ц Блинчики с мясом вес, Россия</h3>
-          <Stars className="mb-[8px]" rating={2} />
+          <Stars className="mb-[8px]" rating={rating} />
           <Button>В корзину</Button>
         </div>
       </div>

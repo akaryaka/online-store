@@ -7,6 +7,10 @@ import ArrowIcon from "@/components/icons/ArrowIcon";
 import loyalCardIcon from "@images/loyalty-card.png";
 import loyalCardIcon2 from "@images/loyalty-card2.png";
 import articleImage from "@images/article.png";
+import product1 from "@images/product1.png";
+import product2 from "@images/product2.png";
+import product3 from "@images/product3.png";
+import product4 from "@images/product4.png";
 import ButtonSecondary from "@/components/button/secondary/Button";
 import ButtonGreyscale from "@/components/button/greyscale/Button";
 
@@ -37,10 +41,10 @@ const Home = () => {
               </Link>
             </header>
             <div className="grid gap-[40px] grid-cols-4">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              <Card img={product1} rating={2} />
+              <Card img={product2} rating={3} />
+              <Card img={product3} rating={5} />
+              <Card img={product4} rating={4} />
             </div>
           </div>
           <div className="pt-[80px] ml-[auto] mr-[auto]">
@@ -52,10 +56,10 @@ const Home = () => {
               </Link>
             </header>
             <div className="grid gap-[40px] grid-cols-4">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              <Card img={product1} rating={2} />
+              <Card img={product1} rating={2} />
+              <Card img={product1} rating={2} />
+              <Card img={product1} rating={2} />
             </div>
           </div>
           <div className="pt-[80px] mb-[120px] ml-[auto] mr-[auto]">
@@ -67,10 +71,10 @@ const Home = () => {
               </Link>
             </header>
             <div className="grid gap-[40px] grid-cols-4">
-              <Card />
-              <Card />
-              <Card />
-              <Card />
+              <Card img={product1} rating={2} />
+              <Card img={product1} rating={2} />
+              <Card img={product1} rating={2} />
+              <Card img={product1} rating={2} />
             </div>
           </div>
           <div className="mb-[120px]">
@@ -193,7 +197,7 @@ const Home = () => {
                     перчаток на территории магазинов "ЛЕНТА". Информация
                     обновляется каждый будний день.
                   </div>
-                  <button className="p-[8px_16px] rounded-[4px] bg-[#E5FFDE] text-[16px] leading-[150%] text-[#70C05B] cursor-pointer transition-all hover:bg-[#70C05B] hover:text-[#fff]">
+                  <button className="p-[8px_16px] rounded-[4px] bg-secondary-muted text-[16px] leading-[150%] text-[#70C05B] cursor-pointer transition-all hover:bg-secondary hover:text-[#fff]">
                     Подробнее
                   </button>
                 </div>
