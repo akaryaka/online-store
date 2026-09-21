@@ -7,7 +7,7 @@ import type { Props } from "./Card.props";
 const Card = ({ img, rating }: Props) => {
   return (
     <>
-      <div className="hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
+      <div className="hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
         <header className="relative">
           <img src={img} alt="cacke" />
           <Sales className="absolute bottom-[10px] left-[10px]">-50%</Sales>
