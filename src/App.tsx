@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Vacancies from "./pages/Vacancies";
 import Contacts from "./pages/Contacts";
 import Search from "./pages/Search";
+import Catalog from "./pages/Catalog";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/favorites" element={<Favorites />} />
           <Route path="/shoppingcart" element={<ShoppingCart />} />
           <Route path="/about" element={<About />} />
+          <Route path="/catalog" element={<Catalog />} />
           <Route path="/vacancies" element={<Vacancies />} />
           <Route path="/contacts" element={<Contacts />} />
           {/* для теста, исправлю) */}
