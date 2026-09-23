@@ -12,3 +12,48 @@ body {
   --color-secondary-muted: #E5FFDE;
   --color-greyscale: #F3F2F1;
 }
+
+/* цвет контейнера */
+.MuiSwitch-track.css-pm6g3f-MuiSwitch-track {
+  background-color: #70C05B !important;
+  /* border: 1px solid #000 !important; */
+  border-radius: 49px;
+}
+
+.css-1ljh8g4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: #fff !important;
+}
+
+/* обводка */
+.MuiButtonBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.PrivateSwitchBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.css-1ljh8g4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase {
+  background: transparent !important;
+}
+
+.MuiButtonBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.PrivateSwitchBase-root.MuiSwitch-switchBase.MuiSwitch-colorPrimary.Mui-checked.css-1ljh8g4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase + .MuiSwitch-track.css-pm6g3f-MuiSwitch-track {
+  background: #70C05B !important;
+  opacity: 1 !important;
+}
+
+.css-1mw77bv-MuiSwitch-thumb:hover {
+  background-color: #000 !important; 
+}
+
+.css-rehya9-MuiSwitch-root { 
+  padding: 6px !important; 
+}
+
+.css-hat6nr-MuiSlider-rail {
+  background-color: #F3F2F1 !important;
+}
+
+.css-1r1jhet-MuiSlider-thumb {
+  
+  background-color: var(--color-secondary) !important;
+  
+}
+
+.css-xvk2i-MuiSlider-track {
+  border-color: var(--color-secondary) !important;
+  background-color: var(--color-secondary) !important;
+
+}

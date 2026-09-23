@@ -10,6 +10,7 @@ import Vacancies from "./pages/Vacancies";
 import Contacts from "./pages/Contacts";
 import Search from "./pages/Search";
 import Catalog from "./pages/Catalog";
+import Category from "./pages/Category";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/shoppingcart" element={<ShoppingCart />} />
           <Route path="/about" element={<About />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/category" element={<Category />} />
           <Route path="/vacancies" element={<Vacancies />} />
           <Route path="/contacts" element={<Contacts />} />
           {/* для теста, исправлю) */}
