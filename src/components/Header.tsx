@@ -12,16 +12,19 @@ const menu = [
     id: 1,
     title: "Избранное",
     icon: <FavoritesIcon />,
+    link: "/favorites",
   },
   {
     id: 2,
     title: "Заказы",
     icon: <OrdersIcon />,
+    link: "/orders",
   },
   {
     id: 3,
     title: "Корзина",
     icon: <ShoppingCart />,
+    link: "shoppingcart",
   },
 ];
 
@@ -55,7 +58,7 @@ export function Header() {
                 <li key={item.id}>
                   <Link
                     className="flex flex-col items-center text-[12px] hover:text-primary transition-all"
-                    to="/favorites"
+                    to={item.link}
                   >
                     {item.icon}
                     <span>{item.title}</span>
