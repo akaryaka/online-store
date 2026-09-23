@@ -2,10 +2,9 @@ import { Link } from "react-router";
 import ArrowIcon from "@/components/icons/ArrowIcon";
 import Container from "@/components/container/Container";
 import Title from "@/components/title/Title";
-import ButtonGreyscale from "@/components/button/greyscale/Button";
-import ButtonSecondary from "@/components/button/secondary/Button";
 import Card from "@/components/card/Card";
 import product1 from "@images/product1.png";
+import Button from "@/components/button/Button";
 import { Switch, Slider } from "@mui/material";
 import { useState } from "react";
 import cn from "classnames";
@@ -52,7 +51,6 @@ interface PaginationLinkProps extends DetailedHTMLProps<
 
 const PaginationLink = ({
   title,
-  active,
   className,
   ...props
 }: PaginationLinkProps) => {
@@ -112,20 +110,32 @@ const Category = () => {
           <Container>
             <Title className="mb-[60px]">Молоко, сыр, яйцо</Title>
             <div className="flex gap-[24px] mb-[40px]">
-              <ButtonGreyscale>Товары нашего производства</ButtonGreyscale>
-              <ButtonGreyscale>Полезное питание</ButtonGreyscale>
-              <ButtonGreyscale>Без ГМО</ButtonGreyscale>
+              <Button textColor="#606060" bgColor="greyscale">
+                Товары нашего производства
+              </Button>
+              <Button textColor="#606060" bgColor="greyscale">
+                Полезное питание
+              </Button>
+              <Button textColor="#606060" bgColor="greyscale">
+                Без ГМО
+              </Button>
             </div>
             <div className="flex gap-[40px] justify-between">
               <div className="sidebar w-[272px]">
-                <ButtonGreyscale className="text-left w-[100%] mb-[40px]">
+                <Button
+                  textColor="#606060"
+                  bgColor="greyscale"
+                  className="text-left w-[100%] mb-[40px]"
+                >
                   <span className="font-bold text-[16px] leading-[150%] text-[#414141]">
                     Фильтр
                   </span>
-                </ButtonGreyscale>
+                </Button>
                 <div className="flex justify-between items-center mb-[13px]">
                   <div className="text-[16px] leading-[150%]">Цена</div>
-                  <ButtonGreyscale>Очистить</ButtonGreyscale>
+                  <Button textColor="#606060" bgColor="greyscale">
+                    Очистить
+                  </Button>
                 </div>
                 <div className="flex items-center mb-[40px]">
                   <input
@@ -182,18 +192,30 @@ const Category = () => {
               </div>
               <div className="content grow">
                 <div className="flex  gap-[24px] mb-[40px]">
-                  <ButtonSecondary className=" flex items-center gap-[8px]">
+                  <Button
+                    className=" flex items-center gap-[8px]"
+                    bgColor="secondary"
+                    textColor="#fff"
+                  >
                     <span>Фильтр 4</span>
                     <ResetIcon fill="#fff" />
-                  </ButtonSecondary>
-                  <ButtonSecondary className="flex items-center gap-[8px]">
+                  </Button>
+                  <Button
+                    className="flex items-center gap-[8px]"
+                    bgColor="secondary"
+                    textColor="#fff"
+                  >
                     <span>Цена от 99 до 2599</span>
                     <ResetIcon fill="#fff" />
-                  </ButtonSecondary>
-                  <ButtonGreyscale className="flex items-center gap-[8px]">
+                  </Button>
+                  <Button
+                    className="flex items-center gap-[8px]"
+                    bgColor="greyscale"
+                    textColor="#606060"
+                  >
                     <span>Очистить фильтры</span>
                     <ResetIcon fill="#414141" />
-                  </ButtonGreyscale>
+                  </Button>
                 </div>
                 <div className="cards grid grid-cols-3 grid-rows-2 gap-[40px] mb-[40px]">
                   <Card img={product1} rating={2} />
@@ -204,7 +226,10 @@ const Category = () => {
                   <Card img={product1} rating={2} />
                 </div>
                 <div className="flex justify-center mb-[40px]">
-                  <ButtonGreyscale>Показать ещё</ButtonGreyscale>
+                  <Button textColor="#606060" bgColor="greyscale">
+                    Показать ещё
+                  </Button>
+                  {/* <ButtonGreyscale>Показать ещё</ButtonGreyscale> */}
                 </div>
                 <div className="flex justify-center">
                   <button className="cursor-pointer p-[8px]">

@@ -1,5 +1,4 @@
-import ButtonGreyscale from "@/components/button/greyscale/Button";
-import ButtonSecondary from "@/components/button/secondary/Button";
+import Button from "@/components/button/Button";
 import Container from "@/components/container/Container";
 import Crumbs from "@/components/crumbs/Crumbs";
 import LocationIcon from "@/components/icons/contacts/LocationIcon";
@@ -49,10 +48,18 @@ const Contacts = () => {
           Наши магазины
         </h2>
         <div className="flex gap-[24px] mb-[32px]">
-          <ButtonSecondary>п.Щельяюр</ButtonSecondary>
-          <ButtonGreyscale>д.Вертеп</ButtonGreyscale>
-          <ButtonGreyscale>с.Краснобор</ButtonGreyscale>
-          <ButtonGreyscale>д.Диюр</ButtonGreyscale>
+          <Button bgColor="secondary" textColor="#fff">
+            п.Щельяюр
+          </Button>
+          <Button textColor="#606060" bgColor="greyscale">
+            д.Вертеп
+          </Button>
+          <Button textColor="#606060" bgColor="greyscale">
+            с.Краснобор
+          </Button>
+          <Button textColor="#606060" bgColor="greyscale">
+            д.Диюр
+          </Button>
         </div>
         <div className="flex gap-[80px] mb-[32px]">
           <div>

@@ -32,7 +32,13 @@ const Card = ({ img, rating }: Props) => {
           </div>
           <h3 className="mb-[8px]">Г/Ц Блинчики с мясом вес, Россия</h3>
           <Stars className="mb-[8px]" rating={rating} />
-          <Button>В корзину</Button>
+          <Button
+            border="border"
+            className="w-[100%] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
+            textColor="#70C05B"
+          >
+            В корзину
+          </Button>
         </div>
       </div>
     </>

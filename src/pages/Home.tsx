@@ -11,8 +11,7 @@ import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
 import product4 from "@images/product4.png";
-import ButtonSecondary from "@/components/button/secondary/Button";
-import ButtonGreyscale from "@/components/button/greyscale/Button";
+import Button from "@/components/button/Button";
 
 const Home = () => {
   return (
@@ -117,10 +116,18 @@ const Home = () => {
           <div className="mb-[120px]">
             <h2 className="text-[36px] font-bold mb-[40px]">Наши магазины</h2>
             <div className="flex gap-[24px] mb-[24px]">
-              <ButtonSecondary>п.Щельяюр</ButtonSecondary>
-              <ButtonGreyscale>д.Вертеп</ButtonGreyscale>
-              <ButtonGreyscale>с.Краснобор</ButtonGreyscale>
-              <ButtonGreyscale>д.Диюр</ButtonGreyscale>
+              <Button bgColor="secondary" textColor="#fff">
+                п.Щельяюр
+              </Button>
+              <Button textColor="#606060" bgColor="greyscale">
+                д.Вертеп
+              </Button>
+              <Button textColor="#606060" bgColor="greyscale">
+                с.Краснобор
+              </Button>
+              <Button textColor="#606060" bgColor="greyscale">
+                д.Диюр
+              </Button>
             </div>
             <div className="h-[354px] w-[100%] bg-[grey]"></div>
           </div>
