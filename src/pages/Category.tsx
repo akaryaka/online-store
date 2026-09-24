@@ -1,74 +1,14 @@
+import { useState } from "react";
 import { Link } from "react-router";
+import { Switch, Slider } from "@mui/material";
 import ArrowIcon from "@/components/icons/ArrowIcon";
 import Container from "@/components/container/Container";
 import Title from "@/components/title/Title";
 import Card from "@/components/card/Card";
-import product1 from "@images/product1.png";
 import Button from "@/components/button/Button";
-import { Switch, Slider } from "@mui/material";
-import { useState } from "react";
-import cn from "classnames";
-import type { DetailedHTMLProps, LinkHTMLAttributes } from "react";
-
-interface ResetIconProps {
-  fill: string;
-}
-
-const ResetIcon = ({ fill }: ResetIconProps) => {
-  return (
-    <>
-      <svg
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z"
-          fill={fill}
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z"
-          fill={fill}
-        />
-      </svg>
-    </>
-  );
-};
-
-interface PaginationLinkProps extends DetailedHTMLProps<
-  LinkHTMLAttributes<HTMLLinkElement>,
-  HTMLLinkElement
-> {
-  title: number;
-  active?: boolean;
-}
-
-const PaginationLink = ({
-  title,
-  className,
-  ...props
-}: PaginationLinkProps) => {
-  return (
-    <>
-      <a
-        className={cn(
-          "text-[16px] leading-[150%] text-[#606060] p-[8px]",
-          className,
-          { ...props },
-        )}
-        href="#"
-      >
-        {title}
-      </a>
-    </>
-  );
-};
+import ResetIcon from "@/components/resetIcon/ResetIcon";
+import PaginationLink from "@/components/paginationLink/PaginationLink";
+import product1 from "@images/product1.png";
 
 const Category = () => {
   const [value, setValue] = useState<number[]>([20, 37]);
@@ -272,7 +212,7 @@ const Category = () => {
                   </button>
                   <ul className="flex items-center justify-center gap-[16px]">
                     <li className="flex justify-center items-center w-[40px] h-[40px]">
-                      <PaginationLink className=" text-primary" title={1} />
+                      <PaginationLink className="text-primary" title={1} />
                     </li>
                     <li className="flex justify-center items-center w-[40px] h-[40px]">
                       <PaginationLink title={2} />
