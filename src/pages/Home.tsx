@@ -116,16 +116,16 @@ const Home = () => {
           <div className="mb-[120px]">
             <h2 className="text-[36px] font-bold mb-[40px]">Наши магазины</h2>
             <div className="flex gap-[24px] mb-[24px]">
-              <Button bgColor="secondary" textColor="#fff">
+              <Button bgColor="#70C05B" textColor="#fff">
                 п.Щельяюр
               </Button>
-              <Button textColor="#606060" bgColor="greyscale">
+              <Button textColor="#606060" bgColor="#F3F2F1">
                 д.Вертеп
               </Button>
-              <Button textColor="#606060" bgColor="greyscale">
+              <Button textColor="#606060" bgColor="#F3F2F1">
                 с.Краснобор
               </Button>
-              <Button textColor="#606060" bgColor="greyscale">
+              <Button textColor="#606060" bgColor="#F3F2F1">
                 д.Диюр
               </Button>
             </div>

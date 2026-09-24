@@ -14,7 +14,7 @@ const Button = ({
     <>
       <button
         className={cn(
-          `${border} text-[16px] bg-${bgColor}  border-[${borderColor}] text-[${textColor}] font-[Rubik] p-[8px] rounded-[4px] transition-all cursor-pointer`,
+          `${border} text-[16px] bg-[${bgColor}]  border-[${borderColor}] text-[${textColor}] font-[Rubik] p-[8px] rounded-[4px] transition-all cursor-pointer`,
           className,
           { ...props },
         )}
