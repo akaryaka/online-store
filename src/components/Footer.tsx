@@ -4,6 +4,7 @@ import vkIcon from "@images/vk.svg";
 import okIcon from "@images/ok.svg";
 import bgFooter from "@images/bg-footer.png";
 import phoneIcon from "@images/phone.svg";
+import Container from "./container/Container";
 
 const menu = [
   {
@@ -30,7 +31,7 @@ export function Footer() {
         className="bg-[#F9F4E2] pt-[37px] pb-[37px] shadow-[2px_-4px_8px_rgba(0,0,0,0.1)]"
         style={{ backgroundImage: `url('${bgFooter}')` }}
       >
-        <div className="w-[1440px] ml-[auto] mr-[auto]">
+        <Container>
           <div className="flex items-center justify-between">
             <Link className="uppercase" to="/">
               <img src={logoFooter} alt="logo-footer" />
@@ -62,7 +63,7 @@ export function Footer() {
               </a>
             </div>
           </div>
-        </div>
+        </Container>
       </footer>
     </>
   );
