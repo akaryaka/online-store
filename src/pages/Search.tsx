@@ -1,9 +1,13 @@
 import Card from "@/components/card/Card";
 import Container from "@/components/container/Container";
+import { Helmet } from "react-helmet-async";
 
 const Search = () => {
   return (
     <>
+      <Helmet>
+        <title>Результаты поиска</title>
+      </Helmet>
       <div className="p-[80px_0px]">
         <Container>
           <header>

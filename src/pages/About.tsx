@@ -5,10 +5,14 @@ import LogoAbout from "@images/logo-about.png";
 import ImgAbout from "@images/img-about.png";
 import BgAbout from "@images/bg-about.png";
 import QuoteAbout from "@images/quote.png";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <title>О компании</title>
+      </Helmet>
       <div className="pt-[24px] pb-[80px]">
         <Container>
           <Crumbs page="О компании" />

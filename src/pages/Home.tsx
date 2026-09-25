@@ -12,10 +12,14 @@ import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
 import product4 from "@images/product4.png";
 import Button from "@/components/button/Button";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <title>Главная</title>
+      </Helmet>
       <div
         className="banner h-[200px] bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url('${bannerBg}')` }}

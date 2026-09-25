@@ -3,6 +3,7 @@ import Crumbs from "@/components/crumbs/Crumbs";
 import Title from "@/components/title/Title";
 import catalogBg1 from "@images/catalog/catalog1.png";
 import cn from "classnames";
+import { Helmet } from "react-helmet-async";
 
 interface Props {
   title: string;
@@ -31,6 +32,9 @@ const CatalogItem = ({ title, size, ...props }: Props) => {
 const Catalog = () => {
   return (
     <>
+      <Helmet>
+        <title>Каталог</title>
+      </Helmet>
       <div className="pt-[24px] pb-[80px]">
         <Container>
           <Crumbs page="Каталог" />

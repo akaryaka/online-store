@@ -9,6 +9,7 @@ import Button from "@/components/button/Button";
 import ResetIcon from "@/components/resetIcon/ResetIcon";
 import PaginationLink from "@/components/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
+import { Helmet } from "react-helmet-async";
 
 const Category = () => {
   const [value, setValue] = useState<number[]>([20, 37]);
@@ -18,6 +19,9 @@ const Category = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Каталог | Молоко, сыр, яйцо</title>
+      </Helmet>
       <div className="pt-[24px] pb-[80px]">
         <div className="mb-[27px]">
           {/* заменить компонентом */}
