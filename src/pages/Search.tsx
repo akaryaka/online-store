@@ -1,5 +1,6 @@
 import Card from "@/components/card/Card";
 import Container from "@/components/container/Container";
+import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";
 
 const Search = () => {
@@ -19,22 +20,22 @@ const Search = () => {
             по запросу <span className="text-[#FF6633]">Еда</span>
           </div>
           <div className="grid grid-cols-4 gap-[40px]">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
+            <Card img={product1} rating={2} />
           </div>
         </Container>
       </div>
