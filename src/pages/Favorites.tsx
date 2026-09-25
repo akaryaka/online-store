@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
 import { Switch, Slider } from "@mui/material";
-import ArrowIcon from "@/components/icons/ArrowIcon";
 import Container from "@/components/container/Container";
 import Title from "@/components/title/Title";
 import Card from "@/components/card/Card";
@@ -10,6 +8,7 @@ import ResetIcon from "@/components/resetIcon/ResetIcon";
 import PaginationLink from "@/components/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";
+import Crumbs from "@/components/crumbs/Crumbs";
 
 const Favorites = () => {
   const [value, setValue] = useState<number[]>([20, 37]);
@@ -17,6 +16,7 @@ const Favorites = () => {
   const handleChange = (event: Event, newValue: number[]) => {
     setValue(newValue);
   };
+
   return (
     <>
       <Helmet>
@@ -24,23 +24,8 @@ const Favorites = () => {
       </Helmet>
       <div className="pt-[24px] pb-[80px]">
         <div className="mb-[27px]">
-          {/* заменить компонентом */}
           <Container>
-            <div className="flex items-center gap-[10px]">
-              <Link
-                className="leading-[150%] text-[12px] text-[#414141]"
-                to="/"
-              >
-                Главная
-              </Link>
-              <ArrowIcon />
-              <Link
-                className="leading-[150%] text-[12px] text-[#414141]"
-                to="/catalog"
-              >
-                Избранное
-              </Link>
-            </div>
+            <Crumbs page="Избранное" />
           </Container>
         </div>
         <div>
