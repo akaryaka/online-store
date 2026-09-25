@@ -144,7 +144,7 @@ const Favorites = () => {
                   <Card img={product1} rating={2} />
                 </div>
                 <div className="flex justify-center mb-[40px]">
-                  <Button textColor="#606060" bgColor="greyscale">
+                  <Button textColor="#606060" bgColor="#F3F2F1">
                     Показать ещё
                   </Button>
                 </div>
