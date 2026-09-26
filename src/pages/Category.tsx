@@ -173,7 +173,6 @@ const Category = () => {
                   <Button textColor="#606060" bgColor="greyscale">
                     Показать ещё
                   </Button>
-                  {/* <ButtonGreyscale>Показать ещё</ButtonGreyscale> */}
                 </div>
                 <div className="flex justify-center">
                   <button className="cursor-pointer p-[8px]">
