@@ -3,7 +3,7 @@ import Container from "@/components/container/Container";
 import Crumbs from "@/components/crumbs/Crumbs";
 import LocationIcon from "@/components/icons/contacts/LocationIcon";
 import PercentIcon from "@/components/icons/contacts/PercentIcon";
-import PhoneIcon from "@/components/icons/PhoneIcon";
+import Phone from "@/components/phone/Phone";
 import Title from "@/components/title/Title";
 import { Helmet } from "react-helmet-async";
 
@@ -108,15 +108,7 @@ const Contacts = () => {
                   ул. Дорожная 10
                 </span>
               </div>
-              <div className="flex items-center gap-[8px]">
-                <PhoneIcon />
-                <a
-                  className="text-[18px] leading-[150%] text-[#414141] underline"
-                  href="tel:+7 904 271 35 90"
-                >
-                  +7 904 271 35 90
-                </a>
-              </div>
+              <Phone number="+7 904 271 35 90" />
             </div>
             <div>
               <div className="mb-[8px]">
@@ -155,15 +147,7 @@ const Contacts = () => {
                   ул. Советская 87
                 </span>
               </div>
-              <div className="flex items-center gap-[8px]">
-                <PhoneIcon />
-                <a
-                  className="text-[18px] leading-[150%] text-[#414141] underline"
-                  href="tel:+7 82140 91330"
-                >
-                  +7 82140 91330
-                </a>
-              </div>
+              <Phone number="+7 82140 91330" />
             </div>
             <div>
               <div className="mb-[8px]">
@@ -218,15 +202,7 @@ const Contacts = () => {
                   ул. Заводская 16
                 </span>
               </div>
-              <div className="flex items-center gap-[8px]">
-                <PhoneIcon />
-                <a
-                  className="text-[18px] leading-[150%] text-[#414141] underline"
-                  href="tel:+7 82140 91101"
-                >
-                  +7 82140 91101
-                </a>
-              </div>
+              <Phone number="+7 82140 91101" />
             </div>
             <div>
               <div className="mb-[8px]">
@@ -269,15 +245,7 @@ const Contacts = () => {
                   ул. Рабочая 1
                 </span>
               </div>
-              <div className="flex items-center gap-[8px]">
-                <PhoneIcon />
-                <a
-                  className="text-[18px] leading-[150%] text-[#414141] underline"
-                  href="tel:+7 82140 91300"
-                >
-                  +7 82140 91300
-                </a>
-              </div>
+              <Phone number="+7 82140 91300" />
             </div>
           </div>
           <div className="map w-[100%] h-[354px] bg-[grey]"></div>
