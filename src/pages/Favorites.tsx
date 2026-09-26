@@ -4,7 +4,7 @@ import Container from "@/components/container/Container";
 import Title from "@/components/title/Title";
 import Card from "@/components/card/Card";
 import Button from "@/components/button/Button";
-import ResetIcon from "@/components/resetIcon/ResetIcon";
+import ResetIcon from "@/components/icons/resetIcon/ResetIcon";
 import PaginationLink from "@/components/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";

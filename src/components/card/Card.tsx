@@ -1,7 +1,7 @@
 import Button from "../button/Button";
 import Favorites from "../favorites/Favorites";
 import Sales from "../sales/Sales";
-import Stars from "../stars/Stars";
+import Stars from "../icons/stars/Stars";
 import type { Props } from "./Card.props";
 
 const Card = ({ img, rating }: Props) => {

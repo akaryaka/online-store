@@ -11,7 +11,7 @@ import Contacts from "./pages/Contacts";
 import Search from "./pages/Search";
 import Catalog from "./pages/Catalog";
 import Category from "./pages/Category";
-import OrdersManager from "./pages/OrdersManager";
+import OrdersManager from "./pages/OrdersManager/OrdersManager";
 
 function App() {
   return (
