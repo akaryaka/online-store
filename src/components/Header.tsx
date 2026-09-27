@@ -26,7 +26,7 @@ const menu = [
     id: 3,
     title: "Корзина",
     icon: <ShoppingCart />,
-    link: "shoppingcart",
+    link: "/shoppingcart",
   },
 ];
 
@@ -39,14 +39,17 @@ export function Header() {
             <Link className="mr-[40px]" to="/">
               <img className="w-[152px] h-[32px]" src={logo} alt="logo" />
             </Link>
-            <Button className="w-[140px] h-[40px] mr-[16px] flex items-center gap-[28px]  p-[13px_10px] text-[#fff] bg-[#70C05B]">
+            <Link
+              to="/catalog"
+              className="w-[140px] h-[40px] mr-[16px] flex items-center gap-[28px] rounded-[4px] p-[13px_10px] text-[#fff] bg-[#70C05B]"
+            >
               <span className="flex flex-col justify-center items-center w-[20px] h-[24px]">
                 <span className="block w-[100%] mb-[5px] h-[1px] bg-[#fff] rounded-[1px]"></span>
                 <span className="block w-[100%] mb-[5px] h-[1px] bg-[#fff] rounded-[1px]"></span>
                 <span className="block w-[100%] h-[1px] bg-[#fff] rounded-[1px]"></span>
               </span>
               <span>Каталог</span>
-            </Button>
+            </Link>
             <TextField
               className="mr-[40px] w-[435px]"
               placeholder="Найти товар"
