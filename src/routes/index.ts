@@ -18,7 +18,7 @@ export const routes = [
   { id: 4, path: "/shoppingcart", element: ShoppingCart },
   { id: 5, path: "/about", element: About },
   { id: 6, path: "/catalog", element: Catalog },
-  { id: 7, path: "/category", element: Category },
+  { id: 7, path: "/catalog/category", element: Category },
   { id: 8, path: "/vacancies", element: Vacancies },
   //  для теста
   { id: 9, path: "/ordersmanager", element: OrdersManager },
