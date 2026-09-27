@@ -1,14 +1,11 @@
-import { Outlet } from "react-router";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
-const Layout = () => {
+const Layout = ({ children }: any) => {
   return (
     <>
       <Header />
-      <main className="bg-[#F9F4E2]">
-        <Outlet />
-      </main>
+      <main className="bg-[#FBF8EC]">{children}</main>
       <Footer />
     </>
   );

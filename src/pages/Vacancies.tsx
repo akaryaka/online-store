@@ -3,6 +3,7 @@ import Crumbs from "@/components/crumbs/Crumbs";
 import Title from "@/components/title/Title";
 import { Helmet } from "react-helmet-async";
 import Phone from "@/components/phone/Phone";
+import Layout from "./layout/Layout";
 
 interface Props {
   job: string;
@@ -111,7 +112,7 @@ const Vacancies = () => {
       <Helmet>
         <title>Вакансии</title>
       </Helmet>
-      <>
+      <Layout>
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="mb-[24px]">
@@ -135,7 +136,7 @@ const Vacancies = () => {
             </div>
           </Container>
         </div>
-      </>
+      </Layout>
     </>
   );
 };

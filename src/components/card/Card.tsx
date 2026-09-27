@@ -34,8 +34,7 @@ const Card = ({ img, rating }: Props) => {
           <Stars className="mb-[8px]" rating={rating} />
           <Button
             border="border"
-            className="w-[100%] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
-            textColor="#70C05B"
+            className="w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
           >
             В корзину
           </Button>

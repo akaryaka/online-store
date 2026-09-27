@@ -4,6 +4,7 @@ import Title from "@/components/title/Title";
 import catalogBg1 from "@images/catalog/catalog1.png";
 import cn from "classnames";
 import { Helmet } from "react-helmet-async";
+import Layout from "./layout/Layout";
 
 interface Props {
   title: string;
@@ -35,31 +36,33 @@ const Catalog = () => {
       <Helmet>
         <title>Каталог</title>
       </Helmet>
-      <div className="pt-[24px] pb-[80px]">
-        <Container>
-          <Crumbs page="Каталог" />
-        </Container>
-      </div>
-      <div className="pb-[80px]">
-        <Container>
-          <Title className="mb-[60px]">Каталог</Title>
-          <div className="grid grid-cols-4 grid-rows-4 gap-[40px]">
-            <CatalogItem title="Молоко, сыр, яйцо" size="col-span-2" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" size="col-span-2" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-            <CatalogItem title="Молоко, сыр, яйцо" size="col-span-2" />
-            <CatalogItem title="Молоко, сыр, яйцо" />
-          </div>
-        </Container>
-      </div>
+      <Layout>
+        <div className="pt-[24px] pb-[80px]">
+          <Container>
+            <Crumbs page="Каталог" />
+          </Container>
+        </div>
+        <div className="pb-[80px]">
+          <Container>
+            <Title className="mb-[60px]">Каталог</Title>
+            <div className="grid grid-cols-4 grid-rows-4 gap-[40px]">
+              <CatalogItem title="Молоко, сыр, яйцо" size="col-span-2" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" size="col-span-2" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+              <CatalogItem title="Молоко, сыр, яйцо" size="col-span-2" />
+              <CatalogItem title="Молоко, сыр, яйцо" />
+            </div>
+          </Container>
+        </div>
+      </Layout>
     </>
   );
 };
