@@ -6,6 +6,10 @@ import { Helmet } from "react-helmet-async";
 import { Switch } from "@mui/material";
 import Button from "@/components/button/Button";
 import Layout from "./layout/Layout";
+import MinusIcon from "@/components/icons/MinusIcon";
+import CheckIcon from "@/components/icons/CheckIcon";
+import PlusIcon from "@/components/icons/PlusIcon";
+import SmileIcon from "@/components/icons/SmileIcont";
 
 const ShoppingCart = () => {
   return (
@@ -31,21 +35,8 @@ const ShoppingCart = () => {
               <div className="grow">
                 <div className="flex gap-[40px] mb-[24px]">
                   <button className="flex items-center gap-[8px] text-[12px] leading-[150%] text-[#606060] cursor-pointer">
-                    <span className="w-[24px] h-[24px] p-[4px] rounded-[4px] bg-[#70C05B]">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M3 8.00001C3 7.81591 3.14924 7.66667 3.33333 7.66667H12.6667C12.8508 7.66667 13 7.81591 13 8.00001C13 8.1841 12.8508 8.33334 12.6667 8.33334H3.33333C3.14924 8.33334 3 8.1841 3 8.00001Z"
-                          fill="white"
-                        />
-                      </svg>
+                    <span className="flex items-center justify-center w-[24px] h-[24px] p-[4px] rounded-[4px] bg-[#70C05B]">
+                      <MinusIcon fill="#fff" />
                     </span>
                     <span> Выделить всё</span>
                   </button>
@@ -56,20 +47,7 @@ const ShoppingCart = () => {
                 <div>
                   <div className="mb-[24px] hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] relative pb-[10px] pr-[8px] cursor-pointer flex w-[100%] bg-[#fff] rounded-[4px] shadow-[1px_2px_4px_rgba(0,0,0,0.1)]">
                     <div className="absolute top-[-8px] left-[8px] border border-[#fff] flex items-center justify-center border-[#fff] w-[24px] h-[24px] p-[4px] rounded-[4px] bg-[#70C05B]">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M13.5692 4.43096C13.6994 4.56113 13.6994 4.77219 13.5692 4.90236L6.23587 12.2357C6.10569 12.3659 5.89464 12.3659 5.76446 12.2357L2.43113 8.90236C2.30095 8.77219 2.30095 8.56113 2.43113 8.43096C2.5613 8.30078 2.77236 8.30078 2.90253 8.43096L6.00016 11.5286L13.0978 4.43096C13.228 4.30078 13.439 4.30078 13.5692 4.43096Z"
-                          fill="white"
-                        />
-                      </svg>
+                      <CheckIcon fill="#fff" />
                     </div>
                     <div className="w-[80px] h-[60px] rounded-[4px] shadow-[1px_2px_4px_rgba(0,0,0,0.1)] mr-[8px]">
                       <img src={cartItem1} alt="order" />
@@ -89,43 +67,11 @@ const ShoppingCart = () => {
                     </div>
                     <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
                       <button className="cursor-pointer">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <MinusIcon fill="#fff" />
                       </button>
                       <span className="text-[#fff]">2</span>
                       <button className="cursor-pointer">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z"
-                            fill="white"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <PlusIcon fill="#fff" />
                       </button>
                     </div>
                     <div className="text-[#414141] text-[18px] leading-[150%] font-bold mt-[8px] grow text-right">
@@ -134,20 +80,7 @@ const ShoppingCart = () => {
                   </div>
                   <div className="mb-[24px] hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] relative pb-[10px] pr-[8px] cursor-pointer flex w-[100%] bg-[#fff] rounded-[4px] shadow-[1px_2px_4px_rgba(0,0,0,0.1)]">
                     <div className="absolute top-[-8px] left-[8px] border border-[#fff] flex items-center justify-center border-[#fff] w-[24px] h-[24px] p-[4px] rounded-[4px] bg-[#70C05B]">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M13.5692 4.43096C13.6994 4.56113 13.6994 4.77219 13.5692 4.90236L6.23587 12.2357C6.10569 12.3659 5.89464 12.3659 5.76446 12.2357L2.43113 8.90236C2.30095 8.77219 2.30095 8.56113 2.43113 8.43096C2.5613 8.30078 2.77236 8.30078 2.90253 8.43096L6.00016 11.5286L13.0978 4.43096C13.228 4.30078 13.439 4.30078 13.5692 4.43096Z"
-                          fill="white"
-                        />
-                      </svg>
+                      <CheckIcon fill="#fff" />
                     </div>
                     <div className="w-[80px] h-[60px] rounded-[4px] shadow-[1px_2px_4px_rgba(0,0,0,0.1)] mr-[8px]">
                       <img src={cartItem1} alt="order" />
@@ -182,43 +115,11 @@ const ShoppingCart = () => {
                     </div>
                     <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
                       <button className="cursor-pointer">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <MinusIcon fill="#fff" />
                       </button>
                       <span className="text-[#fff]">2</span>
                       <button className="cursor-pointer">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z"
-                            fill="white"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <PlusIcon fill="#fff" />
                       </button>
                     </div>
                     <div className="flex flex-col mt-[8px] grow text-right">
@@ -233,20 +134,7 @@ const ShoppingCart = () => {
                   </div>
                   <div className="mb-[24px] hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] relative pb-[10px] pr-[8px] cursor-pointer flex w-[100%] bg-[#fff] rounded-[4px] shadow-[1px_2px_4px_rgba(0,0,0,0.1)]">
                     <div className="absolute top-[-8px] left-[8px] border border-[#fff] flex items-center justify-center border-[#fff] w-[24px] h-[24px] p-[4px] rounded-[4px] bg-[#70C05B]">
-                      <svg
-                        width="16"
-                        height="16"
-                        viewBox="0 0 16 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          clip-rule="evenodd"
-                          d="M13.5692 4.43096C13.6994 4.56113 13.6994 4.77219 13.5692 4.90236L6.23587 12.2357C6.10569 12.3659 5.89464 12.3659 5.76446 12.2357L2.43113 8.90236C2.30095 8.77219 2.30095 8.56113 2.43113 8.43096C2.5613 8.30078 2.77236 8.30078 2.90253 8.43096L6.00016 11.5286L13.0978 4.43096C13.228 4.30078 13.439 4.30078 13.5692 4.43096Z"
-                          fill="white"
-                        />
-                      </svg>
+                      <CheckIcon fill="#fff" />
                     </div>
                     <div className="w-[80px] h-[60px] rounded-[4px] shadow-[1px_2px_4px_rgba(0,0,0,0.1)] mr-[8px]">
                       <img src={cartItem1} alt="order" />
@@ -266,43 +154,11 @@ const ShoppingCart = () => {
                     </div>
                     <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
                       <button className="cursor-pointer">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <MinusIcon fill="#fff" />
                       </button>
                       <span className="text-[#fff]">2</span>
                       <button className="cursor-pointer">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M12 4.5C12.2761 4.5 12.5 4.72386 12.5 5V19C12.5 19.2761 12.2761 19.5 12 19.5C11.7239 19.5 11.5 19.2761 11.5 19V5C11.5 4.72386 11.7239 4.5 12 4.5Z"
-                            fill="white"
-                          />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M4.5 12C4.5 11.7239 4.72386 11.5 5 11.5H19C19.2761 11.5 19.5 11.7239 19.5 12C19.5 12.2761 19.2761 12.5 19 12.5H5C4.72386 12.5 4.5 12.2761 4.5 12Z"
-                            fill="white"
-                          />
-                        </svg>
+                        <PlusIcon fill="#fff" />
                       </button>
                     </div>
                     <div className="text-[#414141] text-[18px] leading-[150%] font-bold mt-[8px] grow text-right">
@@ -368,18 +224,7 @@ const ShoppingCart = () => {
                   </div>
                 </div>
                 <div className="flex gap-[8px] justify-center items-center mb-[24px]">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M23.1883 6.66661H0.811961C0.343143 6.66661 -0.0396916 7.05823 0.0033005 7.52051C0.494639 13.0113 5.67826 17.3333 12.0001 17.3333C18.322 17.3333 23.5056 13.0133 23.997 7.52051C24.0379 7.05823 23.6571 6.66661 23.1883 6.66661Z"
-                      fill="#70C05B"
-                    />
-                  </svg>
+                  <SmileIcon />
                   <span className="text-[#70C05B] flex gap-[4px]">
                     <span>Вы получяете</span>
                     <span className="font-bold">100 бонусов</span>

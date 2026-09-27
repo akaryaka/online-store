@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 import logoFooter from "@images/logo-footer.png";
-import vkIcon from "@images/vk.svg";
-import okIcon from "@images/ok.svg";
 import bgFooter from "@images/bg-footer.png";
-import phoneIcon from "@images/phone.svg";
 import Container from "./container/Container";
+import VkIcon from "./icons/VkIcon";
+import PhoneIcon from "./icons/PhoneIcon";
+import OkIcon from "./icons/OkIcon";
 
 const menu = [
   {
@@ -21,6 +21,12 @@ const menu = [
     id: 3,
     title: "Вакансии",
     link: "/vacancies",
+  },
+  // удалить, для теста)
+  {
+    id: 5,
+    title: "category",
+    link: "/category",
   },
 ];
 
@@ -50,15 +56,18 @@ export function Footer() {
             </ul>
             <div className="social flex gap-[16px]">
               <a href="/">
-                <img className="w-[24px]" src={vkIcon} alt="vk" />
+                <VkIcon />
               </a>
               <a href="/">
-                <img className="w-[24px]" src={okIcon} alt="ok" />
+                <OkIcon />
               </a>
             </div>
             <div className="phone">
-              <a className="flex gap-[8px]" href="tel:8 800 777 33 33">
-                <img src={phoneIcon} alt="phone" />
+              <a
+                className="flex items-center gap-[8px]"
+                href="tel:8 800 777 33 33"
+              >
+                <PhoneIcon />
                 <span className="text-[16px]">8 800 777 33 33</span>
               </a>
             </div>
