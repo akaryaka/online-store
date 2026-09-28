@@ -7,6 +7,7 @@ export interface Props extends DetailedHTMLProps<
   decoration?: string;
   bgColor?: string;
   border?: string;
+  clickEvent?: string;
   borderColor?: string;
   textColor?: string;
   children: React.ReactNode;

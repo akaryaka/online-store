@@ -54,10 +54,11 @@ import type { Props } from "./Button.props";
 //   );
 // }
 
-const Button = ({ children, className, ...props }: Props) => {
+const Button = ({ children, className, clickEvent, ...props }: Props) => {
   return (
     <>
       <button
+        onClick={clickEvent}
         className={cn(
           `text-[16px] font-[Rubik] p-[8px] rounded-[4px] transition-all cursor-pointer`,
           className,
