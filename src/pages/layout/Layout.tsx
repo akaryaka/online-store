@@ -1,11 +1,11 @@
 import Footer from "@/components/Footer";
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 
 const Layout = ({ children }: any) => {
   return (
     <>
       <Header />
-      <main className="bg-[#FBF8EC]">{children}</main>
+      <main className="z-[1] bg-[#FBF8EC]">{children}</main>
       <Footer />
     </>
   );
