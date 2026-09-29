@@ -8,7 +8,9 @@ import "./index.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
+    {/* библиотека для заголовков страниц */}
     <HelmetProvider>
+      {/* роутинг */}
       <BrowserRouter>
         <App />
       </BrowserRouter>
