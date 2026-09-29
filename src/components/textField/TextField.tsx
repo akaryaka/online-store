@@ -6,17 +6,17 @@ const TextField = ({ placeholder, children, className, ...props }: Props) => {
     <>
       <div
         className={cn(
-          "search pr-[8px] h-[40px] flex justify-between items-center border border-[#70C05B] rounded-[4px]",
+          "pr-[8px] h-[40px] flex items-center border focus:shadow-[4px_8px_16px_rgba(112,192,91,0.2)] border-[#BFBFBF] rounded-[4px]",
           className,
           { ...props },
         )}
       >
         <input
-          className="flex-1 p-[8px_16px] outline-none"
+          className="p-[8px_16px] outline-none w-[100%] "
           type="text"
           placeholder={placeholder}
         />
-        {children}
+        <div>{children}</div>
       </div>
     </>
   );

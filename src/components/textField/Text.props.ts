@@ -4,5 +4,5 @@ export interface Props extends DetailedHTMLProps<
   HtmlHTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > {
-  placeholder: string;
+  placeholder?: string;
 }
