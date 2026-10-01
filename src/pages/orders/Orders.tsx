@@ -5,7 +5,7 @@ import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
 import Button from "@/widgets/button/Button";
 import { Helmet } from "react-helmet-async";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 import CalendarIcon from "@/widgets/icons/CalendarIcon";
 import EyeIcon from "@/widgets/icons/EyeIcon";
 

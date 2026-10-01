@@ -1,15 +1,15 @@
-import Home from "@pages/Home";
-import Orders from "@pages/Orders";
-import Favorites from "@pages/Favorites";
-import ShoppingCart from "@pages/ShoppingCart";
-import Page_404 from "@pages/404";
-import About from "@pages/About";
-import Vacancies from "@pages/Vacancies";
-import Contacts from "@pages/Contacts";
-import Search from "@pages/Search";
-import Catalog from "@pages/Catalog";
-import Category from "@pages/Category";
-import OrdersManager from "@pages/OrdersManager/OrdersManager";
+import Home from "@pages/home/Home";
+import Orders from "@pages/orders/Orders";
+import Favorites from "@pages/favorites/Favorites";
+import ShoppingCart from "@pages/shoppingcart/ShoppingCart";
+import Page_404 from "@/pages/404/404";
+import About from "@/pages/about/About";
+import Vacancies from "@pages/vacancies/Vacancies";
+import Contacts from "@pages/contacts/Contacts";
+import Search from "@pages/search/Search";
+import Catalog from "@/pages/catalog/Catalog";
+import Category from "@pages/category/Category";
+import OrdersManager from "@/pages/manager/OrdersManager";
 
 export const routes = [
   { id: 1, path: "/", element: Home },

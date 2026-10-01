@@ -6,7 +6,7 @@ import PercentIcon from "@/widgets/icons/contacts/PercentIcon";
 import Phone from "@/widgets/phone/Phone";
 import Title from "@/widgets/title/Title";
 import { Helmet } from "react-helmet-async";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 import MarketIcon1 from "@/widgets/icons/contactsPage/MarketIcon1";
 import MarketIcon2 from "@/widgets/icons/contactsPage/MarketIcon2";
 import MarketIcon3 from "@/widgets/icons/contactsPage/MarketIcon3";

@@ -5,7 +5,7 @@ import cartItem1 from "@images/cart-item.png";
 import { Helmet } from "react-helmet-async";
 import { Switch } from "@mui/material";
 import Button from "@/widgets/button/Button";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import CheckIcon from "@/widgets/icons/CheckIcon";
 import PlusIcon from "@/widgets/icons/PlusIcon";

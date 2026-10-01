@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import { Switch, Slider } from "@mui/material";
+import ArrowIcon from "@/widgets/icons/ArrowIcon";
 import Container from "@/widgets/container/Container";
 import Title from "@/widgets/title/Title";
 import Card from "@/widgets/card/Card";
@@ -8,44 +10,73 @@ import ResetIcon from "@/widgets/icons/resetIcon/ResetIcon";
 import PaginationLink from "@/widgets/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";
-import Crumbs from "@/widgets/crumbs/Crumbs";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import ChevronDoubleIcon from "@/widgets/icons/ChevronDoubleIcon";
 import ChevronDownIcon from "@/widgets/icons/ChevronDownIcon";
 
-const Favorites = () => {
+const Category = () => {
   const [value, setValue] = useState<number[]>([20, 37]);
 
   const handleChange = (event: Event, newValue: number[]) => {
     setValue(newValue);
   };
-
   return (
     <>
       <Helmet>
-        <title>Избранное</title>
+        <title>Каталог | Молоко, сыр, яйцо</title>
       </Helmet>
       <Layout>
         <div className="pt-[24px] pb-[80px]">
           <div className="mb-[27px]">
+            {/* заменить компонентом */}
             <Container>
-              <Crumbs page="Избранное" />
+              <div className="flex items-center gap-[10px]">
+                <Link
+                  className="leading-[150%] text-[12px] text-[#414141]"
+                  to="/"
+                >
+                  Главная
+                </Link>
+                <ArrowIcon />
+                <Link
+                  className="leading-[150%] text-[12px] text-[#414141]"
+                  to="/catalog"
+                >
+                  Каталог
+                </Link>
+                <ArrowIcon />
+                <Link
+                  className="leading-[150%] text-[12px] text-[#8F8F8F]"
+                  to="/category"
+                >
+                  Молоко, сыр, яйцо
+                </Link>
+              </div>
             </Container>
           </div>
           <div>
             <Container>
-              <Title className="mb-[60px]">Избранное</Title>
+              <Title className="mb-[60px]">Молоко, сыр, яйцо</Title>
+              <div className="flex gap-[24px] mb-[40px]">
+                <Button className="text-[#606060] bg-[#F3F2F1]">
+                  Товары нашего производства
+                </Button>
+                <Button className="text-[#606060] bg-[#F3F2F1]">
+                  Полезное питание
+                </Button>
+                <Button className="text-[#606060] bg-[#F3F2F1]">Без ГМО</Button>
+              </div>
               <div className="flex gap-[40px] justify-between">
                 <div className="sidebar w-[272px]">
-                  <Button className="bg-[#F3F2F1] text-[#606060] text-left w-[100%] mb-[40px]">
+                  <Button className="text-[#606060] bg-[#F3F2F1] text-left w-[100%] mb-[40px]">
                     <span className="font-bold text-[16px] leading-[150%] text-[#414141]">
                       Фильтр
                     </span>
                   </Button>
                   <div className="flex justify-between items-center mb-[13px]">
                     <div className="text-[16px] leading-[150%]">Цена</div>
-                    <Button className="bg-[#F3F2F1] text-[#606060]">
+                    <Button className="text-[#606060] bg-[#F3F2F1]">
                       Очистить
                     </Button>
                   </div>
@@ -90,12 +121,16 @@ const Favorites = () => {
                   </button>
                 </div>
                 <div className="content grow">
-                  <div className="flex  gap-[24px] mb-[40px]">
-                    <Button className="bg-[#70C05B] text-[#fff] flex items-center gap-[8px]">
+                  <div className="flex gap-[24px] mb-[40px]">
+                    <Button className="text-[#fff] bg-[#70C05B] flex items-center gap-[8px]">
+                      <span>Фильтр 4</span>
+                      <ResetIcon fill="#fff" />
+                    </Button>
+                    <Button className="text-[#fff] bg-[#70C05B] flex items-center gap-[8px]">
                       <span>Цена от 99 до 2599</span>
                       <ResetIcon fill="#fff" />
                     </Button>
-                    <Button className="bg-[#F3F2F1] text-[#606060] flex items-center gap-[8px]">
+                    <Button className="text-[#606060] bg-[#F3F2F1] flex items-center gap-[8px]">
                       <span>Очистить фильтры</span>
                       <ResetIcon fill="#414141" />
                     </Button>
@@ -109,7 +144,7 @@ const Favorites = () => {
                     <Card img={product1} rating={2} />
                   </div>
                   <div className="flex justify-center mb-[40px]">
-                    <Button className="bg-[#F3F2F1] text-[#606060]">
+                    <Button className="text-[#606060] bg-[#F3F2F1]">
                       Показать ещё
                     </Button>
                   </div>
@@ -163,4 +198,4 @@ const Favorites = () => {
   );
 };
 
-export default Favorites;
+export default Category;

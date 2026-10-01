@@ -3,7 +3,7 @@ import Crumbs from "@/widgets/crumbs/Crumbs";
 import Title from "@/widgets/title/Title";
 import { Helmet } from "react-helmet-async";
 import Phone from "@/widgets/phone/Phone";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 
 interface Props {
   job: string;

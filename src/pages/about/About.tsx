@@ -5,7 +5,7 @@ import LogoAbout from "@images/logo-about.png";
 import ImgAbout from "@images/img-about.png";
 import BgAbout from "@images/bg-about.png";
 import QuoteAbout from "@images/quote.png";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 import { Helmet } from "react-helmet-async";
 import CheckIcon from "@/widgets/icons/aboutPage/CheckIcon";
 

@@ -4,7 +4,7 @@ import Title from "@/widgets/title/Title";
 import catalogBg1 from "@images/catalog/catalog1.png";
 import cn from "classnames";
 import { Helmet } from "react-helmet-async";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 
 interface Props {
   title: string;

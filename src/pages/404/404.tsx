@@ -1,7 +1,7 @@
 import Container from "@/widgets/container/Container";
 import Title from "@/widgets/title/Title";
 import { Helmet } from "react-helmet-async";
-import Layout from "../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 
 const Page_404 = () => {
   return (

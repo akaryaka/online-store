@@ -22,7 +22,7 @@ import BaqIcon from "@/widgets/icons/BaqIcon";
 import UploadIcon from "@/widgets/icons/UploadIcon";
 import Card from "@/widgets/card/Card";
 import { Helmet } from "react-helmet-async";
-import Layout from "../../app/layout/Layout";
+import Layout from "@app/layout/Layout";
 
 interface DayBtnProps extends DetailedHTMLProps<
   ButtonHTMLAttributes<HTMLButtonElement>,
