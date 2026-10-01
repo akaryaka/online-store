@@ -1,13 +1,13 @@
-import Container from "@/components/container/Container";
-import Crumbs from "@/components/crumbs/Crumbs";
-import Title from "@/components/title/Title";
+import Container from "@/widgets/container/Container";
+import Crumbs from "@/widgets/crumbs/Crumbs";
+import Title from "@/widgets/title/Title";
 import LogoAbout from "@images/logo-about.png";
 import ImgAbout from "@images/img-about.png";
 import BgAbout from "@images/bg-about.png";
 import QuoteAbout from "@images/quote.png";
-import Layout from "./layout/Layout";
+import Layout from "../app/layout/Layout";
 import { Helmet } from "react-helmet-async";
-import CheckIcon from "@/components/icons/aboutPage/CheckIcon";
+import CheckIcon from "@/widgets/icons/aboutPage/CheckIcon";
 
 const About = () => {
   return (

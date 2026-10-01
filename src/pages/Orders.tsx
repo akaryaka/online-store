@@ -1,13 +1,13 @@
-import Container from "@/components/container/Container";
-import Crumbs from "@/components/crumbs/Crumbs";
-import Title from "@/components/title/Title";
-import Card from "@/components/card/Card";
+import Container from "@/widgets/container/Container";
+import Crumbs from "@/widgets/crumbs/Crumbs";
+import Title from "@/widgets/title/Title";
+import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
-import Button from "@/components/button/Button";
+import Button from "@/widgets/button/Button";
 import { Helmet } from "react-helmet-async";
-import Layout from "./layout/Layout";
-import CalendarIcon from "@/components/icons/CalendarIcon";
-import EyeIcon from "@/components/icons/EyeIcon";
+import Layout from "../app/layout/Layout";
+import CalendarIcon from "@/widgets/icons/CalendarIcon";
+import EyeIcon from "@/widgets/icons/EyeIcon";
 
 const Orders = () => {
   return (

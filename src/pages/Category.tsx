@@ -1,19 +1,19 @@
 import { useState } from "react";
 import { Link } from "react-router";
 import { Switch, Slider } from "@mui/material";
-import ArrowIcon from "@/components/icons/ArrowIcon";
-import Container from "@/components/container/Container";
-import Title from "@/components/title/Title";
-import Card from "@/components/card/Card";
-import Button from "@/components/button/Button";
-import ResetIcon from "@/components/icons/resetIcon/ResetIcon";
-import PaginationLink from "@/components/paginationLink/PaginationLink";
+import ArrowIcon from "@/widgets/icons/ArrowIcon";
+import Container from "@/widgets/container/Container";
+import Title from "@/widgets/title/Title";
+import Card from "@/widgets/card/Card";
+import Button from "@/widgets/button/Button";
+import ResetIcon from "@/widgets/icons/resetIcon/ResetIcon";
+import PaginationLink from "@/widgets/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";
-import Layout from "./layout/Layout";
-import MinusIcon from "@/components/icons/MinusIcon";
-import ChevronDoubleIcon from "@/components/icons/ChevronDoubleIcon";
-import ChevronDownIcon from "@/components/icons/ChevronDownIcon";
+import Layout from "../app/layout/Layout";
+import MinusIcon from "@/widgets/icons/MinusIcon";
+import ChevronDoubleIcon from "@/widgets/icons/ChevronDoubleIcon";
+import ChevronDownIcon from "@/widgets/icons/ChevronDownIcon";
 
 const Category = () => {
   const [value, setValue] = useState<number[]>([20, 37]);

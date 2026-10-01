@@ -1,16 +1,16 @@
-import Button from "@/components/button/Button";
-import Container from "@/components/container/Container";
-import Crumbs from "@/components/crumbs/Crumbs";
-import LocationIcon from "@/components/icons/contacts/LocationIcon";
-import PercentIcon from "@/components/icons/contacts/PercentIcon";
-import Phone from "@/components/phone/Phone";
-import Title from "@/components/title/Title";
+import Button from "@/widgets/button/Button";
+import Container from "@/widgets/container/Container";
+import Crumbs from "@/widgets/crumbs/Crumbs";
+import LocationIcon from "@/widgets/icons/contacts/LocationIcon";
+import PercentIcon from "@/widgets/icons/contacts/PercentIcon";
+import Phone from "@/widgets/phone/Phone";
+import Title from "@/widgets/title/Title";
 import { Helmet } from "react-helmet-async";
-import Layout from "./layout/Layout";
-import MarketIcon1 from "@/components/icons/contactsPage/MarketIcon1";
-import MarketIcon2 from "@/components/icons/contactsPage/MarketIcon2";
-import MarketIcon3 from "@/components/icons/contactsPage/MarketIcon3";
-import MarketIcon4 from "@/components/icons/contactsPage/MarketIcon4";
+import Layout from "../app/layout/Layout";
+import MarketIcon1 from "@/widgets/icons/contactsPage/MarketIcon1";
+import MarketIcon2 from "@/widgets/icons/contactsPage/MarketIcon2";
+import MarketIcon3 from "@/widgets/icons/contactsPage/MarketIcon3";
+import MarketIcon4 from "@/widgets/icons/contactsPage/MarketIcon4";
 
 const Contacts = () => {
   return (

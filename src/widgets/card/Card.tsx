@@ -1,4 +1,4 @@
-import Button from "../button/Button";
+import Button from "../../widgets/button/Button";
 import Favorites from "../favorites/Favorites";
 import Sales from "../sales/Sales";
 import Stars from "../icons/stars/Stars";

@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 import logoFooter from "@images/logo-footer.png";
 import bgFooter from "@images/bg-footer.png";
-import Container from "./container/Container";
-import VkIcon from "./icons/VkIcon";
-import PhoneIcon from "./icons/PhoneIcon";
-import OkIcon from "./icons/OkIcon";
+import Container from "@widgets/container/Container";
+import VkIcon from "@widgets/icons/VkIcon";
+import PhoneIcon from "@widgets/icons/PhoneIcon";
+import OkIcon from "@widgets/icons/OkIcon";
 
 const menu = [
   {

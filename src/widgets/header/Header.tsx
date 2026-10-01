@@ -1,10 +1,10 @@
 import { Link } from "react-router";
 import logo from "@images/logo.png";
-import Container from "@components/container/Container";
-import SearchIcon from "@components/icons/SearchIcon";
-import LogInIcon from "@components/icons/LogInIcon";
-import TextField from "@components/textField/TextField";
-import Button from "@components/button/Button";
+import Container from "@/widgets/container/Container";
+import SearchIcon from "@/widgets/icons/SearchIcon";
+import LogInIcon from "@/widgets/icons/LogInIcon";
+import TextField from "@/widgets/textField/TextField";
+import Button from "@/widgets/button/Button";
 import { useEffect, useState } from "react";
 import CloseIcon from "../icons/CloseIcon";
 import { menu } from "./menu";
@@ -12,7 +12,7 @@ import { catalogList } from "./catalogList";
 import CalendarIcon from "../icons/CalendarIcon";
 import EyeOff from "../icons/EyeOff";
 import ChevronDownIcon from "../icons/ChevronDownIcon";
-import { ModalInput } from "../modal/ModalInput";
+import { ModalInput } from "@widgets/modal/ModalInput";
 import { createPortal } from "react-dom";
 
 export function Header() {

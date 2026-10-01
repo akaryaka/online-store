@@ -1,4 +1,4 @@
-import PhoneIcon from "../icons/PhoneIcon";
+import PhoneIcon from "../../widgets/icons/PhoneIcon";
 import type { Props } from "./Phone.props";
 
 const Phone = ({ number }: Props) => {

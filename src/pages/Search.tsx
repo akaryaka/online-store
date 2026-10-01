@@ -1,8 +1,8 @@
-import Card from "@/components/card/Card";
-import Container from "@/components/container/Container";
+import Card from "@/widgets/card/Card";
+import Container from "@/widgets/container/Container";
 import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";
-import Layout from "./layout/Layout";
+import Layout from "../app/layout/Layout";
 
 const Search = () => {
   return (

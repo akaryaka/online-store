@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-import Container from "@/components/container/Container";
+import Container from "@/widgets/container/Container";
 import bannerIcon from "@images/banner-icon.png";
 import bannerBg from "@images/banner-bg.png";
-import Card from "@/components/card/Card";
-import ArrowIcon from "@/components/icons/ArrowIcon";
+import Card from "@/widgets/card/Card";
+import ArrowIcon from "@/widgets/icons/ArrowIcon";
 import loyalCardIcon from "@images/loyalty-card.png";
 import loyalCardIcon2 from "@images/loyalty-card2.png";
 import articleImage from "@images/article.png";
@@ -11,9 +11,9 @@ import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
 import product4 from "@images/product4.png";
-import Button from "@/components/button/Button";
+import Button from "@/widgets/button/Button";
 import { Helmet } from "react-helmet-async";
-import Layout from "./layout/Layout";
+import Layout from "../app/layout/Layout";
 
 const Home = () => {
   return (
