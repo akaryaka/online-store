@@ -1,11 +1,11 @@
-import Button from "@/widgets/button/Button";
+import Button from "@shared/ui/button/Button";
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import type { DetailedHTMLProps, ButtonHTMLAttributes } from "react";
 import cn from "classnames";
-import Phone from "@/widgets/phone/Phone";
-import UserAccount from "@/widgets/userAccount/UserAccount";
+import Phone from "@shared/ui/phone/Phone";
+import UserAccount from "@/shared/ui/userAccount/UserAccount";
 import CalendarIcon from "@/widgets/icons/CalendarIcon";
 import ClockIcon from "@/widgets/icons/ClockIcon";
 import CheckIcon from "@/widgets/icons/CheckIcon";

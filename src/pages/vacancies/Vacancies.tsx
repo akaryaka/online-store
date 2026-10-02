@@ -1,8 +1,8 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import { Helmet } from "react-helmet-async";
-import Phone from "@/widgets/phone/Phone";
+import Phone from "@shared/ui/phone/Phone";
 import Layout from "@app/layout/Layout";
 
 interface Props {

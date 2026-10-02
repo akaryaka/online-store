@@ -10,6 +10,7 @@ import Search from "@pages/search/Search";
 import Catalog from "@/pages/catalog/Catalog";
 import Category from "@pages/category/Category";
 import OrdersManager from "@/pages/manager/OrdersManager";
+// import { Children } from "react";
 
 export const routes = [
   { id: 1, path: "/", element: Home },
@@ -17,7 +18,14 @@ export const routes = [
   { id: 3, path: "/favorites", element: Favorites },
   { id: 4, path: "/shoppingcart", element: ShoppingCart },
   { id: 5, path: "/about", element: About },
-  { id: 6, path: "/catalog", element: Catalog },
+  { 
+    id: 6, 
+    path: "/catalog", 
+    element: Catalog, 
+    children:[{
+      path: "/:productId"
+    }] 
+  },
   { id: 7, path: "/catalog/category", element: Category },
   { id: 8, path: "/vacancies", element: Vacancies },
   //  для теста

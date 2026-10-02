@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { Switch, Slider } from "@mui/material";
 import Container from "@/widgets/container/Container";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import Card from "@/widgets/card/Card";
-import Button from "@/widgets/button/Button";
+import Button from "@shared/ui/button/Button";
 import ResetIcon from "@/widgets/icons/resetIcon/ResetIcon";
-import PaginationLink from "@/widgets/paginationLink/PaginationLink";
+import PaginationLink from "@/shared/ui/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
 import { Helmet } from "react-helmet-async";
 import Crumbs from "@/widgets/crumbs/Crumbs";

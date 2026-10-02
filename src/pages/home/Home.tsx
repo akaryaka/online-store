@@ -11,7 +11,7 @@ import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
 import product4 from "@images/product4.png";
-import Button from "@/widgets/button/Button";
+import Button from "@shared/ui/button/Button";
 import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 

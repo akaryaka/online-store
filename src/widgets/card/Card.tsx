@@ -1,6 +1,6 @@
-import Button from "../../widgets/button/Button";
-import Favorites from "../favorites/Favorites";
-import Sales from "../sales/Sales";
+import Button from "@shared/ui/button/Button";
+import Favorites from "@shared/ui/favorites/Favorites";
+import Sales from "@shared/ui/sales/Sales";
 import Stars from "../icons/stars/Stars";
 import type { Props } from "./Card.props";
 

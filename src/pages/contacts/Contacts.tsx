@@ -1,10 +1,10 @@
-import Button from "@/widgets/button/Button";
+import Button from "@shared/ui/button/Button";
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
 import LocationIcon from "@/widgets/icons/contacts/LocationIcon";
 import PercentIcon from "@/widgets/icons/contacts/PercentIcon";
-import Phone from "@/widgets/phone/Phone";
-import Title from "@/widgets/title/Title";
+import Phone from "@shared/ui/phone/Phone";
+import Title from "@/shared/ui/title/Title";
 import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 import MarketIcon1 from "@/widgets/icons/contactsPage/MarketIcon1";

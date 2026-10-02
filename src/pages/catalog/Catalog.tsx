@@ -1,6 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import catalogBg1 from "@images/catalog/catalog1.png";
 import cn from "classnames";
 import { Helmet } from "react-helmet-async";

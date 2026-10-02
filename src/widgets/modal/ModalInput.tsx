@@ -1,4 +1,4 @@
-import TextField from "../textField/TextField";
+import TextField from "../../shared/ui/textField/TextField";
 
 interface modalInputProps {
   label: string;

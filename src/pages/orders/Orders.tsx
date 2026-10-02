@@ -1,9 +1,9 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
-import Button from "@/widgets/button/Button";
+import Button from "@shared/ui/button/Button";
 import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 import CalendarIcon from "@/widgets/icons/CalendarIcon";

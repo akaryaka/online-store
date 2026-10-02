@@ -1,10 +1,10 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import cartItem1 from "@images/cart-item.png";
 import { Helmet } from "react-helmet-async";
 import { Switch } from "@mui/material";
-import Button from "@/widgets/button/Button";
+import Button from "@shared/ui/button/Button";
 import Layout from "@app/layout/Layout";
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import CheckIcon from "@/widgets/icons/CheckIcon";

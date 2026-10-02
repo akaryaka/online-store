@@ -1,5 +1,5 @@
 import Container from "@/widgets/container/Container";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 

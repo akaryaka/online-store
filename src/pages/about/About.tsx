@@ -1,6 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Title from "@/widgets/title/Title";
+import Title from "@/shared/ui/title/Title";
 import LogoAbout from "@images/logo-about.png";
 import ImgAbout from "@images/img-about.png";
 import BgAbout from "@images/bg-about.png";
