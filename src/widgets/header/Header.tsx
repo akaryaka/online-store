@@ -283,10 +283,16 @@ export function Header() {
                   {menu.map((item) => (
                     <li key={item.id}>
                       <Link
-                        className="flex flex-col items-center text-[12px] hover:text-primary transition-all"
+                        className="flex flex-col gap-[8px] items-center text-[12px] hover:text-primary transition-all"
                         to={item.link}
                       >
-                        {<item.icon />}
+                        {
+                          <item.icon
+                            fill="currentColor"
+                            width="24px"
+                            height="24px"
+                          />
+                        }
                         <span>{item.title}</span>
                       </Link>
                     </li>

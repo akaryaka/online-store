@@ -38,7 +38,7 @@ const Stars = ({ rating, className, ...props }: Props) => {
   );
   return (
     <>
-      <div className={cn("flex", className, { ...props })}>
+      <div className={cn("flex gap-[4px]", className, { ...props })}>
         {ActiveStars}
         {unactiveStars}
       </div>

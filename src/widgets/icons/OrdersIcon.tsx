@@ -2,7 +2,6 @@ const OrdersIcon = () => {
   return (
     <>
       <svg
-        className="mb-[8px]"
         width="24"
         height="24"
         viewBox="0 0 24 24"
