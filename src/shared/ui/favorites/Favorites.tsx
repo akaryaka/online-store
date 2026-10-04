@@ -12,7 +12,7 @@ const Favorites = ({ status, className, ...props }: Props) => {
           { ...props },
         )}
       >
-        <HeartIcon />
+        <HeartIcon fill="" favorites={status} />
       </div>
     </>
   );
