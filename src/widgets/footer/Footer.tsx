@@ -1,34 +1,9 @@
-import { Link } from "react-router";
-import logoFooter from "@images/logo-footer.png";
 import bgFooter from "@images/bg-footer.png";
 import Container from "@widgets/container/Container";
-import VkIcon from "@widgets/icons/VkIcon";
-import PhoneIcon from "@widgets/icons/PhoneIcon";
-import OkIcon from "@widgets/icons/OkIcon";
-
-const menu = [
-  {
-    id: 1,
-    title: "О компании",
-    link: "/about",
-  },
-  {
-    id: 2,
-    title: "Контакты",
-    link: "/contacts",
-  },
-  {
-    id: 3,
-    title: "Вакансии",
-    link: "/vacancies",
-  },
-  // удалить, для теста)
-  {
-    id: 5,
-    title: "category",
-    link: "/category",
-  },
-];
+import FooterLogo from "./FooterLogo";
+import FooterMenu from "./menu/FooterMenu";
+import FooterSocials from "./socials/FooterSocials";
+import FooterPhoneBtn from "./phone/FooterPhoneBtn";
 
 export function Footer() {
   return (
@@ -39,38 +14,10 @@ export function Footer() {
       >
         <Container>
           <div className="flex items-center justify-between">
-            <Link className="uppercase" to="/">
-              <img src={logoFooter} alt="logo-footer" />
-            </Link>
-            <ul className="flex gap-[40px]">
-              {menu.map((item) => (
-                <li key={item.id}>
-                  <Link
-                    className="hover:text-primary transition-all"
-                    to={item.link}
-                  >
-                    {item.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="social flex gap-[16px]">
-              <a href="/">
-                <VkIcon />
-              </a>
-              <a href="/">
-                <OkIcon />
-              </a>
-            </div>
-            <div className="phone">
-              <a
-                className="flex items-center gap-[8px]"
-                href="tel:8 800 777 33 33"
-              >
-                <PhoneIcon />
-                <span className="text-[16px]">8 800 777 33 33</span>
-              </a>
-            </div>
+            <FooterLogo />
+            <FooterMenu />
+            <FooterSocials />
+            <FooterPhoneBtn />
           </div>
         </Container>
       </footer>
