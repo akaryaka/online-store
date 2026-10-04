@@ -5,7 +5,7 @@ const HeaderSearch = () => {
   return (
     <>
       <TextField className="mr-[40px] w-[435px]" placeholder="Найти товар">
-        <button className="cursor-pointer">
+        <button className="cursor-pointer flex items-center">
           <SearchIcon />
         </button>
       </TextField>
