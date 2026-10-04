@@ -22,12 +22,13 @@ const CatalogBtn = () => {
             {catalogList.map((item) => {
               return (
                 <li key={item.id}>
-                  <a
+                  <Link
+                    target="_blank"
                     className="text-[16px] font-bold leading-[150%] text-[#414141] hover:text-[#FF6633] transition-all"
-                    href={item.link}
+                    to={item.link}
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
