@@ -2,7 +2,6 @@ import Layout from "@/app/layout/Layout";
 import Container from "@/widgets/container/Container";
 import { Link } from "react-router";
 import ArrowIcon from "@/widgets/icons/ArrowIcon";
-import { Helmet } from "react-helmet-async";
 import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
@@ -24,10 +23,7 @@ import BellOf from "@/widgets/icons/BellOf";
 const Product = () => {
   return (
     <>
-      <Helmet>
-        <title>Товар</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Товар">
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="mb-[24px]">

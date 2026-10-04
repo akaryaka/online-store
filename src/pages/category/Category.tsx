@@ -9,7 +9,6 @@ import Button from "@shared/ui/button/Button";
 import ResetIcon from "@/widgets/icons/resetIcon/ResetIcon";
 import PaginationLink from "@/shared/ui/paginationLink/PaginationLink";
 import product1 from "@images/product1.png";
-import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import ChevronDoubleIcon from "@/widgets/icons/ChevronDoubleIcon";
@@ -23,10 +22,7 @@ const Category = () => {
   };
   return (
     <>
-      <Helmet>
-        <title>Каталог | Молоко, сыр, яйцо</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Каталог | Молоко, сыр, яйцо">
         <div className="pt-[24px] pb-[80px]">
           <div className="mb-[27px]">
             {/* заменить компонентом */}

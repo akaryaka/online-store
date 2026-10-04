@@ -4,7 +4,6 @@ import Title from "@/shared/ui/title/Title";
 import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
 import Button from "@shared/ui/button/Button";
-import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 import CalendarIcon from "@/widgets/icons/CalendarIcon";
 import EyeIcon from "@/widgets/icons/EyeIcon";
@@ -12,10 +11,7 @@ import EyeIcon from "@/widgets/icons/EyeIcon";
 const Orders = () => {
   return (
     <>
-      <Helmet>
-        <title>Заказы</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Заказы">
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="mb-[24px]">

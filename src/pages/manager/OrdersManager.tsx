@@ -21,7 +21,6 @@ import DeliveryIcon from "@/widgets/icons/DeliveryIcon";
 import BaqIcon from "@/widgets/icons/BaqIcon";
 import UploadIcon from "@/widgets/icons/UploadIcon";
 import Card from "@/widgets/card/Card";
-import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 
 interface DayBtnProps extends DetailedHTMLProps<
@@ -116,10 +115,7 @@ const NumberOrder = ({ count }: NumberOrderProps) => {
 const OrdersManager = () => {
   return (
     <>
-      <Helmet>
-        <title>Менеджер | Заказы</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Менеджер | Заказы">
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="mb-[24px]">

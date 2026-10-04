@@ -1,7 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
 import Title from "@/shared/ui/title/Title";
-import { Helmet } from "react-helmet-async";
 import Phone from "@shared/ui/phone/Phone";
 import Layout from "@app/layout/Layout";
 
@@ -109,10 +108,7 @@ const VacanciesItem = ({
 const Vacancies = () => {
   return (
     <>
-      <Helmet>
-        <title>Вакансии</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Вакансии">
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="mb-[24px]">

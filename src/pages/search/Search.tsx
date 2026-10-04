@@ -1,16 +1,12 @@
 import Card from "@/widgets/card/Card";
 import Container from "@/widgets/container/Container";
 import product1 from "@images/product1.png";
-import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 
 const Search = () => {
   return (
     <>
-      <Helmet>
-        <title>Результаты поиска</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Результаты поиска">
         <div className="p-[80px_0px]">
           <Container>
             <header>

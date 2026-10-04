@@ -6,16 +6,12 @@ import ImgAbout from "@images/img-about.png";
 import BgAbout from "@images/bg-about.png";
 import QuoteAbout from "@images/quote.png";
 import Layout from "@app/layout/Layout";
-import { Helmet } from "react-helmet-async";
 import CheckIcon from "@/widgets/icons/aboutPage/CheckIcon";
 
 const About = () => {
   return (
     <>
-      <Helmet>
-        <title>О компании</title>
-      </Helmet>
-      <Layout>
+      <Layout title="О компании">
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <Crumbs page="О компании" />

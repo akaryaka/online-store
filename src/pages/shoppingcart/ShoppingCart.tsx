@@ -2,7 +2,6 @@ import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
 import Title from "@/shared/ui/title/Title";
 import cartItem1 from "@images/cart-item.png";
-import { Helmet } from "react-helmet-async";
 import { Switch } from "@mui/material";
 import Button from "@shared/ui/button/Button";
 import Layout from "@app/layout/Layout";
@@ -14,10 +13,7 @@ import SmileIcon from "@/widgets/icons/SmileIcont";
 const ShoppingCart = () => {
   return (
     <>
-      <Helmet>
-        <title>Корзина</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Корзина">
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="mb-[24px]">

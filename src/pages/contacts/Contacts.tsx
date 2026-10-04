@@ -5,7 +5,6 @@ import LocationIcon from "@/widgets/icons/contacts/LocationIcon";
 import PercentIcon from "@/widgets/icons/contacts/PercentIcon";
 import Phone from "@shared/ui/phone/Phone";
 import Title from "@/shared/ui/title/Title";
-import { Helmet } from "react-helmet-async";
 import Layout from "@app/layout/Layout";
 import MarketIcon1 from "@/widgets/icons/contactsPage/MarketIcon1";
 import MarketIcon2 from "@/widgets/icons/contactsPage/MarketIcon2";
@@ -15,10 +14,7 @@ import MarketIcon4 from "@/widgets/icons/contactsPage/MarketIcon4";
 const Contacts = () => {
   return (
     <>
-      <Helmet>
-        <title>Контакты</title>
-      </Helmet>
-      <Layout>
+      <Layout title="Контакты">
         <div className="pb-[80px]">
           <Container>
             <div className="p-[24px_0px]">
