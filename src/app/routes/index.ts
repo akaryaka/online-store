@@ -14,6 +14,7 @@ import Product from "@/pages/product/Product";
 import AllBoughtBefore from "@/pages/allBoughtBefore/AllBoughtBefore";
 import AllNewProducts from "@/pages/allNewProducts/AllNewProducts";
 import AllSales from "@/pages/allSales/AllSales";
+import AllArticles from "@/pages/allArticles/AllArticles";
 
 export const routes = [
   { id: 1, path: "/", element: Home },
@@ -36,13 +37,13 @@ export const routes = [
   { id: 9, path: "/allboughtbefore", element: AllBoughtBefore },
   { id: 10, path: "/allnewproducts", element: AllNewProducts },
   { id: 11, path: "/allsales", element: AllSales },
-
+  { id: 12, path: "/allarticles", element: AllArticles },
   //  для теста
-  { id: 12, path: "/ordersmanager", element: OrdersManager },
+  { id: 13, path: "/ordersmanager", element: OrdersManager },
   //  для теста
-  { id: 13, path: "/product", element: Product },
-  { id: 14, path: "/contacts", element: Contacts },
+  { id: 14, path: "/product", element: Product },
+  { id: 15, path: "/contacts", element: Contacts },
   // для теста, исправлю)
-  { id: 15, path: "/search", element: Search },
-  { id: 16, path: "*", element: Page_404 },
+  { id: 16, path: "/search", element: Search },
+  { id: 17, path: "*", element: Page_404 },
 ];
