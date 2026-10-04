@@ -41,7 +41,7 @@ export const routes = [
   //  для теста
   { id: 13, path: "/ordersmanager", element: OrdersManager },
   //  для теста
-  { id: 14, path: "/product", element: Product },
+  { id: 14, path: "/catalog/category/product", element: Product },
   { id: 15, path: "/contacts", element: Contacts },
   // для теста, исправлю)
   { id: 16, path: "/search", element: Search },
