@@ -2,7 +2,7 @@ import Layout from "@/app/layout/Layout";
 import Container from "@/widgets/container/Container";
 import { Link } from "react-router";
 import ArrowIcon from "@/widgets/icons/ArrowIcon";
-import Card from "@/widgets/card/Card";
+import Card from "@/widgets/card/CardSale";
 import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";

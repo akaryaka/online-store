@@ -1,4 +1,4 @@
-import Card from "@/widgets/card/Card";
+import Card from "@/widgets/card/CardSale";
 import Container from "@/widgets/container/Container";
 import product1 from "@images/product1.png";
 import Layout from "@app/layout/Layout";
