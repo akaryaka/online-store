@@ -16,6 +16,11 @@ const menu = [
     title: "Вакансии",
     link: "/vacancies",
   },
+  {
+    id: 4,
+    title: "Статьи",
+    link: "/allarticles",
+  },
 ];
 
 const FooterMenu = () => {
