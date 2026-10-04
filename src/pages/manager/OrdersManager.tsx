@@ -20,7 +20,7 @@ import AlertCircleIcon from "@/widgets/icons/AlertCircleIcon";
 import DeliveryIcon from "@/widgets/icons/DeliveryIcon";
 import BaqIcon from "@/widgets/icons/BaqIcon";
 import UploadIcon from "@/widgets/icons/UploadIcon";
-import Card from "@/widgets/card/Card";
+import Card from "@/widgets/card/CardSale";
 import Layout from "@app/layout/Layout";
 
 interface DayBtnProps extends DetailedHTMLProps<
