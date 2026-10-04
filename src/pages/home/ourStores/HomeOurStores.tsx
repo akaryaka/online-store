@@ -1,12 +1,13 @@
 import Button from "@/shared/ui/button/Button";
-// import ymaps3 from "@yandex/ymaps3-types";
 import React from "react";
 import ReactDOM from "react-dom";
+
 declare global {
   interface Window {
     ymaps3: any;
   }
 }
+
 const ymaps3Reactify = await ymaps3.import("@yandex/ymaps3-reactify");
 const reactify = ymaps3Reactify.reactify.bindTo(React, ReactDOM);
 const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } =
