@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import Button from "@shared/ui/button/Button";
 import Favorites from "@shared/ui/favorites/Favorites";
 import Sales from "@shared/ui/sales/Sales";
@@ -38,7 +39,13 @@ const Card = ({ price, priceSales, title, img, rating, favorites }: Props) => {
               </div>
             </div>
           </div>
-          <h3 className="mb-[8px]">{title}</h3>
+          <Link
+            target="_blank"
+            to="/catalog/category/product"
+            className="mb-[8px]"
+          >
+            {title}
+          </Link>
           <Stars className="mb-[8px]" rating={rating} />
           <Button
             border="border"

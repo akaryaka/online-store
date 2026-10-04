@@ -1,6 +1,7 @@
 import Button from "@shared/ui/button/Button";
 import Favorites from "@shared/ui/favorites/Favorites";
 import Stars from "../icons/stars/Stars";
+import { Link } from "react-router";
 import type { Props } from "./Card.props";
 
 const CardNewProduct = ({ price, title, img, rating, favorites }: Props) => {
@@ -24,7 +25,13 @@ const CardNewProduct = ({ price, title, img, rating, favorites }: Props) => {
               </div>
             </div>
           </div>
-          <h3 className="mb-[8px]">{title}</h3>
+          <Link
+            target="_blank"
+            to="/catalog/category/product"
+            className="mb-[8px]"
+          >
+            {title}
+          </Link>
           <Stars className="mb-[8px]" rating={rating} />
           <Button
             border="border"
