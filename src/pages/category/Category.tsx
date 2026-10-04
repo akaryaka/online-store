@@ -4,7 +4,7 @@ import { Switch, Slider } from "@mui/material";
 import ArrowIcon from "@/widgets/icons/ArrowIcon";
 import Container from "@/widgets/container/Container";
 import Title from "@/shared/ui/title/Title";
-import Card from "@/widgets/card/Card";
+import Card from "@/widgets/card/CardSale";
 import Button from "@shared/ui/button/Button";
 import ResetIcon from "@/widgets/icons/resetIcon/ResetIcon";
 import PaginationLink from "@/shared/ui/paginationLink/PaginationLink";
