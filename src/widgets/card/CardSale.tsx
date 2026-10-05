@@ -5,7 +5,7 @@ import Sales from "@shared/ui/sales/Sales";
 import Stars from "../icons/stars/Stars";
 import type { Props } from "./Card.props";
 
-const Card = ({ price, priceSales, title, img, rating, favorites }: Props) => {
+const CardSale = ({ price, priceSales, title, img, rating, favorites }: Props) => {
   return (
     <>
       <div className="hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
@@ -59,4 +59,4 @@ const Card = ({ price, priceSales, title, img, rating, favorites }: Props) => {
   );
 };
 
-export default Card;
+export default CardSale;

@@ -4,10 +4,10 @@ import Stars from "../icons/stars/Stars";
 import { Link } from "react-router";
 import type { Props } from "./Card.props";
 
-const CardNewProduct = ({ price, title, img, rating, favorites }: Props) => {
+const Card = ({ price, title, img, rating, favorites }: Props) => {
   return (
     <>
-      <div className="hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
+      <div className="flex flex-col hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
         <header className="relative">
           <img src={img} alt="cacke" />
           <Favorites
@@ -45,4 +45,4 @@ const CardNewProduct = ({ price, title, img, rating, favorites }: Props) => {
   );
 };
 
-export default CardNewProduct;
+export default Card;
