@@ -16,8 +16,8 @@ const Card = ({ price, title, img, rating, favorites }: Props) => {
             className="absolute top-[8px] right-[8px]"
           />
         </header>
-        <div className="p-[8px]">
-          <div className="flex justify-between pt-[8px] mb-[8px]">
+        <div className="p-[8px] flex grow flex-col">
+          <div className="flex h-[45px] justify-between pt-[8px] mb-[18px]">
             <div>
               <div className="text-[#414141] flex gap-[4px] text-[18px] font-bold">
                 <span>{price}</span>
@@ -25,17 +25,13 @@ const Card = ({ price, title, img, rating, favorites }: Props) => {
               </div>
             </div>
           </div>
-          <Link
-            target="_blank"
-            to="/catalog/category/product"
-            className="mb-[8px]"
-          >
+          <Link target="_blank" to="/catalog/category/product">
             {title}
           </Link>
           <Stars className="mb-[8px]" rating={rating} />
           <Button
             border="border"
-            className="w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
+            className="mt-[auto] w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
           >
             В корзину
           </Button>
