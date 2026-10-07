@@ -2,7 +2,7 @@ import Layout from "@/app/layout/Layout";
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
 import Title from "@/shared/ui/title/Title";
-import AllArticlesList from "../allArticles/list/AllArticlesList";
+import AllNewProductsList from "./list/AllNewProductsList";
 
 const AllNewProducts = () => {
   return (
@@ -19,7 +19,7 @@ const AllNewProducts = () => {
               <Title>Все новинки</Title>
             </Container>
           </div>
-          <AllArticlesList />
+          <AllNewProductsList />
         </div>
       </Layout>
     </>
