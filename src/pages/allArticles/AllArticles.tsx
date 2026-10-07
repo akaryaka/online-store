@@ -1,10 +1,26 @@
 import Layout from "@/app/layout/Layout";
+import Title from "@/shared/ui/title/Title";
+import Container from "@/widgets/container/Container";
+import Crumbs from "@/widgets/crumbs/Crumbs";
+import AllArticlesList from "./list/AllArticlesList";
 
 const AllArticles = () => {
   return (
     <>
       <Layout title="Все статьи">
-        <div></div>
+        <div className="pt-[24px] pb-[80px]">
+          <div className="mb-[27px]">
+            <Container>
+              <Crumbs page="Все статьи" />
+            </Container>
+          </div>
+          <div className="mb-[60px]">
+            <Container>
+              <Title>Все статьи</Title>
+            </Container>
+          </div>
+          <AllArticlesList />
+        </div>
       </Layout>
     </>
   );
