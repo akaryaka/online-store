@@ -1,14 +1,16 @@
-import type { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface Props extends DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > {
+  size?: string;
+  accent?: string;
+  icon?: string;
+  type?: string;
   decoration?: string;
-  bgColor?: string;
-  border?: string;
+  hover?: string;
+  disabled?: boolean;
   clickEvent?: string;
-  borderColor?: string;
-  textColor?: string;
   children: React.ReactNode;
 }
