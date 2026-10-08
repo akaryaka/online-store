@@ -41,11 +41,13 @@ const LoginBtn = () => {
   return (
     <>
       <Button
-        clickEvent={modalOpen}
-        className="w-[157px] h-[40px] flex gap-[42px] text-[#fff] pl-[40px] bg-primary"
+        // clickEvent={loginOpen}
+        accent="primary"
+        size="m"
+        type="text-btn"
+        className="w-[121px] text-[#fff]"
       >
-        <span>Войти</span>
-        <LogInIcon />
+        Вход
       </Button>
       <div
         className={`modal w-[100%] z-[1000] ${modalDisplay} fixed top-[0px] left-[0px] h-[100vh] bg-[#000] flex justify-center bg-[rgba(252,213,186,0.8)] items-center`}

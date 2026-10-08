@@ -30,7 +30,8 @@ const Card = ({ price, title, img, rating, favorites }: Props) => {
           </Link>
           <Stars className="mb-[8px]" rating={rating} />
           <Button
-            border="border"
+            size="m"
+            type="text-btn"
             className="mt-[auto] w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
           >
             В корзину

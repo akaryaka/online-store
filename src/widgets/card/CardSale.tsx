@@ -5,7 +5,14 @@ import Sales from "@shared/ui/sales/Sales";
 import Stars from "../icons/stars/Stars";
 import type { Props } from "./Card.props";
 
-const CardSale = ({ price, priceSales, title, img, rating, favorites }: Props) => {
+const CardSale = ({
+  price,
+  priceSales,
+  title,
+  img,
+  rating,
+  favorites,
+}: Props) => {
   return (
     <>
       <div className="hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
@@ -48,8 +55,9 @@ const CardSale = ({ price, priceSales, title, img, rating, favorites }: Props) =
           </Link>
           <Stars className="mb-[8px]" rating={rating} />
           <Button
-            border="border"
-            className="w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
+            size="m"
+            type="text-btn"
+            className="mt-[auto] w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
           >
             В корзину
           </Button>

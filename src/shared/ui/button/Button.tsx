@@ -1,5 +1,6 @@
 import cn from "classnames";
 import type { Props } from "./Button.props";
+import { useState } from "react";
 
 // оптимизация компонента, пример
 // import { clsx } from 'clsx';
@@ -54,19 +55,83 @@ import type { Props } from "./Button.props";
 //   );
 // }
 
-const Button = ({ children, className, clickEvent, ...props }: Props) => {
+const Button = ({
+  size,
+  accent,
+  hover,
+  decoration,
+  icon,
+  type,
+  children,
+  className,
+  clickEvent,
+  ...props
+}: Props) => {
+  switch (size) {
+    case "l":
+      size = "60";
+      break;
+    case "m":
+      size = "40";
+      break;
+    case "s":
+      size = "32";
+      break;
+    default:
+      break;
+  }
+
+  switch (accent) {
+    case "secondary":
+      accent = "#70C05B";
+      break;
+    case "primary":
+      accent = "#FF6633";
+      break;
+    case "greyscale":
+      accent = "#F3F2F1";
+      break;
+    case "error":
+      accent = "#D80000";
+      break;
+    default:
+      accent = "#fff";
+      break;
+  }
+
+  const [bg, setBg] = useState(accent);
+
+  function handleBtnEnter() {
+    setBg("#FF6633");
+  }
+
+  function handleBtnBgLeave() {
+    setBg(accent);
+  }
+
   return (
     <>
-      <button
-        onClick={clickEvent}
-        className={cn(
-          `text-[16px] font-[Rubik] p-[8px] rounded-[4px] transition-all cursor-pointer`,
-          className,
-          { ...props },
-        )}
-      >
-        {children}
-      </button>
+      {type == "text-btn" && (
+        <button
+          onClick={clickEvent}
+          onMouseEnter={handleBtnEnter}
+          onMouseLeave={handleBtnBgLeave}
+          style={{
+            height: `${size}px`,
+            border: "1px solid",
+            borderColor: decoration,
+            backgroundColor: bg,
+          }}
+          className={cn(
+            `flex items-center justify-center font-[Rubik]  rounded-[4px] transition-all cursor-pointer`,
+            className,
+            { ...props },
+          )}
+        >
+          {children}
+        </button>
+      )}
+      {type == "icon-btn" && <button>{children}</button>}
     </>
   );
 };
