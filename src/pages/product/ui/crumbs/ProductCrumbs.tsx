@@ -34,6 +34,4 @@ const ProductCrumbs = () => {
   );
 };
 
-// background: #FCD5BA;
-
 export default ProductCrumbs;
