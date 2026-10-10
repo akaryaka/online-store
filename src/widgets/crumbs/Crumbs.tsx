@@ -2,8 +2,6 @@ import { Link } from "react-router";
 import ArrowIcon from "../icons/ArrowIcon";
 import type { Props } from "./Crumbs.props";
 
-// использовать React Router v6 + handle + useMatches
-
 const Crumbs = ({ page }: Props) => {
   return (
     <>
