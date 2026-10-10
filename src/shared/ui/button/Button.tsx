@@ -29,7 +29,7 @@ const Button = ({
       "bg-[#F3F2F1] text-[#606060] hover:shadow-[4px_8px_16px_rgba(0,0,0,0.1)] active:shadow-[inset_0px_2px_0px_rgba(0,0,0,0.2)]",
     error: "bg-[#D80000]",
     default:
-      "bg-[#fff] border border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]",
+      "bg-[#fff] border border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:text-[white] hover:border-[#FF6633] active:shadow-[inset_0px_2px_0px_rgba(0,0,0,0.2)]",
   };
 
   return (
