@@ -57,7 +57,8 @@ const CardSale = ({
           <Button
             size="m"
             type="text-btn"
-            className="mt-[auto] w-[100%] border-[#70C05B] text-[#70C05B] hover:bg-[#FF6633] hover:text-[white] hover:border-[#FF6633]"
+            accent="default"
+            className="mt-[auto] flex justify-center items-center w-[100%]"
           >
             В корзину
           </Button>
