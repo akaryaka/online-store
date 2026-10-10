@@ -1,6 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Layout from "@app/layout/Layout";
+import Layout from "@app/layout";
 import ShoppingCartTitle from "./title/ShoppingCartTitle";
 import ShoppingCartSidebar from "./sidebar/ShoppingCartSidebar";
 import ShoppingCartOrders from "./orders/ShoppingCartOrders";

@@ -1,4 +1,4 @@
-import Layout from "@/app/layout/Layout";
+import Layout from "@/app/layout";
 import Title from "@/shared/ui/title/Title";
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";

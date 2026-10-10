@@ -2,7 +2,7 @@ import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
 import Title from "@/shared/ui/title/Title";
 import CatalogItem from "./item/CatalogItem";
-import Layout from "@app/layout/Layout";
+import Layout from "@app/layout";
 import catalogBg1 from "@images/catalog/catalog1.png";
 import catalogBg2 from "@images/catalog/catalog2.png";
 import catalogBg3 from "@images/catalog/catalog3.png";

@@ -1,6 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Crumbs from "@/widgets/crumbs/Crumbs";
-import Layout from "@app/layout/Layout";
+import Layout from "@app/layout";
 import AboutHeader from "./header/AboutHeader";
 import AboutItems from "./items/AboutItems";
 import AboutFooter from "./footer/AboutFooter";

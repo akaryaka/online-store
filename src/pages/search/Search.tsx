@@ -1,5 +1,5 @@
 import Container from "@/widgets/container/Container";
-import Layout from "@app/layout/Layout";
+import Layout from "@app/layout";
 import SearchResponse from "./response/SearchResponse";
 
 const Search = () => {

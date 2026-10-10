@@ -1,6 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Title from "@/shared/ui/title/Title";
-import Layout from "@app/layout/Layout";
+import Layout from "@app/layout";
 import CategoryCrumbs from "./crumbs/CategoryCrumbs";
 import CategoryTags from "./tags/CategoryTags";
 import CategorySidebar from "./sidebar/CategorySidebar";
