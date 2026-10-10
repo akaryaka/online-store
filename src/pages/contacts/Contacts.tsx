@@ -2,9 +2,9 @@ import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import Title from "@/shared/ui/title";
 import Layout from "@app/layout";
-import ContactsItems from "./items/ContactsItems";
-import ContactsMap from "./map/ContactsMap";
-import ContactsStores from "./stores/ContactsStores";
+import ContactsItems from "./ui/items/ContactsItems";
+import ContactsMap from "./ui/map/ContactsMap";
+import ContactsStores from "./ui/stores/ContactsStores";
 
 const Contacts = () => {
   return (

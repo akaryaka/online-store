@@ -1,12 +1,12 @@
 import Container from "@/widgets/container";
 import Layout from "@app/layout";
-import HomeBanner from "./banner/HomeBanner";
-import HomeSales from "./sales/HomeSales";
-import HomeNewProducts from "./newProducts/HomeNewProducts";
-import HomeBoughtBefore from "./bought/HomeBoughtBefore";
-import HomeSprecialOffers from "./specialOffers/HomeSprecialOffers";
-import HomeOurStores from "./ourStores/HomeOurStores";
-import HomeArticles from "./articles/HomeArticles";
+import HomeBanner from "./ui/banner/HomeBanner";
+import HomeSales from "./ui/sales/HomeSales";
+import HomeNewProducts from "./ui/newProducts/HomeNewProducts";
+import HomeBoughtBefore from "./ui/bought/HomeBoughtBefore";
+import HomeSprecialOffers from "./ui/specialOffers/HomeSprecialOffers";
+import HomeOurStores from "./ui/ourStores/HomeOurStores";
+import HomeArticles from "./ui/articles/HomeArticles";
 
 const Home = () => {
   return (

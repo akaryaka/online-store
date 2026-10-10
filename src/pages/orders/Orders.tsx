@@ -2,7 +2,7 @@ import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import Title from "@/shared/ui/title";
 import Layout from "@app/layout";
-import OrdersList from "./list/OrdersList";
+import OrdersList from "./ui/list/OrdersList";
 
 const Orders = () => {
   return (

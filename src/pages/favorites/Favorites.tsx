@@ -2,8 +2,8 @@ import Container from "@/widgets/container";
 import Title from "@/shared/ui/title";
 import Crumbs from "@/widgets/crumbs";
 import Layout from "@app/layout";
-import FavoritesSidebar from "./sidebar/FavoritesSidebar";
-import FavoritesContent from "./content/FavoritesContent";
+import FavoritesSidebar from "./ui/sidebar/FavoritesSidebar";
+import FavoritesContent from "./ui/content/FavoritesContent";
 
 const Favorites = () => {
   return (

@@ -2,7 +2,7 @@ import Layout from "@/app/layout";
 import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import Title from "@/shared/ui/title";
-import AllBoughtBeforeList from "./list/AllBoughtBeforeList";
+import AllBoughtBeforeList from "./ui/list/AllBoughtBeforeList";
 
 const AllBoughtBefore = () => {
   return (

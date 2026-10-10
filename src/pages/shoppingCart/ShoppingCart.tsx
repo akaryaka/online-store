@@ -1,10 +1,10 @@
-import Container from "@/widgets/container/Container";
-import Crumbs from "@/widgets/crumbs/Crumbs";
+import Container from "@/widgets/container";
+import Crumbs from "@/widgets/crumbs";
 import Layout from "@app/layout";
-import ShoppingCartTitle from "./title/ShoppingCartTitle";
-import ShoppingCartSidebar from "./sidebar/ShoppingCartSidebar";
-import ShoppingCartOrders from "./orders/ShoppingCartOrders";
-import ShoppingCartHeaderOrders from "./headerOrders/ShoppingCartHeaderOrders";
+import ShoppingCartTitle from "./ui/title/ShoppingCartTitle";
+import ShoppingCartSidebar from "./ui/sidebar/ShoppingCartSidebar";
+import ShoppingCartOrders from "./ui/orders/ShoppingCartOrders";
+import ShoppingCartHeaderOrders from "./ui/headerOrders/ShoppingCartHeaderOrders";
 
 const ShoppingCart = () => {
   return (

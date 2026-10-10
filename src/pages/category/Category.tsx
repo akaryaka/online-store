@@ -1,10 +1,10 @@
 import Container from "@/widgets/container";
 import Title from "@/shared/ui/title";
 import Layout from "@app/layout";
-import CategoryCrumbs from "./crumbs/CategoryCrumbs";
-import CategoryTags from "./tags/CategoryTags";
-import CategorySidebar from "./sidebar/CategorySidebar";
-import CategoryCardList from "./cardList/CategoryCardList";
+import CategoryCrumbs from "./ui/crumbs/CategoryCrumbs";
+import CategoryTags from "./ui/tags/CategoryTags";
+import CategorySidebar from "./ui/sidebar/CategorySidebar";
+import CategoryCardList from "./ui/cardList/CategoryCardList";
 
 const Category = () => {
   return (

@@ -2,7 +2,7 @@ import Layout from "@/app/layout";
 import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import Title from "@/shared/ui/title";
-import AllSalesList from "./list/AllSalesList";
+import AllSalesList from "./ui/list/AllSalesList";
 
 const AllSales = () => {
   return (
