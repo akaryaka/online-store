@@ -1,4 +1,4 @@
-import HeartIcon from "../../../widgets/icons/HeartIcon";
+import HeartIcon from "@widgets/icons/HeartIcon";
 import type { Props } from "./Favorites.props";
 import cn from "classnames";
 

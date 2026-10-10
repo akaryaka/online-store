@@ -1,5 +1,5 @@
 import bgFooter from "@images/bg-footer.png";
-import Container from "@widgets/container/Container";
+import Container from "@widgets/container";
 import FooterLogo from "./FooterLogo";
 import FooterMenu from "./menu/FooterMenu";
 import FooterSocials from "./socials/FooterSocials";

@@ -1,5 +1,5 @@
-import Container from "@/widgets/container/Container";
-import Crumbs from "@/widgets/crumbs/Crumbs";
+import Container from "@/widgets/container";
+import Crumbs from "@/widgets/crumbs";
 import Layout from "@app/layout";
 import AboutHeader from "./header/AboutHeader";
 import AboutItems from "./items/AboutItems";

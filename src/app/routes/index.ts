@@ -1,20 +1,20 @@
-import Home from "@pages/home/Home";
-import Orders from "@pages/orders/Orders";
-import Favorites from "@pages/favorites/Favorites";
-import ShoppingCart from "@/pages/shoppingCart/ShoppingCart";
+import Home from "@pages/home";
+import Orders from "@pages/orders";
+import Favorites from "@pages/favorites";
+import ShoppingCart from "@/pages/shoppingCart";
 import Page_404 from "@/pages/404/404";
-import About from "@/pages/about/About";
-import Vacancies from "@pages/vacancies/Vacancies";
-import Contacts from "@pages/contacts/Contacts";
-import Search from "@pages/search/Search";
-import Catalog from "@/pages/catalog/Catalog";
-import Category from "@pages/category/Category";
-import OrdersManager from "@/pages/manager/OrdersManager";
-import Product from "@/pages/product/Product";
-import AllBoughtBefore from "@/pages/allBoughtBefore/AllBoughtBefore";
-import AllNewProducts from "@/pages/allNewProducts/AllNewProducts";
-import AllSales from "@/pages/allSales/AllSales";
-import AllArticles from "@/pages/allArticles/AllArticles";
+import About from "@/pages/about";
+import Vacancies from "@pages/vacancies";
+import Contacts from "@pages/contacts";
+import Search from "@pages/search";
+import Catalog from "@/pages/catalog";
+import Category from "@pages/category";
+import OrdersManager from "@/pages/manager";
+import Product from "@/pages/product";
+import AllBoughtBefore from "@/pages/allBoughtBefore";
+import AllNewProducts from "@/pages/allNewProducts";
+import AllSales from "@/pages/allSales";
+import AllArticles from "@/pages/allArticles";
 
 export const routes = [
   { id: 1, path: "/", element: Home },

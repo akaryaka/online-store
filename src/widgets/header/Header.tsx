@@ -1,4 +1,4 @@
-import Container from "@/widgets/container/Container";
+import Container from "@/widgets/container";
 import HeaderLogo from "./logo/HeaderLogo";
 import CatalogBtn from "./catalogBtn/CatalogBtn";
 import HeaderSearch from "./search/HeaderSearch";
