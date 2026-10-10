@@ -20,7 +20,7 @@ const Button = ({
   };
 
   const accentClass = {
-    secondary: "bg-[#70C05B] border-[#70C05B] ",
+    secondary: "bg-[#70C05B] text-[#fff] border-[#70C05B] ",
     primary: "bg-[#FF6633] text-[#fff]",
     greyscale: "bg-[#F3F2F1]",
     error: "bg-[#D80000]",
