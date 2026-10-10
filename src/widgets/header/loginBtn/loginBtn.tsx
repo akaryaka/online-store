@@ -5,8 +5,8 @@ import CalendarIcon from "@/widgets/icons/CalendarIcon";
 import ChevronDownIcon from "@/widgets/icons/ChevronDownIcon";
 import CloseIcon from "@/widgets/icons/CloseIcon";
 import EyeOff from "@/widgets/icons/EyeOff";
-import { ModalInput } from "@/widgets/modal/ModalInput";
-import { TextField } from "@mui/material";
+import ModalInput from "@/widgets/modal";
+import TextField from "@/shared/ui/textField";
 
 const LoginBtn = () => {
   const [modalDisplay, setModalDisplay] = useState("hidden");
@@ -47,7 +47,7 @@ const LoginBtn = () => {
         size="m"
         icon={<LogInIcon />}
         type="text-btn"
-        className="w-[157px] items-center justify-end p-[8px] gap-[38px] hover:opacity-[0.8]"
+        className="w-[157px] items-center justify-end p-[8px] gap-[38px]"
       >
         Вход
       </Button>

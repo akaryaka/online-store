@@ -1,15 +1,12 @@
-import TextField from "../../shared/ui/textField/TextField";
+import TextField from "@shared/ui/textField";
 
 interface modalInputProps {
   label: string;
   placeholder?: string;
+  children: React.ReactNode;
 }
 
-export const ModalInput = ({
-  label,
-  placeholder,
-  children,
-}: modalInputProps) => {
+const ModalInput = ({ label, placeholder, children }: modalInputProps) => {
   return (
     <>
       <div>
@@ -30,3 +27,5 @@ export const ModalInput = ({
     </>
   );
 };
+
+export default ModalInput;

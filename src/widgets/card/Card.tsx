@@ -1,17 +1,22 @@
-import Button from "@shared/ui/button/Button";
-import Favorites from "@shared/ui/favorites/Favorites";
+import Button from "@shared/ui/button";
+import Favorites from "@shared/ui/favorites";
 import Stars from "../icons/stars/Stars";
 import { Link } from "react-router";
 import type { Props } from "./Card.props";
 
-const Card = ({ price, title, img, rating, favorites }: Props) => {
+const Card = ({
+  price = "0",
+  title = "не удалось загрузить",
+  img,
+  rating = 3,
+  favorites,
+}: Props) => {
   return (
     <>
       <div className="flex flex-col hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
         <header className="relative">
           <img src={img} alt="cacke" />
           <Favorites
-            onClick={() => alert(1)}
             status={favorites}
             className="absolute top-[8px] right-[8px]"
           />
