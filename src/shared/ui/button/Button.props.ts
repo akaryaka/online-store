@@ -6,11 +6,11 @@ export interface Props extends DetailedHTMLProps<
 > {
   size?: string;
   accent?: string;
-  icon?: string;
+  icon?: React.ReactNode;
+  leftIcon?: boolean;
+  rightIcon?: boolean;
   type?: string;
-  decoration?: string;
-  hover?: string;
   disabled?: boolean;
-  clickEvent?: string;
+  clickEvent?: any;
   children: React.ReactNode;
 }
