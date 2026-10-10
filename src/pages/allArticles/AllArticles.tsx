@@ -2,7 +2,7 @@ import Layout from "@/app/layout";
 import Title from "@/shared/ui/title";
 import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
-import AllArticlesList from "./list/AllArticlesList";
+import AllArticlesList from "./ui/list/AllArticlesList";
 
 const AllArticles = () => {
   return (

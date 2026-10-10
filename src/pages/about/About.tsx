@@ -1,9 +1,9 @@
 import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import Layout from "@app/layout";
-import AboutHeader from "./header/AboutHeader";
-import AboutItems from "./items/AboutItems";
-import AboutFooter from "./footer/AboutFooter";
+import AboutHeader from "./ui/header/AboutHeader";
+import AboutItems from "./ui/items/AboutItems";
+import AboutFooter from "./ui/footer/AboutFooter";
 
 const About = () => {
   return (
