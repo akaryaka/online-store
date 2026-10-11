@@ -46,7 +46,12 @@ const ShoppingCartSidebar = () => {
           Минимальная сумма заказа 1000р
         </div>
         <div>
-          <Button className="w-[100%] bg-[#FCD5BA] text-[#FF6633]">
+          <Button
+            type="text-btn"
+            size="l"
+            accent="primaryDisabled"
+            className="w-[100%] text-[24px] justify-center items-center"
+          >
             Оформить заказ
           </Button>
         </div>
