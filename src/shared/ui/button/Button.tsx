@@ -22,6 +22,8 @@ const Button = ({
   const accentClass = {
     secondary:
       "bg-[#70C05B] text-[#fff] border-[#70C05B] hover:shadow-[4px_8px_16px_rgba(112,192,91,0.2)] active:shadow-[inset_0px_2px_0px_rgba(0,0,0,0.2)]",
+    secondaryDisabled:
+      "bg-[#E5FFDE] text-[#70C05B] hover:bg-[#70C05B] hover:text-[#fff] hover:shadow-[4px_8px_16px_rgba(112,192,91,0.2)] active:shadow-[inset_0px_2px_0px_rgba(0,0,0,0.2)]",
     primary:
       "bg-[#FF6633] text-[#fff] hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] active:shadow-[inset_0px_2px_0px_rgba(0,0,0,0.2)]",
     primaryDisabled: "text-[#FF6633] bg-[#FCD5BA]",
