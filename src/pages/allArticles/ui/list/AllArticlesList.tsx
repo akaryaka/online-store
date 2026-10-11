@@ -1,5 +1,6 @@
 import Container from "@/widgets/container/Container";
 import { articles } from "./models/articles";
+import Button from "@/shared/ui/button";
 
 const AllArticlesList = () => {
   return (
@@ -28,9 +29,13 @@ const AllArticlesList = () => {
                     <div className="text-[16px] leading-[150%] text-[#414141]">
                       {article.desc}
                     </div>
-                    <button className="w-[150px] mt-[auto] p-[8px_16px] rounded-[4px] bg-[#E5FFDE] text-[16px] leading-[150%] text-[#70C05B] cursor-pointer transition-all hover:bg-[#70C05B] hover:text-[#fff]">
+                    <Button
+                      type="text-btn"
+                      accent="secondaryDisabled"
+                      className="w-[150px] justify-center mt-[auto] p-[8px_16px] text-[16px] leading-[150%]"
+                    >
                       Подробнее
-                    </button>
+                    </Button>
                   </div>
                 </div>
               );
