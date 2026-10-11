@@ -1,32 +1,7 @@
-import article1 from "@images/article1.png";
-import article2 from "@images/article2.png";
-import article3 from "@images/article3.png";
 import ArrowIcon from "@/widgets/icons/ArrowIcon";
 import { Link } from "react-router";
-
-const articles = [
-  {
-    id: 1,
-    img: article1,
-    date: "05.03.2021",
-    title: "Режим использования масок и перчаток на территории магазинов",
-    desc: "Подробная информация о режимах использования масок и перчаток на территории магазинов 'ЛЕНТА'. Информация обновляется каждыйбудний день.",
-  },
-  {
-    id: 2,
-    img: article2,
-    date: "05.03.2021",
-    title: "Весеннее настроение для каждой",
-    desc: "8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.",
-  },
-  {
-    id: 3,
-    img: article3,
-    date: "22.02.2020",
-    title: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
-    desc: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
-  },
-];
+import Button from "@/shared/ui/button";
+import { articles } from "./models/articles";
 
 const HomeArticles = () => {
   return (
@@ -61,9 +36,13 @@ const HomeArticles = () => {
                   <div className="text-[16px] leading-[150%] text-[#414141]">
                     {article.desc}
                   </div>
-                  <button className="w-[150px] mt-[auto] p-[8px_16px] rounded-[4px] bg-[#E5FFDE] text-[16px] leading-[150%] text-[#70C05B] cursor-pointer transition-all hover:bg-[#70C05B] hover:text-[#fff]">
+                  <Button
+                    type="text-btn"
+                    accent="secondaryDisabled"
+                    className="w-[150px] justify-center mt-[auto] p-[8px_16px] text-[16px] leading-[150%]"
+                  >
                     Подробнее
-                  </button>
+                  </Button>
                 </div>
               </div>
             );
