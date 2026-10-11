@@ -9,7 +9,7 @@ const textSizes = {
   xl: "text-[36px]",
 };
 
-const Text = ({ text, size, className, ...props }: Props) => {
+const Text = ({ children, size, className, ...props }: Props) => {
   return (
     <>
       <div
@@ -17,7 +17,7 @@ const Text = ({ text, size, className, ...props }: Props) => {
           ...props,
         })}
       >
-        {text}
+        {children}
       </div>
     </>
   );
