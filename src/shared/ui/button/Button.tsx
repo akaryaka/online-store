@@ -47,12 +47,25 @@ const Button = ({
             { ...props },
           )}
         >
-          {leftIcon && <span>{icon}</span>}
-          <span>{children}</span>
-          {rightIcon && <span>{icon}</span>}
+          <span>{leftIcon}</span>
+          {children}
+          <span>{rightIcon}</span>
         </button>
       )}
-      {type == "icon-btn" && <button>{icon}</button>}
+      {type == "icon-btn" && (
+        <button
+          onClick={clickEvent}
+          className={cn(
+            `flex rounded-[4px] transition-all cursor-pointer`,
+            className,
+            sizeClass[size],
+            accentClass[accent],
+            { ...props },
+          )}
+        >
+          {icon}
+        </button>
+      )}
     </>
   );
 };
