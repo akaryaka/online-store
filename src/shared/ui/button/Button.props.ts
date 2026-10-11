@@ -4,7 +4,7 @@ export interface Props extends DetailedHTMLProps<
   HTMLAttributes<HTMLButtonElement>,
   HTMLButtonElement
 > {
-  size?: "l" | "m" | "s" | string;
+  size: "l" | "m" | "s" | string;
   accent?:
     | "secondary"
     | "primary"
@@ -14,10 +14,10 @@ export interface Props extends DetailedHTMLProps<
     | "secondaryDisabled"
     | string;
   icon?: React.ReactNode;
-  leftIcon?: boolean;
-  rightIcon?: boolean;
-  type?: "text-btn" | "icon-btn" | string;
+  leftIcon?: React.ReactNode;
+  rightIcon?: React.ReactNode;
+  type: "text-btn" | "icon-btn" | string;
   disabled?: boolean;
   clickEvent?: any;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
