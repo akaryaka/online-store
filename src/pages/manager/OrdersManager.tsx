@@ -2,45 +2,10 @@ import Button from "@shared/ui/button";
 import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import Title from "@/shared/ui/title";
-import cn from "classnames";
 import CalendarIcon from "@/widgets/icons/CalendarIcon";
 import Layout from "@app/layout";
 import OrderItems from "./ui/OrderItems";
-import type { DayBtnProps } from "./models/DayBtn.props";
-
-const ActiveDayBtn = ({ date, count, className, ...props }: DayBtnProps) => {
-  return (
-    <>
-      <Button
-        className={cn("bg-[#70C05B] flex items-center gap-[8px]", className, {
-          ...props,
-        })}
-      >
-        <span className="text-[#fff]">{date}</span>
-        <span className="inline-flex w-[33px] h-[32px] text-[#fff] bg-[#FF6633] text-[16px] font-normal p-[4px_8px] rounded-[4px]">
-          <span>{count}</span>
-        </span>
-      </Button>
-    </>
-  );
-};
-
-const DayBtn = ({ date, count, className, ...props }: DayBtnProps) => {
-  return (
-    <>
-      <Button
-        className={cn("bg-[#F3F2F1] flex items-center gap-[8px]", className, {
-          ...props,
-        })}
-      >
-        <span className="text-[#606060]">{date}</span>
-        <span className="inline-flex text-[#fff] bg-[#FF6633] text-[16px] font-normal p-[4px_8px] rounded-[4px]">
-          <span>{count}</span>
-        </span>
-      </Button>
-    </>
-  );
-};
+import OrderCounterBtn from "./ui/OrderCounterBtn";
 
 const OrdersManager = () => {
   return (
@@ -60,12 +25,40 @@ const OrdersManager = () => {
               </span>
             </div>
             <div className="flex gap-[16px] mb-[60px]">
-              <Button className="bg-[#F3F2F1]">
-                <CalendarIcon />
-              </Button>
-              <ActiveDayBtn date="Сегодня" count="10" />
-              <DayBtn date="1 апреля" count="2" />
-              <DayBtn date="5 апреля" count="1" />
+              <Button
+                icon={<CalendarIcon />}
+                type="icon-btn"
+                size="l"
+                accent="greyscale"
+                className="w-[60px] flex justify-center items-center"
+              />
+              <OrderCounterBtn
+                size="l"
+                date="Сегодня"
+                accent="secondary"
+                count="10"
+                dateSize="l"
+                countSize="s"
+                className="p-[14px_16px] gap-[16px]"
+              />
+              <OrderCounterBtn
+                size="l"
+                date="1 апреля"
+                accent="greyscale"
+                count="2"
+                dateSize="l"
+                countSize="s"
+                className="p-[14px_16px] gap-[16px]"
+              />
+              <OrderCounterBtn
+                size="l"
+                date="5 апреля"
+                accent="greyscale"
+                count="1"
+                dateSize="l"
+                countSize="s"
+                className="p-[14px_16px] gap-[16px]"
+              />
             </div>
             <OrderItems />
           </Container>

@@ -16,19 +16,10 @@ import Phone from "@shared/ui/phone";
 import UserAccount from "@/shared/ui/userAccount";
 import Button from "@/shared/ui/button";
 import CalendarIcon from "@/widgets/icons/CalendarIcon";
-import cn from "classnames";
-import type { DetailedHTMLProps, ButtonHTMLAttributes } from "react";
+import OrderCounterBtn from "./OrderCounterBtn";
 
 interface DayTimeProps {
   time: string;
-}
-
-interface DayBtnProps extends DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
-> {
-  date: string;
-  count: string;
 }
 
 interface NumberOrderProps {
@@ -42,23 +33,6 @@ const DayTime = ({ time }: DayTimeProps) => {
         <ClockIcon />
         <div className="text-[38px] font-bold leading-[150%]">{time}</div>
       </div>
-    </>
-  );
-};
-
-const DayBtn = ({ date, count, className, ...props }: DayBtnProps) => {
-  return (
-    <>
-      <Button
-        className={cn("bg-[#F3F2F1] flex items-center gap-[8px]", className, {
-          ...props,
-        })}
-      >
-        <span className="text-[#606060]">{date}</span>
-        <span className="inline-flex text-[#fff] bg-[#FF6633] text-[16px] font-normal p-[4px_8px] rounded-[4px]">
-          <span>{count}</span>
-        </span>
-      </Button>
     </>
   );
 };
@@ -91,23 +65,6 @@ const NumberOrder = ({ count }: NumberOrderProps) => {
   );
 };
 
-const ActiveDayBtn = ({ date, count, className, ...props }: DayBtnProps) => {
-  return (
-    <>
-      <Button
-        className={cn("bg-[#70C05B] flex items-center gap-[8px]", className, {
-          ...props,
-        })}
-      >
-        <span className="text-[#fff]">{date}</span>
-        <span className="inline-flex w-[33px] h-[32px] text-[#fff] bg-[#FF6633] text-[16px] font-normal p-[4px_8px] rounded-[4px]">
-          <span>{count}</span>
-        </span>
-      </Button>
-    </>
-  );
-};
-
 const OrderItems = () => {
   return (
     <>
@@ -121,8 +78,24 @@ const OrderItems = () => {
             <OrderCheckList current="5" full="5" />
           </header>
           <div className="flex gap-[10px] mb-[60px]">
-            <ActiveDayBtn date="Усть-Ижма" count="3" />
-            <DayBtn date="Галово" count="2" />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Усть-Ижма"
+              accent="secondary"
+              count="3"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Галово"
+              accent="greyscale"
+              count="2"
+              className="p-[8px] gap-[8px]"
+            />
           </div>
           <div className="order mb-[60px] flex justify-between">
             <div className="flex">
@@ -138,22 +111,36 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#008C49] text-[#fff]">
-                  <CheckCircle />
-                  <span>Подтвержден</span>
-                  <ChevronDownIcon fill={""} />
+                <Button
+                  size="m"
+                  type="text-btn"
+                  icon
+                  leftIcon={<CheckCircle />}
+                  rightIcon={<ChevronDownIcon fill="#fff" />}
+                  className="flex items-center w-[200px] p-[8px] bg-[#008C49] text-[#fff]"
+                >
+                  <span className="ml-[4px] mr-[auto]">Подтвержден</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
+                <Button
+                  size="m"
+                  accent="greyscale"
+                  type="text-btn"
+                  leftIcon={<EyeIcon />}
+                  className="flex items-center p-[8px] gap-[8px]"
+                >
                   <span>Просмотреть заказ</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <MessageSquareIcon />
-                </Button>
+                <Button
+                  size="m"
+                  type="icon-btn"
+                  accent="greyscale"
+                  icon={<MessageSquareIcon />}
+                  className="w-[40px] items-center justify-center"
+                />
               </div>
             </div>
           </div>
@@ -171,22 +158,36 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#008C49] text-[#fff]">
-                  <CheckCircle />
-                  <span>Подтвержден</span>
-                  <ChevronDownIcon fill={""} />
+                <Button
+                  size="m"
+                  type="text-btn"
+                  icon
+                  leftIcon={<CheckCircle />}
+                  rightIcon={<ChevronDownIcon fill="#fff" />}
+                  className="flex items-center w-[200px] p-[8px] bg-[#008C49] text-[#fff]"
+                >
+                  <span className="ml-[4px] mr-[auto]">Подтвержден</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
+                <Button
+                  size="m"
+                  accent="greyscale"
+                  type="text-btn"
+                  leftIcon={<EyeIcon />}
+                  className="flex items-center p-[8px] gap-[8px]"
+                >
                   <span>Просмотреть заказ</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <MessageSquareEmpty />
-                </Button>
+                <Button
+                  size="m"
+                  type="icon-btn"
+                  accent="greyscale"
+                  className="w-[40px] justify-center items-center"
+                  icon={<MessageSquareEmpty />}
+                />
               </div>
             </div>
           </div>
@@ -204,22 +205,35 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#D80000] text-[#fff]">
-                  <AlertTriangleIcon />
-                  <span>Возврат</span>
-                  <ChevronDownIcon fill={""} />
+                <Button
+                  size="m"
+                  type="text-btn"
+                  leftIcon={<AlertTriangleIcon />}
+                  rightIcon={<ChevronDownIcon fill="#fff" />}
+                  className="flex items-center w-[200px] p-[8px] gap-[4px] bg-[#D80000] text-[#fff]"
+                >
+                  <span className="ml-[4px] mr-[auto]">Возврат</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
+                <Button
+                  size="m"
+                  accent="greyscale"
+                  type="text-btn"
+                  leftIcon={<EyeIcon />}
+                  className="flex items-center p-[8px] gap-[8px]"
+                >
                   <span>Просмотреть заказ</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <MessageSquareNotice />
-                </Button>
+                <Button
+                  size="m"
+                  type="icon-btn"
+                  accent="greyscale"
+                  className="w-[40px] justify-center items-center"
+                  icon={<MessageSquareNotice />}
+                />
               </div>
             </div>
           </div>
@@ -233,8 +247,26 @@ const OrderItems = () => {
             <OrderCheckList current="8" full="8" />
           </header>
           <div className="flex gap-[10px] mb-[60px]">
-            <ActiveDayBtn date="Усть-Ижма" count="3" />
-            <DayBtn date="Галово" count="2" />
+            <div className="flex gap-[10px] mb-[60px]">
+              <OrderCounterBtn
+                size="m"
+                dateSize="s"
+                countSize="xs"
+                date="Усть-Ижма"
+                accent="secondary"
+                count="3"
+                className="p-[8px] gap-[8px]"
+              />
+              <OrderCounterBtn
+                size="m"
+                dateSize="s"
+                countSize="xs"
+                date="Галово"
+                accent="greyscale"
+                count="2"
+                className="p-[8px] gap-[8px]"
+              />
+            </div>
           </div>
           <div className="order mb-[60px] flex justify-between">
             <div className="flex">
@@ -250,22 +282,35 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#FCA21C] text-[#fff]">
-                  <AlertCircleIcon />
-                  <span>Не подтвердили</span>
-                  <ChevronDownIcon fill="#f2f2f2" />
+                <Button
+                  size="m"
+                  leftIcon={<AlertCircleIcon />}
+                  rightIcon={<ChevronDownIcon fill="#f2f2f2" />}
+                  type="text-btn"
+                  className="flex p-[8px] w-[200px] bg-[#FCA21C] text-[#fff]"
+                >
+                  <span className="ml-[4px] mr-[auto]">Не подтвердили</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
-                  <span>Просмотреть</span>
+                <Button
+                  className="w-[200px] flex items-center p-[8px] gap-[8px]"
+                  size="m"
+                  leftIcon={<EyeIcon />}
+                  accent="greyscale"
+                  type="text-btn"
+                >
+                  <span className="ml-[20px]">Просмотреть</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <MessageSquareNotice />
-                </Button>
+                <Button
+                  type="icon-btn"
+                  size="m"
+                  accent="greyscale"
+                  icon={<MessageSquareNotice />}
+                  className="w-[40px] justify-center items-center bg-[#F3F2F1]"
+                />
               </div>
             </div>
           </div>
@@ -283,22 +328,36 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#F3F2F1] text-[#606060]">
-                  <DeliveryIcon />
-                  <span>Доставляется</span>
-                  <ChevronDownIcon fill="#606060" />
+                <Button
+                  type="text-btn"
+                  leftIcon={<DeliveryIcon />}
+                  rightIcon={<ChevronDownIcon fill="#606060" />}
+                  accent="greyscale"
+                  size="m"
+                  className="flex w-[200px]  p-[8px] gap-[4px]"
+                >
+                  <span className="mr-[auto] ml-[4px]">Доставляется</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
-                  <span>Просмотреть</span>
+                <Button
+                  className="w-[200px] flex items-center p-[8px] gap-[8px]"
+                  size="m"
+                  leftIcon={<EyeIcon />}
+                  accent="greyscale"
+                  type="text-btn"
+                >
+                  <span className="ml-[20px]">Просмотреть</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <CalendarIcon />
-                </Button>
+                <Button
+                  size="m"
+                  icon={<CalendarIcon />}
+                  type="icon-btn"
+                  accent="greyscale"
+                  className="w-[40px] items-center justify-center"
+                />
               </div>
             </div>
           </div>
@@ -316,22 +375,35 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#fff] text-[#414141]">
-                  <BaqIcon />
-                  <span>Новый</span>
-                  <ChevronDownIcon fill="#414141" />
+                <Button
+                  type="text-btn"
+                  size="m"
+                  leftIcon={<BaqIcon />}
+                  rightIcon={<ChevronDownIcon fill="#414141" />}
+                  className="flex gap-[4px] bg-[#fff] w-[200px] p-[8px] text-[#414141]"
+                >
+                  <span className="mr-[auto] ml-[4px]">Новый</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
-                  <span>Просмотреть</span>
+                <Button
+                  className="w-[200px] flex items-center p-[8px] gap-[8px]"
+                  size="m"
+                  leftIcon={<EyeIcon />}
+                  accent="greyscale"
+                  type="text-btn"
+                >
+                  <span className="ml-[20px]">Просмотреть</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <CalendarIcon />
-                </Button>
+                <Button
+                  size="m"
+                  icon={<CalendarIcon />}
+                  type="icon-btn"
+                  accent="greyscale"
+                  className="w-[40px] items-center justify-center"
+                />
               </div>
             </div>
           </div>
@@ -345,7 +417,15 @@ const OrderItems = () => {
             <OrderCheckList current="1" full="2" />
           </header>
           <div className="flex gap-[10px] mb-[60px]">
-            <ActiveDayBtn date="Усть-Ижма" count="3" />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Усть-Ижма"
+              accent="secondary"
+              count="3"
+              className="p-[8px] gap-[8px]"
+            />
           </div>
           <div className="order mb-[60px] flex justify-between">
             <div className="flex">
@@ -361,22 +441,35 @@ const OrderItems = () => {
                 <Phone number="+7 912 888 77 55" />
               </div>
               <div>
-                <Button className="flex gap-[4px] bg-[#70C05B] text-[#fff]">
-                  <CheckIcon fill="#fff" />
-                  <span>Собран</span>
-                  <ChevronDownIcon fill="#fff" />
+                <Button
+                  type="text-btn"
+                  size="m"
+                  leftIcon={<CheckIcon fill="#fff" />}
+                  rightIcon={<ChevronDownIcon fill="#fff" />}
+                  className="flex gap-[4px] w-[200px] p-[8px] bg-[#70C05B] text-[#fff]"
+                >
+                  <span className="mr-[auto] ml-[4px]">Собран</span>
                 </Button>
               </div>
               <div>
-                <Button className="flex items-center gap-[8px] bg-[#F3F2F1] text-[#606060]">
-                  <EyeIcon />
-                  <span>Просмотреть</span>
+                <Button
+                  className="w-[200px] flex items-center p-[8px] gap-[8px]"
+                  size="m"
+                  leftIcon={<EyeIcon />}
+                  accent="greyscale"
+                  type="text-btn"
+                >
+                  <span className="ml-[20px]">Просмотреть</span>
                 </Button>
               </div>
               <div>
-                <Button className="bg-[#F3F2F1]">
-                  <CalendarIcon />
-                </Button>
+                <Button
+                  size="m"
+                  icon={<CalendarIcon />}
+                  type="icon-btn"
+                  accent="greyscale"
+                  className="w-[40px] items-center justify-center"
+                />
               </div>
             </div>
           </div>
@@ -395,22 +488,34 @@ const OrderItems = () => {
                   <Phone number="+7 912 888 77 55" />
                 </div>
                 <div>
-                  <Button className="flex gap-[4px] bg-[#F3F2F1] text-[#606060]">
-                    <BaqIcon />
-                    <span>Новый</span>
-                    <ChevronDownIcon fill="#606060" />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<BaqIcon />}
+                    rightIcon={<ChevronDownIcon fill="#606060" />}
+                    className="flex w-[200px] p-[8px] gap-[4px] bg-[#F3F2F1] text-[#606060]"
+                  >
+                    <span className="mr-[auto] ml-[4px]">Новый</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="flex items-center gap-[8px] bg-[#FF6633] text-[#fff]">
-                    <UploadIcon />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<UploadIcon />}
+                    className="flex w-[200px] p-[8px] items-center gap-[20px] bg-[#FF6633] text-[#fff]"
+                  >
                     <span>Выгрузить в 1с</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="bg-[#F3F2F1]">
-                    <CalendarIcon />
-                  </Button>
+                  <Button
+                    size="m"
+                    icon={<CalendarIcon />}
+                    type="icon-btn"
+                    accent="greyscale"
+                    className="w-[40px] items-center justify-center"
+                  />
                 </div>
               </div>
             </div>
@@ -445,8 +550,13 @@ const OrderItems = () => {
               />
             </div>
             <div className="flex justify-center">
-              <Button className="flex gap-[8px] bg-[#F3F2F1]">
-                <EyeIcon />
+              <Button
+                size="m"
+                accent="greyscale"
+                type="text-btn"
+                leftIcon={<EyeIcon />}
+                className="flex items-center p-[8px] gap-[8px]"
+              >
                 <span>Просмотреть заказ</span>
               </Button>
             </div>
@@ -460,16 +570,88 @@ const OrderItems = () => {
             </div>
             <OrderCheckList current="0" full="15" />
           </header>
-          <div className="flex gap-[10px] mb-[60px]">
-            <ActiveDayBtn date="Усть-Ижма" count="3" />
-            <DayBtn date="Галово" count="2" />
-            <DayBtn date="Кельчиюр" count="2" />
-            <DayBtn date="Галово" count="2" />
-            <DayBtn date="Вертеп" count="2" />
-            <DayBtn date="Краснобор" count="2" />
-            <DayBtn date="Диюр" count="2" />
-            <DayBtn date="Ыргеншар" count="2" />
-            <DayBtn date="Щельяюр" count="2" />
+          <div className="flex gap-[4px] mb-[60px]">
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Усть-Ижма"
+              accent="secondary"
+              count="3"
+              className="gap-[8px] p-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Галово"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Кельчиюр"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Галово"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Вертеп"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Краснобор"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Диюр"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Ыргеншар"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
+            <OrderCounterBtn
+              size="m"
+              dateSize="s"
+              countSize="xs"
+              date="Щельяюр"
+              accent="greyscale"
+              count="1"
+              className="p-[8px] gap-[8px]"
+            />
           </div>
           <div className="order mb-[60px] ">
             <div className="flex justify-between mb-[40px]">
@@ -486,22 +668,34 @@ const OrderItems = () => {
                   <Phone number="+7 912 888 77 55" />
                 </div>
                 <div>
-                  <Button className="flex gap-[4px] bg-[#F3F2F1] text-[#606060]">
-                    <BaqIcon />
-                    <span>Новый</span>
-                    <ChevronDownIcon fill="#606060" />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<BaqIcon />}
+                    rightIcon={<ChevronDownIcon fill="#606060" />}
+                    className="flex w-[200px] p-[8px] gap-[4px] bg-[#F3F2F1] text-[#606060]"
+                  >
+                    <span className="mr-[auto] ml-[4px]">Новый</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="flex items-center gap-[8px] bg-[#FF6633] text-[#fff]">
-                    <UploadIcon />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<UploadIcon />}
+                    className="flex w-[200px] p-[8px] items-center gap-[20px] bg-[#FF6633] text-[#fff]"
+                  >
                     <span>Выгрузить в 1с</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="bg-[#F3F2F1]">
-                    <CalendarIcon />
-                  </Button>
+                  <Button
+                    size="m"
+                    icon={<CalendarIcon />}
+                    type="icon-btn"
+                    accent="greyscale"
+                    className="w-[40px] items-center justify-center"
+                  />
                 </div>
               </div>
             </div>
@@ -551,22 +745,34 @@ const OrderItems = () => {
                   <Phone number="+7 912 888 77 55" />
                 </div>
                 <div>
-                  <Button className="flex gap-[4px] bg-[#F3F2F1] text-[#606060]">
-                    <BaqIcon />
-                    <span>Новый</span>
-                    <ChevronDownIcon fill="#606060" />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<BaqIcon />}
+                    rightIcon={<ChevronDownIcon fill="#606060" />}
+                    className="flex w-[200px] p-[8px] gap-[4px] bg-[#F3F2F1] text-[#606060]"
+                  >
+                    <span className="mr-[auto] ml-[4px]">Новый</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="flex items-center gap-[8px] bg-[#FF6633] text-[#fff]">
-                    <UploadIcon />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<UploadIcon />}
+                    className="flex w-[200px] p-[8px] items-center gap-[20px] bg-[#FF6633] text-[#fff]"
+                  >
                     <span>Выгрузить в 1с</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="bg-[#F3F2F1]">
-                    <CalendarIcon />
-                  </Button>
+                  <Button
+                    size="m"
+                    icon={<CalendarIcon />}
+                    type="icon-btn"
+                    accent="greyscale"
+                    className="w-[40px] items-center justify-center"
+                  />
                 </div>
               </div>
             </div>
@@ -601,8 +807,13 @@ const OrderItems = () => {
               />
             </div>
             <div className="flex justify-center">
-              <Button className="flex gap-[8px] bg-[#F3F2F1]">
-                <EyeIcon />
+              <Button
+                size="m"
+                accent="greyscale"
+                type="text-btn"
+                leftIcon={<EyeIcon />}
+                className="flex items-center p-[8px] gap-[8px]"
+              >
                 <span>Просмотреть заказ</span>
               </Button>
             </div>
@@ -622,22 +833,34 @@ const OrderItems = () => {
                   <Phone number="+7 912 888 77 55" />
                 </div>
                 <div>
-                  <Button className="flex gap-[4px] bg-[#F3F2F1] text-[#606060]">
-                    <BaqIcon />
-                    <span>Новый</span>
-                    <ChevronDownIcon fill="#606060" />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<BaqIcon />}
+                    rightIcon={<ChevronDownIcon fill="#606060" />}
+                    className="flex w-[200px] p-[8px] gap-[4px] bg-[#F3F2F1] text-[#606060]"
+                  >
+                    <span className="mr-[auto] ml-[4px]">Новый</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="flex items-center gap-[8px] bg-[#FF6633] text-[#fff]">
-                    <UploadIcon />
+                  <Button
+                    type="text-btn"
+                    size="m"
+                    leftIcon={<UploadIcon />}
+                    className="flex w-[200px] p-[8px] items-center gap-[20px] bg-[#FF6633] text-[#fff]"
+                  >
                     <span>Выгрузить в 1с</span>
                   </Button>
                 </div>
                 <div>
-                  <Button className="bg-[#F3F2F1]">
-                    <CalendarIcon />
-                  </Button>
+                  <Button
+                    size="m"
+                    icon={<CalendarIcon />}
+                    type="icon-btn"
+                    accent="greyscale"
+                    className="w-[40px] items-center justify-center"
+                  />
                 </div>
               </div>
             </div>
@@ -672,8 +895,13 @@ const OrderItems = () => {
               />
             </div>
             <div className="flex justify-center">
-              <Button className="flex gap-[8px] bg-[#F3F2F1]">
-                <EyeIcon />
+              <Button
+                size="m"
+                accent="greyscale"
+                type="text-btn"
+                leftIcon={<EyeIcon />}
+                className="flex items-center p-[8px] gap-[8px]"
+              >
                 <span>Просмотреть заказ</span>
               </Button>
             </div>
