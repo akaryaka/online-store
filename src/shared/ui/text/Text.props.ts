@@ -4,6 +4,6 @@ export interface Props extends DetailedHTMLProps<
   HTMLAttributes<HTMLDivElement>,
   HTMLDivElement
 > {
-  text: string;
+  children: React.ReactNode;
   size: "xl" | "l" | "m" | "s" | "xs";
 }
