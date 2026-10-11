@@ -1,4 +1,4 @@
-import ShoppingCart from "@/pages/shoppingCart";
+import ShoppingCart from "@/widgets/icons/ShoppingCart";
 import Sales from "@/shared/ui/sales";
 import BellOf from "@/widgets/icons/BellOf";
 import FavoritesIcon from "@/widgets/icons/FavoritesIcon";
@@ -67,7 +67,7 @@ const ProductInfo = () => {
             />
           </div>
           <div className="w-[376px] mr-[40px]">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between mb-[16px]">
               <div className="flex flex-col">
                 <div className="text-[24px] mb-[6px] leading-[150%] text-[#606060]">
                   192,69 ₽
@@ -86,11 +86,15 @@ const ProductInfo = () => {
                 </div>
               </div>
             </div>
-            <Button className="mb-[8px] flex p-[14px_16px] items-center w-[100%] bg-[#FF6633]">
-              <ShoppingCart width="32px" height="32px" fill="#fff" />
-              <span className="grow text-[24px] leading-[150%] text-[#fff]">
-                В корзину
-              </span>
+            <Button
+              type="text-btn"
+              accent="primary"
+              size="l"
+              icon={<ShoppingCart width="32px" height="32px" fill="#fff" />}
+              leftIcon={true}
+              className="w-[100%] justify-start p-[14px_16px] gap-[90px] items-center mb-[8px]"
+            >
+              <span className="text-[24px] leading-[150%]">В корзину</span>
             </Button>
             <div className="flex gap-[8px] justify-center items-center mb-[24px]">
               <SmileIcon />
