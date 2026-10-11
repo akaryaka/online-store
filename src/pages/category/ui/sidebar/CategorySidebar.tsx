@@ -57,9 +57,14 @@ const CategorySidebar = () => {
             В наличии
           </span>
         </div>
-        <button className="w-[100%] font-[Rubik] bg-primary rounded-[4px] text-[#fff] text-[16px] leading-[150%] cursor-pointer p-[8px]">
+        <Button
+          type="text-btn"
+          size="m"
+          accent="primary"
+          className="w-[100%] justify-center p-[8px]"
+        >
           Применить
-        </button>
+        </Button>
       </div>
     </>
   );
