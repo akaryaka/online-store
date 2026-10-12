@@ -30,6 +30,7 @@ const AllArticlesList = () => {
                       {article.desc}
                     </div>
                     <Button
+                      size="m"
                       type="text-btn"
                       accent="secondaryDisabled"
                       className="w-[150px] justify-center mt-[auto] p-[8px_16px] text-[16px] leading-[150%]"

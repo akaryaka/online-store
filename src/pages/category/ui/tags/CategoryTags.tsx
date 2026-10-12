@@ -4,13 +4,30 @@ const CategoryTags = () => {
   return (
     <>
       <div className="flex gap-[24px] mb-[40px]">
-        <Button className="text-[#606060] bg-[#F3F2F1]">
+        <Button
+          accent="greyscale"
+          size="s"
+          type="text-btn"
+          className="items-center p-[8px_20px]"
+        >
           Товары нашего производства
         </Button>
-        <Button className="text-[#606060] bg-[#F3F2F1]">
+        <Button
+          accent="greyscale"
+          size="s"
+          type="text-btn"
+          className="items-center p-[8px_20px]"
+        >
           Полезное питание
         </Button>
-        <Button className="text-[#606060] bg-[#F3F2F1]">Без ГМО</Button>
+        <Button
+          accent="greyscale"
+          size="s"
+          type="text-btn"
+          className="items-center p-[8px_20px]"
+        >
+          Без ГМО
+        </Button>
       </div>
     </>
   );

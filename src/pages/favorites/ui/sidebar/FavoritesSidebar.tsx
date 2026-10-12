@@ -12,14 +12,21 @@ const FavoritesSidebar = () => {
   return (
     <>
       <div className="sidebar w-[272px]">
-        <Button className="bg-[#F3F2F1] text-[#606060] text-left w-[100%] mb-[40px]">
+        <div className="text-[#606060] p-[10px] bg-[#F3F2F1] text-left w-[100%] mb-[40px]">
           <span className="font-bold text-[16px] leading-[150%] text-[#414141]">
             Фильтр
           </span>
-        </Button>
+        </div>
         <div className="flex justify-between items-center mb-[13px]">
           <div className="text-[16px] leading-[150%]">Цена</div>
-          <Button className="bg-[#F3F2F1] text-[#606060]">Очистить</Button>
+          <Button
+            type="text-btn"
+            accent="greyscale"
+            size="s"
+            className="items-center p-[8px_16px]"
+          >
+            Очистить
+          </Button>
         </div>
         <div className="flex items-center mb-[40px]">
           <input

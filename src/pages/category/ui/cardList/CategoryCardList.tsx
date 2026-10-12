@@ -6,23 +6,41 @@ import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
 import CardSale from "@/widgets/card/CardSale";
 import CategoryPagination from "../pagination/CategoryPagination";
+import Text from "@/shared/ui/text";
 
 const CategoryCardList = () => {
   return (
     <>
       <div className="content grow">
         <div className="flex gap-[24px] mb-[40px]">
-          <Button className="text-[#fff] bg-[#70C05B] flex items-center gap-[8px]">
-            <span>Фильтр 4</span>
-            <ResetIcon fill="#fff" />
+          <Button
+            type="text-btn"
+            size="s"
+            rightIcon={<ResetIcon fill="#fff" />}
+            accent="secondary"
+            className="p-[8px] flex items-center gap-[8px]"
+          >
+            <Text size="s" className="mr-[auto]">
+              Фильтр 4
+            </Text>
           </Button>
-          <Button className="text-[#fff] bg-[#70C05B] flex items-center gap-[8px]">
-            <span>Цена от 99 до 2599</span>
-            <ResetIcon fill="#fff" />
+          <Button
+            type="text-btn"
+            size="s"
+            rightIcon={<ResetIcon fill="#fff" />}
+            accent="secondary"
+            className="p-[8px] flex items-center gap-[8px]"
+          >
+            <Text size="s">Цена от 99 до 2599</Text>
           </Button>
-          <Button className="text-[#606060] bg-[#F3F2F1] flex items-center gap-[8px]">
-            <span>Очистить фильтры</span>
-            <ResetIcon fill="#414141" />
+          <Button
+            type="text-btn"
+            size="s"
+            accent="greyscale"
+            rightIcon={<ResetIcon fill="#414141" />}
+            className="items-center gap-[8px]"
+          >
+            <Text size="s">Очистить фильтры</Text>
           </Button>
         </div>
         <div className="cards grid grid-cols-3 grid-rows-2 gap-[40px] mb-[40px]">
@@ -55,14 +73,14 @@ const CategoryCardList = () => {
             price="139,99"
             img={product1}
             rating={2}
-          />{" "}
+          />
           <Card
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             favorites={false}
             price="139,99"
             img={product1}
             rating={2}
-          />{" "}
+          />
           <Card
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             favorites={false}
@@ -72,7 +90,14 @@ const CategoryCardList = () => {
           />
         </div>
         <div className="flex justify-center mb-[40px]">
-          <Button className="text-[#606060] bg-[#F3F2F1]">Показать ещё</Button>
+          <Button
+            type="text-btn"
+            accent="greyscale"
+            size="m"
+            className="p-[8px] w-[157px] justify-center items-center"
+          >
+            <Text size="s"> Показать ещё</Text>
+          </Button>
         </div>
         <div className="flex justify-center">
           <button className="cursor-pointer p-[8px]">

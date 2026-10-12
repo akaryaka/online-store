@@ -38,6 +38,7 @@ const HomeArticles = () => {
                   </div>
                   <Button
                     type="text-btn"
+                    size="m"
                     accent="secondaryDisabled"
                     className="w-[150px] justify-center mt-[auto] p-[8px_16px] text-[16px] leading-[150%]"
                   >

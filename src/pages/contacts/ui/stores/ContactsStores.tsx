@@ -41,10 +41,38 @@ const ContactsStores = () => {
           Наши магазины
         </h2>
         <div className="flex gap-[24px] mb-[32px]">
-          <Button className="text-[#fff] bg-[#70C05B]">п.Щельяюр</Button>
-          <Button className="text-[#606060] bg-[#F3F2F1]">д.Вертеп</Button>
-          <Button className="text-[#606060] bg-[#F3F2F1]">с.Краснобор</Button>
-          <Button className="text-[#606060] bg-[#F3F2F1]">д.Диюр</Button>
+          <Button
+            size="m"
+            type="text-btn"
+            accent="secondary"
+            className="items-center p-[8px_16px]"
+          >
+            п.Щельяюр
+          </Button>
+          <Button
+            size="m"
+            type="text-btn"
+            accent="greyscale"
+            className="items-center p-[8px_16px]"
+          >
+            д.Вертеп
+          </Button>
+          <Button
+            size="m"
+            type="text-btn"
+            accent="greyscale"
+            className="items-center p-[8px_16px]"
+          >
+            с.Краснобор
+          </Button>
+          <Button
+            size="m"
+            type="text-btn"
+            accent="greyscale"
+            className="items-center p-[8px_16px]"
+          >
+            д.Диюр
+          </Button>
         </div>
         <div className="flex gap-[80px] mb-[32px]">
           {storeList.map((store) => {

@@ -6,19 +6,30 @@ import Button from "@/shared/ui/button/Button";
 import product1 from "@images/product1.png";
 import Card from "@/widgets/card/Card";
 import CardSale from "@/widgets/card/CardSale";
+import Text from "@/shared/ui/text";
 
 const FavoritesContent = () => {
   return (
     <>
       <div className="content grow">
         <div className="flex  gap-[24px] mb-[40px]">
-          <Button className="bg-[#70C05B] text-[#fff] flex items-center gap-[8px]">
-            <span>Цена от 99 до 2599</span>
-            <ResetIcon fill="#fff" />
+          <Button
+            type="text-btn"
+            size=""
+            accent="secondary"
+            rightIcon={<ResetIcon fill="#fff" />}
+            className="p-[8px_16px] flex items-center gap-[8px]"
+          >
+            <Text size="s">Цена от 99 до 2599</Text>
           </Button>
-          <Button className="bg-[#F3F2F1] text-[#606060] flex items-center gap-[8px]">
-            <span>Очистить фильтры</span>
-            <ResetIcon fill="#414141" />
+          <Button
+            type="text-btn"
+            size=""
+            accent="greyscale"
+            rightIcon={<ResetIcon fill="#414141" />}
+            className="p-[8px_16px] flex items-center gap-[8px]"
+          >
+            <Text size="s">Очистить</Text>
           </Button>
         </div>
         <div className="cards grid grid-cols-3 grid-rows-2 gap-[40px] mb-[40px]">
@@ -51,14 +62,14 @@ const FavoritesContent = () => {
             favorites={false}
             img={product1}
             rating={2}
-          />{" "}
+          />
           <Card
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             price="139,99"
             favorites={false}
             img={product1}
             rating={2}
-          />{" "}
+          />
           <Card
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             price="139,99"
@@ -68,7 +79,14 @@ const FavoritesContent = () => {
           />
         </div>
         <div className="flex justify-center mb-[40px]">
-          <Button className="bg-[#F3F2F1] text-[#606060]">Показать ещё</Button>
+          <Button
+            type="text-btn"
+            accent="greyscale"
+            size="m"
+            className="p-[8px] w-[157px] justify-center items-center"
+          >
+            <Text size="s"> Показать ещё</Text>
+          </Button>
         </div>
         <div className="flex justify-center">
           <button className="cursor-pointer p-[8px]">
