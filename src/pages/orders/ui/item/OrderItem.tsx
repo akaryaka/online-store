@@ -24,8 +24,8 @@ const OrderItem = () => {
           <div className="flex items-center gap-[24px]">
             <div className="price text-[24px] leading-[150%]">3 006,83 ₽</div>
             <Button
-              leftIcon
-              icon={<CalendarIcon />}
+              size="m"
+              leftIcon={<CalendarIcon />}
               accent="secondary"
               type="text-btn"
               className="w-[200px] flex justify-start items-center gap-[16px] p-[8px]"

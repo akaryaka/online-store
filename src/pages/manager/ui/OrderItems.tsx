@@ -419,6 +419,7 @@ const OrderItems = () => {
           <div className="flex gap-[10px] mb-[60px]">
             <OrderCounterBtn
               size="m"
+              type="text-btn"
               dateSize="s"
               countSize="xs"
               date="Усть-Ижма"

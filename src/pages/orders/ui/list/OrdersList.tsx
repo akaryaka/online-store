@@ -25,8 +25,8 @@ const OrdersList = () => {
             <div className="flex items-center gap-[24px]">
               <div className="price text-[24px] leading-[150%]">3 006,83 ₽</div>
               <Button
-                leftIcon
-                icon={<CalendarIcon />}
+                leftIcon={<CalendarIcon />}
+                size="m"
                 accent="secondary"
                 type="text-btn"
                 className="w-[200px] flex justify-start items-center gap-[16px] p-[8px]"
@@ -43,10 +43,10 @@ const OrdersList = () => {
           </div>
           <div className="flex justify-center mb-[40px]">
             <Button
+              size="m"
               type="text-btn"
               accent="greyscale"
-              leftIcon
-              icon={<EyeIcon />}
+              leftIcon={<EyeIcon />}
               className="flex gap-[8px] p-[8px]"
             >
               <span>Просмотреть заказ</span>

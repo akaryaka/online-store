@@ -64,6 +64,7 @@ const ProductReviewsList = () => {
             sd
           </textarea>
           <Button
+            size="m"
             accent="primaryDisabled"
             type="text-btn"
             className="w-[188px] justify-center p-[8px]"

@@ -90,8 +90,7 @@ const ProductInfo = () => {
               type="text-btn"
               accent="primary"
               size="l"
-              icon={<ShoppingCart width="32px" height="32px" fill="#fff" />}
-              leftIcon={true}
+              leftIcon={<ShoppingCart width="32px" height="32px" fill="#fff" />}
               className="w-[100%] justify-start p-[14px_16px] gap-[90px] items-center mb-[8px]"
             >
               <span className="text-[24px] leading-[150%]">В корзину</span>
