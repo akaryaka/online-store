@@ -7,6 +7,7 @@ import CloseIcon from "@/widgets/icons/CloseIcon";
 import EyeOff from "@/widgets/icons/EyeOff";
 import ModalInput from "@/widgets/modal";
 import TextField from "@/shared/ui/textField";
+import Text from "@/shared/ui/text";
 
 const LoginBtn = () => {
   const [modalDisplay, setModalDisplay] = useState("hidden");
@@ -43,9 +44,8 @@ const LoginBtn = () => {
       <Button
         clickEvent={modalOpen}
         accent="primary"
-        rightIcon
         size="m"
-        icon={<LogInIcon />}
+        rightIcon={<LogInIcon />}
         type="text-btn"
         className="w-[157px] items-center justify-end p-[8px] gap-[38px]"
       >
@@ -75,17 +75,25 @@ const LoginBtn = () => {
 
           <TextField
             style={{ caretColor: "#fff" }}
-            className="mb-[32px] h-[auto] text-[24px]  text-[#414141] focus:shadow-[4px_8px_16px_rgba(112,192,91,0.2)] active:shadow-[4px_8px_16px_rgba(112,192,91,0.2)]"
+            className="mb-[32px] h-[auto] text-[24px] text-[#414141]"
             id="modal-signin-input"
             placeholder="8-800-555 3535"
           />
-          <Button className="text-[24px] leading-[150%] text-[#FF6633] p-[16px] bg-[#FCD5BA] w-[100%] mb-[32px]">
+          <Button
+            size="l"
+            accent="primaryDisabled"
+            type="text-btn"
+            className="text-[24px] leading-[150%] justify-center items-center p-[16px] w-[100%] mb-[32px]"
+          >
             Вход
           </Button>
           <div className="flex justify-between items-center pr-[16px]">
             <Button
+              type="text-btn"
+              size="m"
+              accent="default"
               clickEvent={signUpOpen}
-              className="w-[121px] border text-[#70C05B] border-[#70C05B] w-[121px] text-center"
+              className="w-[121px] items-center justify-center border text-[#70C05B] border-[#70C05B] text-center"
             >
               Регистрация
             </Button>
@@ -158,12 +166,22 @@ const LoginBtn = () => {
               >
                 Пол
               </label>
-              <div className="w-[100%] p-[4px] bg-[#F3F2F1] rounded-[4px]">
-                <Button className="bg-[#70C05B] w-[50%] text-[#fff]">
-                  Мужской
+              <div className="w-[100%] flex p-[4px] bg-[#F3F2F1] rounded-[4px]">
+                <Button
+                  size="s"
+                  type="text-btn"
+                  accent="secondary"
+                  className="w-[50%] flex justify-center items-center"
+                >
+                  <Text size="xs">Мужской</Text>
                 </Button>
-                <Button className="w-[50%] text-[12px] text-[#414141]">
-                  Женский
+                <Button
+                  size="s"
+                  type="text-btn"
+                  accent="greyscale"
+                  className="w-[50%] flex justify-center items-center"
+                >
+                  <Text size="xs">Женский</Text>
                 </Button>
               </div>
             </div>
@@ -190,14 +208,22 @@ const LoginBtn = () => {
             </span>
           </div>
           <div className="flex justify-center">
-            <Button className="text-[24px] w-[260px] leading-[150%] text-[#FF6633] p-[16px] bg-[#FCD5BA] w-[100%] mb-[32px]">
-              Продолжить
+            <Button
+              type="text-btn"
+              size="l"
+              accent="primaryDisabled"
+              className="text-[24px] flex justify-center items-center w-[260px] leading-[150%] p-[16px] mb-[32px]"
+            >
+              <Text size="l">Продолжить</Text>
             </Button>
           </div>
           <div className="flex justify-center items-center pr-[16px]">
             <Button
               clickEvent={loginOpen}
-              className="w-[121px] border text-[#70C05B] border-[#70C05B] w-[121px] text-center"
+              type="text-btn"
+              size="m"
+              accent="default"
+              className="w-[121px] flex justify-center items-center"
             >
               Вход
             </Button>
