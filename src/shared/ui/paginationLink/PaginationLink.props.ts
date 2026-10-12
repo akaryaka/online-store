@@ -1,7 +1,7 @@
-import type { DetailedHTMLProps, LinkHTMLAttributes } from "react";
+import type { DetailedHTMLProps, HTMLAttributes } from "react";
 
 export interface PaginationLinkProps extends DetailedHTMLProps<
-  LinkHTMLAttributes<HTMLLinkElement>,
+  HTMLAttributes<HTMLLinkElement>,
   HTMLLinkElement
 > {
   title: number;
