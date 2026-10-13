@@ -4,7 +4,7 @@ import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
 import product4 from "@images/product4.png";
-import CardSale from "@/widgets/card/CardSale";
+import Card from "@/widgets/card/Card";
 
 const salesCards = [
   {
@@ -62,7 +62,8 @@ const HomeSales = () => {
         <div className="grid gap-[40px] grid-cols-4">
           {salesCards.map((card) => {
             return (
-              <CardSale
+              <Card
+                type="sale"
                 key={card.id}
                 price={card.price}
                 priceSales={card.priceSales}

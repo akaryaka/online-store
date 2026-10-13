@@ -11,6 +11,7 @@ const AllBoughtBeforeList = () => {
             {boughtBefore.map((card) => {
               return (
                 <Card
+                  type="product"
                   price={card.price}
                   img={card.img}
                   favorites={card.favorites}

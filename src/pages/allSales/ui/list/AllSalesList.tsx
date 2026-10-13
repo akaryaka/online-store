@@ -1,6 +1,7 @@
 import Container from "@/widgets/container/Container";
-import CardSale from "@/widgets/card/CardSale";
+// import CardSale from "@/widgets/card/CardSale";
 import { salesCards } from "./models/salesCards";
+import Card from "@/widgets/card/Card";
 
 const AllSalesList = () => {
   return (
@@ -10,7 +11,8 @@ const AllSalesList = () => {
           <div className="grid gap-[40px] grid-cols-4">
             {salesCards.map((card) => {
               return (
-                <CardSale
+                <Card
+                  type="sale"
                   key={card.id}
                   price={card.price}
                   priceSales={card.priceSales}
