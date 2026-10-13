@@ -1,5 +1,5 @@
 import CheckIcon from "@/widgets/icons/aboutPage/CheckIcon";
-import type { AboutItemProps } from "./models/AboutItemProps";
+import type { AboutItemProps } from "../models/AboutItemProps";
 
 const AboutItem = ({ title, desc }: AboutItemProps) => {
   return (
