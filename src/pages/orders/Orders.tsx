@@ -13,7 +13,9 @@ const Orders = () => {
             <div className="mb-[24px]">
               <Crumbs page="Заказы" />
             </div>
-            <Title className="mb-[60px]">Заказы</Title>
+            <Title size="xl" className="mb-[60px]">
+              Заказы
+            </Title>
             <OrdersList />
           </Container>
         </div>

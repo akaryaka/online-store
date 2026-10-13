@@ -1,10 +1,10 @@
-import { Link } from "react-router";
-import ArrowIcon from "@/widgets/icons/ArrowIcon";
 import Card from "@/widgets/card/Card";
 import product2 from "@images/product2.png";
 import product4 from "@images/product4.png";
 import product5 from "@images/product5.png";
 import product6 from "@images/product6.png";
+import Title from "@/shared/ui/title";
+import LinkHome from "../link/LinkHome";
 
 const boughtBefore = [
   {
@@ -46,11 +46,8 @@ const HomeBoughtBefore = () => {
     <>
       <div className="pt-[80px] mb-[120px] ml-[auto] mr-[auto]">
         <header className="flex justify-between items-center mb-[60px]">
-          <h2 className="text-[36px] font-bold">Покупали раньше</h2>
-          <Link className="flex gap-[29px]" to="/allboughtbefore">
-            <span>Все покупки</span>
-            <ArrowIcon />
-          </Link>
+          <Title size="m">Покупали раньше</Title>
+          <LinkHome title="Все покупки" path="/allboughtbefore" />
         </header>
         <div className="grid gap-[40px] grid-cols-4">
           {boughtBefore.map((card) => {

@@ -1,10 +1,10 @@
-import { Link } from "react-router";
-import ArrowIcon from "@/widgets/icons/ArrowIcon";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
 import product4 from "@images/product4.png";
 import product5 from "@images/product5.png";
 import Card from "@/widgets/card/Card";
+import Title from "@/shared/ui/title";
+import LinkHome from "../link/LinkHome";
 
 const newProducts = [
   {
@@ -46,11 +46,8 @@ const HomeNewProducts = () => {
     <>
       <div className="pt-[80px] ml-[auto] mr-[auto]">
         <header className="flex justify-between items-center mb-[60px]">
-          <h2 className="text-[36px] font-bold">Новинки</h2>
-          <Link className="flex gap-[29px]" to="/allnewproducts">
-            <span>Все новинки</span>
-            <ArrowIcon />
-          </Link>
+          <Title size="m">Новинки</Title>
+          <LinkHome title="Все новинки" path="/allnewproducts" />
         </header>
         <div className="grid gap-[40px] grid-cols-4">
           {newProducts.map((card) => {

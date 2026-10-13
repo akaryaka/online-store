@@ -1,18 +1,15 @@
-import ArrowIcon from "@/widgets/icons/ArrowIcon";
-import { Link } from "react-router";
 import Button from "@/shared/ui/button";
 import { articles } from "./models/articles";
+import Title from "@/shared/ui/title";
+import LinkHome from "../link/LinkHome";
 
 const HomeArticles = () => {
   return (
     <>
       <div>
         <header className="flex justify-between items-center mb-[60px]">
-          <h2 className="text-[36px] font-bold">Статьи</h2>
-          <Link className="flex gap-[29px]" to="/allarticles">
-            <span>Все статьи</span>
-            <ArrowIcon />
-          </Link>
+          <Title size="m">Статьи</Title>
+          <LinkHome title="Все статьи" path="/allarticles" />
         </header>
         <div className="flex gap-[40px]">
           {articles.map((article) => {
