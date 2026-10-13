@@ -4,31 +4,11 @@ import CatalogBtn from "./ui/catalogBtn/CatalogBtn";
 import HeaderSearch from "./ui/search/HeaderSearch";
 import HeaderMenu from "./ui/menu/HeaderMenu";
 import LoginBtn from "./ui/loginBtn/loginBtn";
-
-// для смены содержимого хэдера при смене страниц
-// import React from "react";
-// import { useLocation } from "react-router-dom";
-
-// function Header() {
-//   const location = useLocation();
-
-//   return (
-//     <header className="site-header">
-//       {location.pathname === "/" && (
-//         <h1>Главная страница: Добро пожаловать!</h1>
-//       )}
-//       {location.pathname === "/about" && <h1>О нашей компании</h1>}
-//       {location.pathname === "/contact" && <h1>Свяжитесь с нами</h1>}
-
-//       {/* Универсальный элемент для всех страниц */}
-//       <nav>Логотип | Меню</nav>
-//     </header>
-//   );
-// }
-
-// export default Header;
+import { useLocation } from "react-router";
 
 export function Header() {
+  const location = useLocation();
+
   return (
     <>
       <div>
@@ -40,7 +20,7 @@ export function Header() {
                 <CatalogBtn />
                 <HeaderSearch />
                 <HeaderMenu />
-                <LoginBtn />
+                {location.pathname === "/" && <LoginBtn />}
               </div>
             </Container>
           </header>
