@@ -16,7 +16,7 @@ const AllArticles = () => {
           </div>
           <div className="mb-[60px]">
             <Container>
-              <Title>Все статьи</Title>
+              <Title size="xl">Все статьи</Title>
             </Container>
           </div>
           <AllArticlesList />

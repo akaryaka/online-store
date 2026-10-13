@@ -18,7 +18,9 @@ const Category = () => {
           </div>
           <div>
             <Container>
-              <Title className="mb-[60px]">Молоко, сыр, яйцо</Title>
+              <Title size="l" className="mb-[60px]">
+                Молоко, сыр, яйцо
+              </Title>
               <CategoryTags />
               <div className="flex gap-[40px] justify-between">
                 <CategorySidebar />

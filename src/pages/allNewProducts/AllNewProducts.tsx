@@ -16,7 +16,7 @@ const AllNewProducts = () => {
           </div>
           <div className="mb-[60px]">
             <Container>
-              <Title>Все новинки</Title>
+              <Title size="xl">Все новинки</Title>
             </Container>
           </div>
           <AllNewProductsList />

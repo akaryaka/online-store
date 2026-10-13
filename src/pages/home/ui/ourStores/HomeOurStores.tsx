@@ -6,12 +6,15 @@ import {
   YMapDefaultSchemeLayer,
   YMapMarker,
 } from "./models/map";
+import Title from "@/shared/ui/title";
 
 const HomeOurStores = () => {
   return (
     <>
       <div className="mb-[120px]">
-        <h2 className="text-[36px] font-bold mb-[40px]">Наши магазины</h2>
+        <Title size="m" className="mb-[40px]">
+          Наши магазины
+        </Title>
         <div className="flex gap-[24px] mb-[24px]">
           {buttons.map((button) => {
             return (

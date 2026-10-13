@@ -16,7 +16,7 @@ const AllBoughtBefore = () => {
           </div>
           <div className="mb-[60px]">
             <Container>
-              <Title>Все покупки</Title>
+              <Title size="xl">Все покупки</Title>
             </Container>
           </div>
           <AllBoughtBeforeList />

@@ -9,7 +9,7 @@ const Page_404 = () => {
         <div className="pt-[24px] pb-[80px]">
           <Container>
             <div className="flex items-center justify-center h-[75vh]">
-              <Title>Страница не найдена</Title>
+              <Title size="xl">Страница не найдена</Title>
             </div>
           </Container>
         </div>

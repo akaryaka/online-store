@@ -16,7 +16,9 @@ const Catalog = () => {
         </div>
         <div className="pb-[80px]">
           <Container>
-            <Title className="mb-[60px]">Каталог</Title>
+            <Title size="xl" className="mb-[60px]">
+              Каталог
+            </Title>
             <div className="grid grid-cols-4 grid-rows-4 gap-[40px]">
               {catalogList.map((item) => {
                 return (

@@ -13,7 +13,9 @@ const AboutHeader = () => {
         <Container>
           <div className="flex items-center pl-[30px]">
             <div>
-              <Title className="mb-[16px]">О компании</Title>
+              <Title size="xl" className="mb-[16px]">
+                О компании
+              </Title>
               <p className="w-[580px] text-[24px] leading-[150%] text-[#FF6633] font-bold">
                 Мы непрерывно развиваемся и <br /> работаем над
                 совершенствованием сервиса, <br /> заботимся о наших клиентах,{" "}

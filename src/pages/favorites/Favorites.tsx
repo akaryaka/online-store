@@ -17,7 +17,9 @@ const Favorites = () => {
           </div>
           <div>
             <Container>
-              <Title className="mb-[60px]">Избранное</Title>
+              <Title size="xl" className="mb-[60px]">
+                Избранное
+              </Title>
               <div className="flex gap-[40px] justify-between">
                 <FavoritesSidebar />
                 <FavoritesContent />

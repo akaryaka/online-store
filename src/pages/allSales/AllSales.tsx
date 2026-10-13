@@ -16,7 +16,7 @@ const AllSales = () => {
           </div>
           <div className="mb-[60px]">
             <Container>
-              <Title>Все акции</Title>
+              <Title size="xl">Все акции</Title>
             </Container>
           </div>
           <AllSalesList />

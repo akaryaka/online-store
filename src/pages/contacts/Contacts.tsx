@@ -15,7 +15,9 @@ const Contacts = () => {
             <div className="p-[24px_0px]">
               <Crumbs page="Контакты" />
             </div>
-            <Title className="mb-[40px]">Контакты</Title>
+            <Title size="xl" className="mb-[40px]">
+              Контакты
+            </Title>
             <ContactsItems />
             <ContactsStores />
             <ContactsMap />
