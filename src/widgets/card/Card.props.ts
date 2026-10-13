@@ -3,6 +3,7 @@ export interface Props {
   priceSales?: string;
   title: string;
   img: string;
+  type: "product" | "sale" | "balance" | string;
   rating: number;
   favorites: boolean;
 }
