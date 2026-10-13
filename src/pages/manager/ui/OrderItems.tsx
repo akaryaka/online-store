@@ -11,7 +11,7 @@ import AlertCircleIcon from "@/widgets/icons/AlertCircleIcon";
 import DeliveryIcon from "@/widgets/icons/DeliveryIcon";
 import BaqIcon from "@/widgets/icons/BaqIcon";
 import UploadIcon from "@/widgets/icons/UploadIcon";
-import Card from "@/widgets/card/CardSale";
+import Card from "@/widgets/card/Card";
 import Phone from "@shared/ui/phone";
 import UserAccount from "@/shared/ui/userAccount";
 import Button from "@/shared/ui/button";
@@ -79,6 +79,7 @@ const OrderItems = () => {
           </header>
           <div className="flex gap-[10px] mb-[60px]">
             <OrderCounterBtn
+              type=""
               size="m"
               dateSize="s"
               countSize="xs"
@@ -88,6 +89,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type=""
               size="m"
               dateSize="s"
               countSize="xs"
@@ -249,6 +251,7 @@ const OrderItems = () => {
           <div className="flex gap-[10px] mb-[60px]">
             <div className="flex gap-[10px] mb-[60px]">
               <OrderCounterBtn
+                type=""
                 size="m"
                 dateSize="s"
                 countSize="xs"
@@ -258,6 +261,7 @@ const OrderItems = () => {
                 className="p-[8px] gap-[8px]"
               />
               <OrderCounterBtn
+                type=""
                 size="m"
                 dateSize="s"
                 countSize="xs"
@@ -522,6 +526,7 @@ const OrderItems = () => {
             </div>
             <div className="grid grid-cols-4 gap-[40px] mb-[40px]">
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -529,6 +534,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -536,6 +542,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -543,6 +550,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -573,6 +581,7 @@ const OrderItems = () => {
           </header>
           <div className="flex gap-[4px] mb-[60px]">
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -582,6 +591,7 @@ const OrderItems = () => {
               className="gap-[8px] p-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -591,6 +601,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -600,6 +611,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -609,6 +621,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -618,6 +631,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -627,6 +641,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -636,6 +651,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -645,6 +661,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -702,6 +719,7 @@ const OrderItems = () => {
             </div>
             <div className="grid grid-cols-4 gap-[40px]">
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -709,6 +727,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -716,6 +735,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -723,6 +743,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -779,6 +800,7 @@ const OrderItems = () => {
             </div>
             <div className="grid grid-cols-4 gap-[40px] mb-[40px]">
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -786,6 +808,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -793,6 +816,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -800,6 +824,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -867,6 +892,7 @@ const OrderItems = () => {
             </div>
             <div className="grid grid-cols-4 gap-[40px] mb-[40px]">
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -874,6 +900,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -881,6 +908,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}
@@ -888,6 +916,7 @@ const OrderItems = () => {
                 favorites={false}
               />
               <Card
+                type="product"
                 price={""}
                 title={""}
                 img={""}

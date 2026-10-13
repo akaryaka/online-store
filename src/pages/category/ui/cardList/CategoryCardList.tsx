@@ -4,7 +4,6 @@ import ResetIcon from "@/widgets/icons/resetIcon/ResetIcon";
 import Button from "@/shared/ui/button/Button";
 import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
-import CardSale from "@/widgets/card/CardSale";
 import CategoryPagination from "../pagination/CategoryPagination";
 import Text from "@/shared/ui/text";
 
@@ -45,13 +44,15 @@ const CategoryCardList = () => {
         </div>
         <div className="cards grid grid-cols-3 grid-rows-2 gap-[40px] mb-[40px]">
           <Card
+            type="product"
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             favorites={false}
             price="139,99"
             img={product1}
             rating={2}
           />
-          <CardSale
+          <Card
+            type="sale"
             title="Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное ..."
             favorites={false}
             price="140,50"
@@ -59,7 +60,8 @@ const CategoryCardList = () => {
             img={product1}
             rating={2}
           />
-          <CardSale
+          <Card
+            type="sale"
             title="Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное ..."
             favorites={false}
             price="140,50"
@@ -68,6 +70,7 @@ const CategoryCardList = () => {
             rating={2}
           />
           <Card
+            type="product"
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             favorites={false}
             price="139,99"
@@ -75,6 +78,7 @@ const CategoryCardList = () => {
             rating={2}
           />
           <Card
+            type="product"
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             favorites={false}
             price="139,99"
@@ -82,6 +86,7 @@ const CategoryCardList = () => {
             rating={2}
           />
           <Card
+            type="product"
             title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
             favorites={false}
             price="139,99"

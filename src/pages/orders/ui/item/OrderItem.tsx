@@ -35,13 +35,42 @@ const OrderItem = () => {
           </div>
         </header>
         <div className="grid grid-cols-4 grid-rows-1 gap-[40px] mb-[40px]">
-          <Card img={product1} rating={2} />
-          <Card img={product1} rating={2} />
-          <Card img={product1} rating={2} />
-          <Card img={product1} rating={2} />
+          <Card
+            favorites
+            price=""
+            title=""
+            type="balance"
+            img={product1}
+            rating={2}
+          />
+          <Card
+            favorites
+            price=""
+            title=""
+            type="product"
+            img={product1}
+            rating={2}
+          />
+          <Card
+            favorites
+            price=""
+            title=""
+            type="product"
+            img={product1}
+            rating={2}
+          />
+          <Card
+            favorites
+            price=""
+            title=""
+            type="product"
+            img={product1}
+            rating={2}
+          />
         </div>
         <div className="flex justify-center mb-[40px]">
           <Button
+            size="m"
             type="text-btn"
             accent="greyscale"
             leftIcon

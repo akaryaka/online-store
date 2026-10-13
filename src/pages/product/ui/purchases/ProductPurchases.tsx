@@ -1,4 +1,4 @@
-import Card from "@/widgets/card/CardSale";
+import Card from "@/widgets/card/Card";
 import product1 from "@images/product1.png";
 import product2 from "@images/product2.png";
 import product3 from "@images/product3.png";
@@ -12,10 +12,38 @@ const ProductPurchases = () => {
           <h2 className="text-[36px] font-bold">С этим товаров покупают</h2>
         </header>
         <div className="grid gap-[40px] grid-cols-4">
-          <Card img={product1} rating={2} />
-          <Card img={product2} rating={3} />
-          <Card img={product3} rating={5} />
-          <Card img={product4} rating={4} />
+          <Card
+            img={product1}
+            rating={2}
+            price={""}
+            title={""}
+            type={""}
+            favorites={false}
+          />
+          <Card
+            img={product2}
+            rating={3}
+            price={""}
+            title={""}
+            type={""}
+            favorites={false}
+          />
+          <Card
+            img={product3}
+            rating={5}
+            price={""}
+            title={""}
+            type={""}
+            favorites={false}
+          />
+          <Card
+            img={product4}
+            rating={4}
+            price={""}
+            title={""}
+            type={""}
+            favorites={false}
+          />
         </div>
       </div>
     </>

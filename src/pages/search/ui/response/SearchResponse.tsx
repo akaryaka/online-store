@@ -1,5 +1,4 @@
 import Card from "@/widgets/card/Card";
-import CardSale from "@/widgets/card/CardSale";
 import product1 from "@images/product1.png";
 
 const SearchResponse = () => {
@@ -7,6 +6,7 @@ const SearchResponse = () => {
     <>
       <div className="grid grid-cols-4 gap-[40px]">
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -14,6 +14,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -21,13 +22,15 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
           img={product1}
           rating={2}
         />
-        <CardSale
+        <Card
+          type="sale"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -36,6 +39,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -43,6 +47,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -50,6 +55,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -57,6 +63,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -64,6 +71,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -71,6 +79,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -78,6 +87,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -85,6 +95,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -92,6 +103,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -99,6 +111,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -106,6 +119,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"
@@ -113,6 +127,7 @@ const SearchResponse = () => {
           rating={2}
         />
         <Card
+          type="product"
           favorites={false}
           title="Г/Ц Блинчики с мясом вес, Россия"
           price="50,50"

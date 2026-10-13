@@ -36,10 +36,40 @@ const OrdersList = () => {
             </div>
           </header>
           <div className="grid grid-cols-4 grid-rows-1 gap-[40px] mb-[40px]">
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
+            <Card
+              favorites
+              price="77,99"
+              title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
+              type="balance"
+              balance="1"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price="77,99"
+              title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
+              type="balance"
+              balance="2"
+              img={product1}
+              rating={2}
+            />{" "}
+            <Card
+              favorites
+              price="77,99"
+              title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
+              type="balance"
+              img={product1}
+              rating={2}
+            />{" "}
+            <Card
+              favorites
+              price="77,99"
+              title="Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»"
+              type="balance"
+              img={product1}
+              rating={2}
+            />
           </div>
           <div className="flex justify-center mb-[40px]">
             <Button
@@ -69,6 +99,7 @@ const OrdersList = () => {
             <div className="flex items-center gap-[24px]">
               <div className="price text-[24px] leading-[150%]">1 006,00 ₽</div>
               <Button
+                size="m"
                 type="text-btn"
                 accent="primary"
                 className="w-[200px] flex justify-center items-center p-[8px]"
@@ -78,10 +109,38 @@ const OrdersList = () => {
             </div>
           </header>
           <div className="grid grid-cols-4 grid-rows-1 gap-[40px] mb-[40px]">
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
           </div>
         </div>
         <div className="order mb-[120px]">
@@ -100,6 +159,7 @@ const OrdersList = () => {
             <div className="flex items-center gap-[24px]">
               <div className="price text-[24px] leading-[150%]">1 321,20 ₽</div>
               <Button
+                size="m"
                 type="text-btn"
                 accent="primary"
                 className="w-[200px] flex justify-center items-center p-[8px]"
@@ -109,10 +169,38 @@ const OrdersList = () => {
             </div>
           </header>
           <div className="grid grid-cols-4 grid-rows-1 gap-[40px] mb-[40px]">
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
           </div>
         </div>
         <div className="order">
@@ -131,6 +219,7 @@ const OrdersList = () => {
             <div className="flex items-center gap-[24px]">
               <div className="price text-[24px] leading-[150%]">1 321,20 ₽</div>
               <Button
+                size="m"
                 type="text-btn"
                 accent="primary"
                 className="w-[200px] flex justify-center items-center p-[8px]"
@@ -140,14 +229,47 @@ const OrdersList = () => {
             </div>
           </header>
           <div className="grid grid-cols-4 grid-rows-1 gap-[40px] mb-[40px]">
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
-            <Card img={product1} rating={2} />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
+            <Card
+              favorites
+              price=""
+              title=""
+              type="product"
+              img={product1}
+              rating={2}
+            />
           </div>
         </div>
         <div className="flex justify-center">
-          <Button type="text-btn" accent="greyscale" className="flex p-[8px]">
+          <Button
+            size="m"
+            type="text-btn"
+            accent="greyscale"
+            className="flex p-[8px]"
+          >
             Показать ещё
           </Button>
         </div>
