@@ -1,5 +1,6 @@
 import { frame, motion, useSpring } from "motion/react"
-import { RefObject, useEffect, useRef } from "react"
+import type { RefObject } from "react"
+import { useEffect, useRef } from "react"
 
 export default function Drag() {
     const ref = useRef<HTMLDivElement>(null)
@@ -8,7 +9,7 @@ export default function Drag() {
     return <motion.div ref={ref} style={{ ...ball, x, y }} />
 }
 
-const spring = { damping: 3, stiffness: 50, restDelta: 0.001 }
+const spring = { damping: 20, stiffness: 100, restDelta: 0.001 }
 
 export function useFollowPointer(ref: RefObject<HTMLDivElement | null>) {
     const x = useSpring(0, spring)
@@ -35,13 +36,9 @@ export function useFollowPointer(ref: RefObject<HTMLDivElement | null>) {
     return { x, y }
 }
 
-/**
- * ==============   Styles   ================
- */
-
 const ball = {
-    width: 100,
-    height: 100,
-    backgroundColor: "var(--hue-1)",
+    width: 30,
+    height: 30,
+    backgroundColor: "#FF6633",
     borderRadius: "50%",
 }
