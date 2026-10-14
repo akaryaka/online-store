@@ -1,26 +1,16 @@
 ## tasks
 
 - анимации
-- - курсор https://motion.dev/examples/react-follow-pointer-with-spring\
-- - header https://motion.dev/ui/components/shrink-header
+- - header https://motion.dev/ui/components/shrink-header, только сделать плавную обрезку по размеру контейнера
 - - hero https://motion.dev/ui/hero-sections
-- - https://gsap.com/docs/v3/Plugins/ScrollSmoother/
+- - анимации появления блоков motion
 
 ## Переиспользуемые компоненты
 
 - Button
-- - size
-- - - l
-- - - m
-- - - s
-- - accent
-- - - primary
-- - - greyscale
-- - - error
-- - - secondary
-- - icon
-- - - right
-- - - left
+- - size(l,ml,s)
+- - accent(primary, greyscale, error, secondary)
+- - icon(right, left)
 - - type
 - - - text-btn
 - - - icon-btn
