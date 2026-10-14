@@ -6,6 +6,9 @@ import type { Props } from "./Card.props";
 import Sales from "@/shared/ui/sales";
 import Text from "@/shared/ui/text";
 import ShoppingCart from "../icons/ShoppingCart";
+import { Skeleton } from "@mui/material";
+import { useEffect,useState } from "react";
+
 
 const Card = ({
   price = "0",
@@ -17,9 +20,16 @@ const Card = ({
   rating = 3,
   favorites,
 }: Props) => {
+  const [loading, setLoading] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(true), 1000)
+    return () => clearTimeout(timer)
+  }, [])
+
   return (
     <>
-      <div className="flex flex-col hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
+      { loading ? (<div className="flex flex-col hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
         <header className="relative">
           <img src={img} alt="cacke" />
           {type === "balance" && (
@@ -85,7 +95,10 @@ const Card = ({
             В корзину
           </Button>
         </div>
-      </div>
+      </div> )
+      : 
+      <Skeleton variant="rectangular" width={210} height={118} />
+      }
     </>
   );
 };
