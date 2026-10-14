@@ -15,6 +15,7 @@ import AllBoughtBefore from "@/pages/allBoughtBefore";
 import AllNewProducts from "@/pages/allNewProducts";
 import AllSales from "@/pages/allSales";
 import AllArticles from "@/pages/allArticles";
+import Article from "@/pages/article/Article";
 
 export const routes = [
   { id: 1, path: "/", element: Home },
@@ -45,5 +46,6 @@ export const routes = [
   { id: 15, path: "/contacts", element: Contacts },
   // для теста, исправлю)
   { id: 16, path: "/search", element: Search },
-  { id: 17, path: "*", element: Page_404 },
+  { id: 17, path: "/article", element: Article },
+  { id: 18, path: "*", element: Page_404 },
 ];

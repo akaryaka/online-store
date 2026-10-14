@@ -2,6 +2,7 @@ import Button from "@/shared/ui/button";
 import { articles } from "./models/articles";
 import Title from "@/shared/ui/title";
 import LinkHome from "../link/LinkHome";
+import { Link } from "react-router";
 
 const HomeArticles = () => {
   return (
@@ -39,7 +40,7 @@ const HomeArticles = () => {
                     accent="secondaryDisabled"
                     className="w-[150px] justify-center mt-[auto] p-[8px_16px] text-[16px] leading-[150%]"
                   >
-                    Подробнее
+                    <Link to='/article'>Подробнее</Link>
                   </Button>
                 </div>
               </div>
