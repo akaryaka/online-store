@@ -34,14 +34,13 @@ const HomeArticles = () => {
                   <div className="text-[16px] leading-[150%] text-[#414141]">
                     {article.desc}
                   </div>
-                  <Button
-                    type="text-btn"
-                    size="m"
-                    accent="secondaryDisabled"
-                    className="w-[150px] justify-center mt-[auto] p-[8px_16px] text-[16px] leading-[150%]"
+                  <Link
+                    target="_blank"
+                    className="w-[150px] justify-center mt-[auto] p-[8px_16px] rounded-[4px] text-center bg-[#E5FFDE] text-[#70C05B] hover:bg-[#70C05B] hover:text-[#fff] hover:shadow-[4px_8px_16px_rgba(112,192,91,0.2)] active:shadow-[inset_0px_2px_0px_rgba(0,0,0,0.2)]"
+                    to="/article"
                   >
-                    <Link to='/article'>Подробнее</Link>
-                  </Button>
+                    Подробнее
+                  </Link>
                 </div>
               </div>
             );
