@@ -5,6 +5,7 @@ import HeaderSearch from "./ui/search/HeaderSearch";
 import HeaderMenu from "./ui/menu/HeaderMenu";
 import LoginBtn from "./ui/loginBtn/loginBtn";
 import { useLocation } from "react-router";
+import UserAccount from "@/shared/ui/userAccount";
 
 export function Header() {
   const location = useLocation();
@@ -20,7 +21,11 @@ export function Header() {
                 <CatalogBtn />
                 <HeaderSearch />
                 <HeaderMenu />
-                {location.pathname === "/" && <LoginBtn />}
+                {location.pathname !== "/ordersmanager" && <LoginBtn />}
+
+                {location.pathname === "/ordersmanager" && (
+                  <UserAccount name="Менеджер" />
+                )}
               </div>
             </Container>
           </header>

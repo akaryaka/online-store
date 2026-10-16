@@ -8,6 +8,7 @@ import EyeOff from "@/widgets/icons/EyeOff";
 import ModalInput from "@/widgets/modal";
 import TextField from "@/shared/ui/textField";
 import Text from "@/shared/ui/text";
+import { Link } from "react-router";
 
 const LoginBtn = () => {
   const [modalDisplay, setModalDisplay] = useState("hidden");
@@ -100,6 +101,7 @@ const LoginBtn = () => {
             <a href="#" className="text-[#606060] text-[12px] leading-[150%]">
               Забыли пароль?
             </a>
+            <Link to="/ordersmanager">админка, заказы</Link>
           </div>
         </div>
         <div

@@ -1,6 +1,10 @@
 import { Link } from "react-router";
 import { menu } from "../../models/menu";
 
+interface HeaderMenuProps {
+  active: boolean;
+}
+
 const HeaderMenu = () => {
   return (
     <>
@@ -9,6 +13,7 @@ const HeaderMenu = () => {
           <li key={item.id}>
             <Link
               className="flex flex-col gap-[8px] items-center text-[12px] hover:text-primary transition-all"
+              style={{}}
               to={item.link}
             >
               {<item.icon fill="currentColor" width="24px" height="24px" />}
