@@ -1,5 +1,14 @@
 import Checkbox from "@mui/material/Checkbox";
 import FavoritesIcon from "@/widgets/icons/FavoritesIcon";
+import cn from "classnames";
+import type { DetailedHTMLProps, HtmlHTMLAttributes } from "react";
+
+export interface Props extends DetailedHTMLProps<
+  HtmlHTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+> {
+  status: boolean;
+}
 
 const FavoriteCheckedIcon = () => {
   return (
@@ -22,9 +31,16 @@ const FavoriteCheckedIcon = () => {
 
 const label = { slotProps: { input: { "aria-label": "Checkbox demo" } } };
 
-export default function IconCheckboxes() {
+export default function IconCheckboxes({ status, className, ...props }: Props) {
   return (
-    <div>
+    <div
+      style={status ? { opacity: "1" } : { opacity: "0.5" }}
+      className={cn(
+        "w-[32px] h-[32px] flex justify-center items-center bg-[#F3F2F1] opacity-[0.5] p-[4px] rounded-[4px]",
+        className,
+        { ...props },
+      )}
+    >
       <Checkbox
         {...label}
         icon={<FavoritesIcon />}
