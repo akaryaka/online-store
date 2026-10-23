@@ -48,9 +48,9 @@ const LoginBtn = () => {
         size="m"
         rightIcon={<LogInIcon />}
         type="text-btn"
-        className="w-[157px] items-center justify-end p-[8px] gap-[38px]"
+        className="max-[1300px]:w-[40px] w-[157px] items-center justify-end p-[8px] gap-[38px]"
       >
-        Вход
+        <span className="max-[1300px]:hidden">Вход</span>
       </Button>
       <div
         className={`modal w-[100%] z-[1000] ${modalDisplay} fixed top-[0px] left-[0px] h-[100vh] bg-[#000] flex justify-center bg-[rgba(252,213,186,0.8)] items-center`}
@@ -227,7 +227,7 @@ const LoginBtn = () => {
               accent="default"
               className="w-[121px] flex justify-center items-center"
             >
-              Вход
+              <span>Вход</span>
             </Button>
           </div>
         </div>

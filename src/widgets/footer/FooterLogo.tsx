@@ -4,7 +4,7 @@ import { Link } from "react-router";
 const FooterLogo = () => {
   return (
     <>
-      <Link className="uppercase" to="/">
+      <Link className="max-[1300px]:mr-[40px]" to="/">
         <img src={logoFooter} alt="logo-footer" />
       </Link>
     </>

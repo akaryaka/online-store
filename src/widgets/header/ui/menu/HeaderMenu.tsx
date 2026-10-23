@@ -8,7 +8,7 @@ interface HeaderMenuProps {
 const HeaderMenu = () => {
   return (
     <>
-      <ul className="flex items-center gap-[24px] mr-[24px]">
+      <ul className="flex items-center gap-[24px] max-[1300px]:gap-[16px] mr-[24px] max-[1300px]:mr-[16px]">
         {menu.map((item) => (
           <li key={item.id}>
             <Link

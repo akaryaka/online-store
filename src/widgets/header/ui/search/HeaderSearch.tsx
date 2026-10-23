@@ -5,7 +5,10 @@ import { Link } from "react-router";
 const HeaderSearch = () => {
   return (
     <>
-      <TextField className="mr-[40px] w-[435px]" placeholder="Найти товар">
+      <TextField
+        className="mr-[40px] max-[1300px]:mr-[20px] w-[435px]"
+        placeholder="Найти товар"
+      >
         {/* временно */}
         <Link to="/search" className="cursor-pointer flex items-center">
           <SearchIcon />

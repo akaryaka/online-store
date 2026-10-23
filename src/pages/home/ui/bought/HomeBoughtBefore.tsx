@@ -49,7 +49,7 @@ const HomeBoughtBefore = () => {
           <Title size="m">Покупали раньше</Title>
           <LinkHome title="Все покупки" path="/allboughtbefore" />
         </header>
-        <div className="grid gap-[40px] grid-cols-4">
+        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3">
           {boughtBefore.map((card) => {
             return (
               <Card

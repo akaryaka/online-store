@@ -5,7 +5,7 @@ import FooterSocialLink from "./FooterSocialLink";
 const FooterSocials = () => {
   return (
     <>
-      <div className="social flex gap-[16px]">
+      <div className="social flex gap-[16px] max-[1300px]:mr-[24px]">
         <FooterSocialLink href="https://vk.ru/">
           <VkIcon />
         </FooterSocialLink>
