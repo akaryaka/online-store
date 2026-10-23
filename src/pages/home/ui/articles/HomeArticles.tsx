@@ -1,10 +1,10 @@
-import Button from "@/shared/ui/button";
-import { articles } from "./models/articles";
+import { articles } from "@/entities/articles/articles";
 import Title from "@/shared/ui/title";
 import LinkHome from "../link/LinkHome";
 import { Link } from "react-router";
 
 const HomeArticles = () => {
+  const articlesSlice = articles.slice(0, 3);
   return (
     <>
       <div>
@@ -13,7 +13,7 @@ const HomeArticles = () => {
           <LinkHome title="Все статьи" path="/allarticles" />
         </header>
         <div className="flex gap-[40px]">
-          {articles.map((article) => {
+          {articlesSlice.map((article) => {
             return (
               <div
                 key={article.id}
