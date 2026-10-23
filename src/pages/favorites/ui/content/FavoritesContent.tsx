@@ -40,7 +40,7 @@ const FavoritesContent = () => {
             img={product1}
             rating={2}
           />
-          <Card
+          {/* <Card
             type="sale"
             title="Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное..."
             price="140,50"
@@ -81,7 +81,7 @@ const FavoritesContent = () => {
             favorites={false}
             img={product1}
             rating={2}
-          />
+          /> */}
         </div>
         <div className="flex justify-center mb-[40px]">
           <Button

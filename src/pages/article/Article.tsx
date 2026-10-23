@@ -1,4 +1,5 @@
 import Layout from "@/app/layout";
+import BasicDatePicker from "@/shared/ui/lib/Calendar";
 import CheckboxCustom from "@/shared/ui/lib/CheckboxCustom";
 import IconCheckboxes from "@/shared/ui/lib/Favorites";
 import HalfRating from "@/shared/ui/lib/Rating";
@@ -8,46 +9,6 @@ import Title from "@/shared/ui/title";
 import Container from "@/widgets/container";
 import Crumbs from "@/widgets/crumbs";
 import article1 from "@images/article1.png";
-import article2 from "@images/article2.png";
-import article3 from "@images/article3.png";
-
-const articles = [
-  {
-    id: 1,
-    img: article1,
-    date: "05.03.2021",
-    title: "Режим использования масок и перчаток на территории магазинов",
-    desc: "Подробная информация о режимах использования масок и перчаток на территории магазинов 'ЛЕНТА'. Информация обновляется каждыйбудний день.",
-  },
-  {
-    id: 2,
-    img: article2,
-    date: "05.03.2021",
-    title: "Весеннее настроение для каждой",
-    desc: "8 Марта – это не просто Международный женский день, это ещё день тюльпанов, приятных сюрпризов и праздничных тёплых пожеланий.",
-  },
-  {
-    id: 3,
-    img: article3,
-    date: "22.02.2020",
-    title: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
-    desc: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
-  },
-  {
-    id: 4,
-    img: article3,
-    date: "22.02.2020",
-    title: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
-    desc: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
-  },
-  {
-    id: 5,
-    img: article3,
-    date: "22.02.2020",
-    title: "ЗОЖ или ФАСТФУД. А вы на чьей стороне? Голосуем!",
-    desc: "Голосуйте за любимые категории, выбирайте категорию-победителя в мобильном приложении и получайте кешбэк 10% баллами в апреле!",
-  },
-];
 
 const Article = () => {
   return (
@@ -99,7 +60,7 @@ const Article = () => {
               <CheckboxCustom />
               <SelectCustom />
               <HalfRating />
-              <IconCheckboxes />
+              <BasicDatePicker />
             </Container>
           </div>
         </div>

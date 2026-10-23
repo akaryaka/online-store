@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 import { useState } from "react";
 import Container from "@/widgets/container/Container";
-import { catalogList } from "../../models/catalogList";
+import { catalogList } from "@/entities/categories/catalogList";
 import { createPortal } from "react-dom";
 
 const CatalogBtn = () => {
@@ -58,14 +58,14 @@ const CatalogBtn = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         to="/catalog"
-        className="w-[140px] h-[40px] relative group mr-[16px] flex items-center gap-[28px] rounded-[4px] p-[13px_10px] text-[#fff] bg-[#70C05B]"
+        className="max-[1300px]:w-[40px] max-[1300px]:gap-[0] w-[140px] h-[40px] relative group mr-[16px] flex items-center gap-[28px] rounded-[4px] p-[13px_10px] text-[#fff] bg-[#70C05B]"
       >
         <span className="flex flex-col justify-center items-center w-[20px] h-[24px]">
           <span className="block w-[100%] mb-[5px] h-[1px] bg-[#fff] rounded-[1px]"></span>
           <span className="block w-[100%] mb-[5px] h-[1px] bg-[#fff] rounded-[1px]"></span>
           <span className="block w-[100%] h-[1px] bg-[#fff] rounded-[1px]"></span>
         </span>
-        <span>Каталог</span>
+        <span className="max-[1300px]:hidden">Каталог</span>
       </Link>
       {createPortal(catalogMenu, document.body)}
     </>

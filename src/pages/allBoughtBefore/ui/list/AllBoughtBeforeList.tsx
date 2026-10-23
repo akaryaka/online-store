@@ -1,6 +1,6 @@
 import Container from "@/widgets/container/Container";
 import Card from "@/widgets/card/Card";
-import { boughtBefore } from "./models/boughtBefore";
+import { list } from "@/entities/cards/list";
 
 const AllBoughtBeforeList = () => {
   return (
@@ -8,7 +8,7 @@ const AllBoughtBeforeList = () => {
       <div>
         <Container>
           <div className="grid gap-[40px] grid-cols-4 grid-rows-2">
-            {boughtBefore.map((card) => {
+            {list.map((card) => {
               return (
                 <Card
                   type="product"
