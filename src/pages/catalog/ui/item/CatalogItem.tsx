@@ -5,7 +5,7 @@ interface Props {
   title: string;
   link: string;
   img: string;
-  size?: "col-span-2" | "";
+  size?: string;
 }
 
 const CatalogItem = ({ title, link, img, size, ...props }: Props) => {

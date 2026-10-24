@@ -12,6 +12,8 @@ import catalogBg11 from "@images/catalog/catalog11.png";
 import catalogBg12 from "@images/catalog/catalog12.png";
 import catalogBg13 from "@images/catalog/catalog13.png";
 
+// interface
+
 export const catalogList = [
   {
     id: 1,

@@ -6,9 +6,10 @@ import { Slider, Switch } from "@mui/material";
 const CategorySidebar = () => {
   const [value, setValue] = useState<number[]>([20, 37]);
 
-  const handleChange = (event: Event, newValue: number[]) => {
+  const handleChange = (newValue: number[]) => {
     setValue(newValue);
   };
+
   return (
     <>
       <div className="sidebar w-[272px]">

@@ -1,10 +1,6 @@
 import { Link } from "react-router";
 import { menu } from "../../models/menu";
 
-interface HeaderMenuProps {
-  active: boolean;
-}
-
 const HeaderMenu = () => {
   return (
     <>

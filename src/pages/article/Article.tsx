@@ -1,7 +1,7 @@
 import Layout from "@/app/layout";
 import BasicDatePicker from "@/shared/ui/lib/Calendar";
 import CheckboxCustom from "@/shared/ui/lib/CheckboxCustom";
-import IconCheckboxes from "@/shared/ui/lib/Favorites";
+// import IconCheckboxes from "@/shared/ui/lib/Favorites";
 import HalfRating from "@/shared/ui/lib/Rating";
 import SelectCustom from "@/shared/ui/lib/SelectCustom";
 import Text from "@/shared/ui/text";
