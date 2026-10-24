@@ -1,14 +1,14 @@
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import Button from "@/shared/ui/button/Button";
 import { Slider, Switch } from "@mui/material";
-import { useState } from "react";
+// import { useState } from "react";
 
 const FavoritesSidebar = () => {
-  const [value, setValue] = useState<number[]>([20, 37]);
+  // const [value, setValue] = useState<number[]>([20, 37]);
 
-  const handleChange = (event: Event, newValue: number[]) => {
-    setValue(newValue);
-  };
+  // const handleChange = (newValue: number[]) => {
+  //   setValue(newValue);
+  // };
   return (
     <>
       <div className="sidebar w-[272px]">
@@ -43,8 +43,8 @@ const FavoritesSidebar = () => {
         </div>
         <Slider
           className="mb-[40px]"
-          value={value}
-          onChange={handleChange}
+          // value={value}
+          // onChange={handleChange}
           getAriaLabel={() => "Temperature range"}
         />
         <ul className="mb-[40px]">

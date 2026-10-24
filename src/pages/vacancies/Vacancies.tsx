@@ -14,7 +14,9 @@ const Vacancies = () => {
             <div className="mb-[24px]">
               <Crumbs page="Вакансии" />
             </div>
-            <Title className="mb-[60px]">Вакансии</Title>
+            <Title size="m" className="mb-[60px]">
+              Вакансии
+            </Title>
             <div className="grid grid-cols-3 gap-[40px]">
               {vacancies.map((vacancie) => {
                 return (

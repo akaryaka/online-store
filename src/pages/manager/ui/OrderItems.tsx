@@ -79,7 +79,7 @@ const OrderItems = () => {
           </header>
           <div className="flex gap-[10px] mb-[60px]">
             <OrderCounterBtn
-              type=""
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -89,7 +89,7 @@ const OrderItems = () => {
               className="p-[8px] gap-[8px]"
             />
             <OrderCounterBtn
-              type=""
+              type="text-btn"
               size="m"
               dateSize="s"
               countSize="xs"
@@ -114,6 +114,7 @@ const OrderItems = () => {
               </div>
               <div>
                 <Button
+                  accent="default"
                   size="m"
                   type="text-btn"
                   icon
@@ -161,6 +162,7 @@ const OrderItems = () => {
               </div>
               <div>
                 <Button
+                  accent="default"
                   size="m"
                   type="text-btn"
                   icon
@@ -208,6 +210,7 @@ const OrderItems = () => {
               </div>
               <div>
                 <Button
+                  accent="default"
                   size="m"
                   type="text-btn"
                   leftIcon={<AlertTriangleIcon />}
@@ -251,7 +254,7 @@ const OrderItems = () => {
           <div className="flex gap-[10px] mb-[60px]">
             <div className="flex gap-[10px] mb-[60px]">
               <OrderCounterBtn
-                type=""
+                type="text-btn"
                 size="m"
                 dateSize="s"
                 countSize="xs"
@@ -261,7 +264,7 @@ const OrderItems = () => {
                 className="p-[8px] gap-[8px]"
               />
               <OrderCounterBtn
-                type=""
+                type="text-btn"
                 size="m"
                 dateSize="s"
                 countSize="xs"
@@ -287,6 +290,7 @@ const OrderItems = () => {
               </div>
               <div>
                 <Button
+                  accent="default"
                   size="m"
                   leftIcon={<AlertCircleIcon />}
                   rightIcon={<ChevronDownIcon fill="#f2f2f2" />}
@@ -380,6 +384,7 @@ const OrderItems = () => {
               </div>
               <div>
                 <Button
+                  accent="default"
                   type="text-btn"
                   size="m"
                   leftIcon={<BaqIcon />}
@@ -447,6 +452,7 @@ const OrderItems = () => {
               </div>
               <div>
                 <Button
+                  accent="default"
                   type="text-btn"
                   size="m"
                   leftIcon={<CheckIcon fill="#fff" />}
@@ -494,6 +500,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<BaqIcon />}
@@ -505,6 +512,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<UploadIcon />}
@@ -687,6 +695,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<BaqIcon />}
@@ -698,6 +707,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<UploadIcon />}
@@ -768,6 +778,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<BaqIcon />}
@@ -779,6 +790,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<UploadIcon />}
@@ -860,6 +872,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<BaqIcon />}
@@ -871,6 +884,7 @@ const OrderItems = () => {
                 </div>
                 <div>
                   <Button
+                    accent="default"
                     type="text-btn"
                     size="m"
                     leftIcon={<UploadIcon />}

@@ -1,22 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom";
+// import React from "react";
+// import ReactDOM from "react-dom";
 
-declare global {
-  interface Window {
-    ymaps3: any;
-  }
-}
+// declare global {
+//   interface Window {
+//     ymaps3: any;
+//   }
+// }
 
-const ymaps3Reactify = await ymaps3.import("@yandex/ymaps3-reactify");
-const reactify = ymaps3Reactify.reactify.bindTo(React, ReactDOM);
-const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } =
-  reactify.module(ymaps3);
+// const ymaps3Reactify = await ymaps3.import("@yandex/ymaps3-reactify");
+// const reactify = ymaps3Reactify.reactify.bindTo(React, ReactDOM);
+// const { YMap, YMapDefaultSchemeLayer, YMapDefaultFeaturesLayer, YMapMarker } =
+//   reactify.module(ymaps3);
 
 const ContactsMap = () => {
   return (
     <>
       <div className="map w-[100%] h-[354px] bg-[grey]">
-        <YMap
+        {/* <YMap
           location={{ center: [37.588144, 55.733842], zoom: 9 }}
           mode="vector"
         >
@@ -28,7 +28,7 @@ const ContactsMap = () => {
               <h1>You can drag this header</h1>
             </section>
           </YMapMarker>
-        </YMap>
+        </YMap> */}
       </div>
     </>
   );

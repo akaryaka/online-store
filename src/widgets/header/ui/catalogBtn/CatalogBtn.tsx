@@ -47,7 +47,7 @@ const CatalogBtn = () => {
   }
 
   function handleMouseLeave() {
-    const id = setTimeout(() => {
+    const id: any = setTimeout(() => {
       setCatalogDisplay(false);
     }, 200);
     setTimeoutId(id);

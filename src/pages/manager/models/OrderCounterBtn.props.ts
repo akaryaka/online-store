@@ -7,6 +7,6 @@ export interface OrderCounterBtnProps
     Props {
   date: string;
   count: string;
-  dateSize: "l" | "m" | "s" | "xl" | "xs" | string;
-  countSize: "l" | "m" | "s" | "xl" | "xs" | string;
+  dateSize: "l" | "m" | "s" | "xl" | "xs";
+  countSize: "l" | "m" | "s" | "xl" | "xs";
 }

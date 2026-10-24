@@ -5,28 +5,28 @@ const CategoryPagination = () => {
     <>
       <ul className="flex items-center justify-center gap-[16px]">
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink className="text-primary" title={1} />
+          <PaginationLink className="text-primary" text={1} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={2} />
+          <PaginationLink text={2} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={3} />
+          <PaginationLink text={3} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={4} />
+          <PaginationLink text={4} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={5} />
+          <PaginationLink text={5} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={6} />
+          <PaginationLink text={6} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={7} />
+          <PaginationLink text={7} />
         </li>
         <li className="flex justify-center items-center w-[40px] h-[40px]">
-          <PaginationLink title={8} />
+          <PaginationLink text={8} />
         </li>
       </ul>
     </>

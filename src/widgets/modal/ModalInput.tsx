@@ -3,7 +3,7 @@ import TextField from "@shared/ui/textField";
 interface modalInputProps {
   label: string;
   placeholder?: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const ModalInput = ({ label, placeholder, children }: modalInputProps) => {

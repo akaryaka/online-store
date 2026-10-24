@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/online-store/",
+  // base: "/online-store/",
   plugins: [react(), tailwindcss(), tsconfigPaths()],
   server: {
     open: true,

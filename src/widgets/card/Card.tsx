@@ -17,7 +17,6 @@ const Card = ({
   img,
   type = "product",
   rating = 3,
-  favorites,
 }: Props) => {
   const [loading, setLoading] = useState(false);
   const [activeFavorite, setActiveFavorite] = useState(false);

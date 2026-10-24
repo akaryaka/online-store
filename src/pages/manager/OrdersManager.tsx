@@ -17,7 +17,7 @@ const OrdersManager = () => {
               <Crumbs page="Заказы" />
             </div>
             <div className="relative inline-block mb-[32px]">
-              <Title>
+              <Title size="m">
                 <span>Заказы</span>
               </Title>
               <span className="absolute inline-flex items-start justify-start right-[-40px] top-[0] w-[36px] h-[32px] text-[#fff] bg-[#FF6633] text-[16px] font-normal p-[4px_8px] rounded-[4px]">
@@ -33,6 +33,7 @@ const OrdersManager = () => {
                 className="w-[60px] flex justify-center items-center"
               />
               <OrderCounterBtn
+                type="text-btn"
                 size="l"
                 date="Сегодня"
                 accent="secondary"
@@ -42,6 +43,7 @@ const OrdersManager = () => {
                 className="p-[14px_16px] gap-[16px]"
               />
               <OrderCounterBtn
+                type="text-btn"
                 size="l"
                 date="1 апреля"
                 accent="greyscale"
@@ -51,6 +53,7 @@ const OrdersManager = () => {
                 className="p-[14px_16px] gap-[16px]"
               />
               <OrderCounterBtn
+                type="text-btn"
                 size="l"
                 date="5 апреля"
                 accent="greyscale"

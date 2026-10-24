@@ -4,6 +4,6 @@ export interface PaginationLinkProps extends DetailedHTMLProps<
   HTMLAttributes<HTMLLinkElement>,
   HTMLLinkElement
 > {
-  title: number;
+  text: number;
   active?: boolean;
 }

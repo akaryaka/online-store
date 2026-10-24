@@ -17,6 +17,7 @@ const OrderCounterBtn = ({
   return (
     <>
       <Button
+        accent="default"
         type="text-btn"
         size={size}
         className={cn("flex items-center", className, bgButtons[accent], {

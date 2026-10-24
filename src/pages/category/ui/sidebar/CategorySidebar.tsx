@@ -1,14 +1,14 @@
-import { useState } from "react";
+// import { useState } from "react";
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import Button from "@/shared/ui/button/Button";
 import { Slider, Switch } from "@mui/material";
 
 const CategorySidebar = () => {
-  const [value, setValue] = useState<number[]>([20, 37]);
+  // const [value, setValue] = useState<number[]>([20, 37]);
 
-  const handleChange = (newValue: number[]) => {
-    setValue(newValue);
-  };
+  // const handleChange = (newValue?: number[]) => {
+  //   setValue(newValue);
+  // };
 
   return (
     <>
@@ -44,8 +44,8 @@ const CategorySidebar = () => {
         </div>
         <Slider
           className="mb-[40px]"
-          value={value}
-          onChange={handleChange}
+          // value={value}
+          // onChange={handleChange}
           getAriaLabel={() => "Temperature range"}
         />
         <ul className="mb-[40px]">

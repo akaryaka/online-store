@@ -1,11 +1,11 @@
 import Button from "@/shared/ui/button/Button";
 import { buttons } from "./models/buttons";
-import {
-  YMap,
-  YMapDefaultFeaturesLayer,
-  YMapDefaultSchemeLayer,
-  YMapMarker,
-} from "./models/map";
+// import {
+//   YMap,
+//   YMapDefaultFeaturesLayer,
+//   YMapDefaultSchemeLayer,
+//   YMapMarker,
+// } from "./models/map";
 import Title from "@/shared/ui/title";
 
 const HomeOurStores = () => {
@@ -20,9 +20,18 @@ const HomeOurStores = () => {
             return (
               <Button
                 key={button.id}
-                type={button.type}
-                size={button.size}
-                accent={button.accent}
+                type={button.type as "text-btn" | "icon-btn"}
+                size={button.size as "s" | "l" | "m"}
+                accent={
+                  button.accent as
+                    | "secondary"
+                    | "greyscale"
+                    | "primary"
+                    | "primaryDisabled"
+                    | "error"
+                    | "default"
+                    | "secondaryDisabled"
+                }
                 className={`${button.btnClass} `}
               >
                 {button.text}
@@ -31,7 +40,7 @@ const HomeOurStores = () => {
           })}
         </div>
         <div className="h-[354px] w-[100%]">
-          <YMap
+          {/* <YMap
             location={{ center: [37.588144, 55.733842], zoom: 9 }}
             mode="vector"
           >
@@ -42,7 +51,7 @@ const HomeOurStores = () => {
                 <h1>You can drag this header</h1>
               </section>
             </YMapMarker>
-          </YMap>
+          </YMap> */}
         </div>
       </div>
     </>
