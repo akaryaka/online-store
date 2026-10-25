@@ -1,17 +1,17 @@
-// import React from "react";
-// import ReactDOM from "react-dom";
+import React from "react";
+import ReactDOM from "react-dom";
 
-// declare global {
-//   interface Window {
-//     ymaps3: any;
-//   }
-// }
+declare global {
+  interface Window {
+    ymaps3: any;
+  }
+}
 
-// const ymaps3Reactify = await ymaps3.import("@yandex/ymaps3-reactify");
-// const reactify = ymaps3Reactify.reactify.bindTo(React, ReactDOM);
-// export const {
-//   YMap,
-//   YMapDefaultSchemeLayer,
-//   YMapDefaultFeaturesLayer,
-//   YMapMarker,
-// } = reactify.module(ymaps3);
+const ymaps3Reactify = await window.ymaps3.import("@yandex/ymaps3-reactify");
+const reactify = ymaps3Reactify.reactify.bindTo(React, ReactDOM);
+export const {
+  YMap,
+  YMapDefaultSchemeLayer,
+  YMapDefaultFeaturesLayer,
+  YMapMarker,
+} = reactify.module(window.ymaps3);
