@@ -5,14 +5,17 @@ import logoMobile from "@images/logo-about.png";
 const HeaderLogo = () => {
   return (
     <>
-      <Link className="mr-[40px] max-[1300px]:mr-[20px]" to="/">
+      <Link
+        className="mr-[40px] max-[1300px]:mr-[20px] max-[991px]:mr-[10px] max-[375px]:mr-[5px]"
+        to="/"
+      >
         <img
           className="w-[152px] max-[1300px]:hidden h-[32px]"
           src={logo}
           alt="logo"
         />
         <img
-          className="w-[49px] max-[1300px]:block min-[1300px]:hidden h-[40px]"
+          className="w-[49px] max-[1300px]:block min-[1300px]:hidden h-[40px] max-[767px]:w-[39px] max-[767px]:h-[32px]"
           src={logoMobile}
           alt="logo"
         />

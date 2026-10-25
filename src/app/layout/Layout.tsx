@@ -44,10 +44,9 @@ const Layout = ({ title, children }: LayoutProps) => {
           accent="primary"
           icon={<ChevronDownIcon fill="#fff" />}
           clickEvent={scrollUp}
-          className="up fixed bottom-[50px] p-[8px] rotate-[180deg] rounded-[4px] z-[1000] right-[50px] cursor-pointer"
+          className="up fixed bottom-[50px] p-[8px] rotate-[180deg] rounded-[4px] z-[1000] right-[50px] cursor-pointer max-[767px]:right-[20px] max-[767px]:bottom-[20px]"
         />
       </div>
-
       <Footer />
     </>
   );

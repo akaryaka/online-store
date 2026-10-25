@@ -4,7 +4,7 @@ import { menu } from "../../models/menu";
 const HeaderMenu = () => {
   return (
     <>
-      <ul className="flex items-center gap-[24px] max-[1300px]:gap-[16px] mr-[24px] max-[1300px]:mr-[16px]">
+      <ul className="flex items-center gap-[24px] max-[1300px]:gap-[16px] mr-[24px] max-[1300px]:mr-[16px] max-[991px]:mr-[10px] max-[767px]:hidden">
         {menu.map((item) => (
           <li key={item.id}>
             <Link

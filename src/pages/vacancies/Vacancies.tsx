@@ -17,7 +17,7 @@ const Vacancies = () => {
             <Title size="m" className="mb-[60px]">
               Вакансии
             </Title>
-            <div className="grid grid-cols-3 gap-[40px]">
+            <div className="grid grid-cols-3 gap-[40px] max-[1300px]:gap-[32px] max-[1300px]:grid-cols-2 max-[767px]:grid-cols-1">
               {vacancies.map((vacancie) => {
                 return (
                   <>

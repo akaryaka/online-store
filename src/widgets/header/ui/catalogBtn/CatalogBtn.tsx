@@ -58,7 +58,7 @@ const CatalogBtn = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         to="/catalog"
-        className="max-[1300px]:w-[40px] max-[1300px]:gap-[0] w-[140px] h-[40px] relative group mr-[16px] flex items-center gap-[28px] rounded-[4px] p-[13px_10px] text-[#fff] bg-[#70C05B]"
+        className="max-[1300px]:w-[40px] max-[1300px]:gap-[0] w-[140px] h-[40px] relative group mr-[16px] flex items-center gap-[28px] rounded-[4px] p-[13px_10px] text-[#fff] bg-[#70C05B] max-[991px]:mr-[10px] max-[767px]:hidden"
       >
         <span className="flex flex-col justify-center items-center w-[20px] h-[24px]">
           <span className="block w-[100%] mb-[5px] h-[1px] bg-[#fff] rounded-[1px]"></span>

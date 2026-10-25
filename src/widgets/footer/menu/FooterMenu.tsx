@@ -26,7 +26,7 @@ const menu = [
 const FooterMenu = () => {
   return (
     <>
-      <ul className="flex flex-wrap gap-[40px] max-[1300px]:w-[250px] max-[1300px]:gap-[8px] max-[1300px]:mr-[90px]">
+      <ul className="flex flex-wrap gap-[40px] max-[1300px]:w-[250px] max-[1300px]:gap-[8px] max-[1300px]:mr-[90px] max-[767px]:w-[auto] max-[767px]:mr-[0] max-[767px]:flex-col max-[767px]:items-center">
         {menu.map((item) => (
           <li key={item.id}>
             <Link className="hover:text-primary transition-all" to={item.link}>

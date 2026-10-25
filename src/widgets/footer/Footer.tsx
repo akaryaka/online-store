@@ -13,11 +13,21 @@ export function Footer() {
         style={{ backgroundImage: `url('${bgFooter}')` }}
       >
         <Container>
-          <div className="flex items-center justify-between max-[1300px]:justify-center">
+          <div className="flex items-center justify-between max-[1300px]:justify-center max-[767px]:hidden">
             <FooterLogo />
             <FooterMenu />
             <FooterSocials />
             <FooterPhoneBtn />
+          </div>
+          <div className="hidden max-[767px]:flex max-[767px]:flex-col">
+            <div className="flex justify-between mb-[24px] max-[767px]:flex-col max-[767px]:justify-center max-[767px]:items-center">
+              <FooterLogo />
+              <div>
+                <FooterSocials />
+                <FooterPhoneBtn />
+              </div>
+            </div>
+            <FooterMenu />
           </div>
         </Container>
       </footer>

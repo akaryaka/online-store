@@ -48,7 +48,7 @@ const LoginBtn = () => {
         size="m"
         rightIcon={<LogInIcon />}
         type="text-btn"
-        className="max-[1300px]:w-[40px] w-[157px] items-center justify-end p-[8px] gap-[38px]"
+        className="max-[1300px]:w-[40px] w-[157px] items-center justify-end p-[8px] gap-[38px] max-[767px]:hidden"
       >
         <span className="max-[1300px]:hidden">Вход</span>
       </Button>
