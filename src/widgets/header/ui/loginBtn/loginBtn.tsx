@@ -8,7 +8,6 @@ import EyeOff from "@/widgets/icons/EyeOff";
 import ModalInput from "@/widgets/modal";
 import TextField from "@/shared/ui/textField";
 import Text from "@/shared/ui/text";
-import { Link } from "react-router";
 
 const LoginBtn = () => {
   const [modalDisplay, setModalDisplay] = useState("hidden");
@@ -28,15 +27,28 @@ const LoginBtn = () => {
     setModalDisplay("block");
   }
 
-  function modalClose() {
+  // function handleKeyClose(event: any) {
+  //   if (event.key === "Escape") {
+  //     alert(1);
+  //   }
+  // }
+
+  function modalClose(event: any) {
+    // if (event.target === "") {
+    //   setModalDisplay("hidden");
+    // }
+    console.log(event.target.className);
+
     setModalDisplay("hidden");
   }
+
   useEffect(() => {
     if (modalDisplay == "block") {
       document.body.classList.add("overflow-hidden");
     } else {
       document.body.classList.remove("overflow-hidden");
     }
+    // handleKeyClose();
     // Очистка при размонтировании компонента
     return () => document.body.classList.remove("overflow-hidden");
   }, [modalDisplay]);
@@ -60,7 +72,7 @@ const LoginBtn = () => {
         >
           <button
             onClick={modalClose}
-            className="absolute right-[0px] top-[0px] cursor-pointer bg-[#F3F2F1] p-[8px]"
+            className="btn-close-modal absolute right-[0px] top-[0px] cursor-pointer bg-[#F3F2F1] p-[8px]"
           >
             <CloseIcon />
           </button>
@@ -101,7 +113,6 @@ const LoginBtn = () => {
             <a href="#" className="text-[#606060] text-[12px] leading-[150%]">
               Забыли пароль?
             </a>
-            <Link to="/ordersmanager">админка, заказы</Link>
           </div>
         </div>
         <div
