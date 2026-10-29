@@ -44,12 +44,12 @@ const newProducts = [
 const HomeNewProducts = () => {
   return (
     <>
-      <div className="pt-[80px] ml-[auto] mr-[auto]">
+      <div className="pt-[80px] max-[767px]:pt-[40px] ml-[auto] mr-[auto]">
         <header className="flex justify-between items-center mb-[60px] max-[1300px]:mb-[32px]">
           <Title size="m">Новинки</Title>
           <LinkHome title="Все новинки" path="/allnewproducts" />
         </header>
-        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3 max-[991px]:grid-cols-2 max-[991px]:gap-[40px]">
+        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3 max-[991px]:grid-cols-2 max-[991px]:gap-[40px] max-[767px]:grid-cols-1">
           {newProducts.map((card) => {
             return (
               <Card

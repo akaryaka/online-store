@@ -53,7 +53,7 @@ const HomeSales = () => {
           <Title size="m">Акции</Title>
           <LinkHome title="Все акции" path="/allsales" />
         </header>
-        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3 max-[1300px]:gap-[32px] max-[991px]:grid-cols-2 max-[991px]:gap-[40px]">
+        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3 max-[1300px]:gap-[32px] max-[991px]:grid-cols-2 max-[991px]:gap-[40px] max-[767px]:grid-cols-1">
           {salesCards.map((card) => {
             return (
               <Card

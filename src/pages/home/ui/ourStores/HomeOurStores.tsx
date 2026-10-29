@@ -18,7 +18,7 @@ const HomeOurStores = () => {
         >
           Наши магазины
         </Title>
-        <div className="flex gap-[24px] mb-[24px]">
+        <div className="flex gap-[24px] mb-[24px] max-[767px]:flex-wrap">
           {buttons.map((button) => {
             return (
               <Button

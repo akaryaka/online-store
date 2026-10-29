@@ -4,8 +4,8 @@ import cn from "classnames";
 const Title = ({ children, size, className, ...props }: Props) => {
   const sizesTitle = {
     xs: "text-[18px]",
-    s: "text-[24px]",
-    m: "text-[36px] max-[1300px]:text-[32px]",
+    s: "text-[24px] max-[767px]:text-[20px] max-[375px]:text-[18px]",
+    m: "text-[36px] max-[1300px]:text-[32px] max-[767px]:text-[24px] max-[375px]:text-[20px]",
     l: "text-[48px]",
     xl: "text-[64px] max-[1300px]:text-[48px]",
   };

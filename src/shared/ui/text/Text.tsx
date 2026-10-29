@@ -3,7 +3,7 @@ import cn from "classnames";
 
 const textSizes = {
   xs: "text-[12px]",
-  s: "text-[16px]",
+  s: "text-[16px] max-[767px]:text-[12px]",
   m: "text-[18px]",
   l: "text-[24px]",
   xl: "text-[36px]",

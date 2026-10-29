@@ -44,12 +44,12 @@ const boughtBefore = [
 const HomeBoughtBefore = () => {
   return (
     <>
-      <div className="pt-[80px] mb-[120px] ml-[auto] mr-[auto]">
+      <div className="pt-[80px] max-[767px]:pt-[40px] mb-[120px] max-[767px]:mb-[40px] ml-[auto] mr-[auto]">
         <header className="flex justify-between items-center mb-[60px] max-[1300px]:mb-[32px]">
           <Title size="m">Покупали раньше</Title>
           <LinkHome title="Все покупки" path="/allboughtbefore" />
         </header>
-        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3 max-[991px]:grid-cols-2 max-[991px]:gap-[40px]">
+        <div className="grid gap-[40px] grid-cols-4 max-[1300px]:grid-cols-3 max-[991px]:grid-cols-2 max-[991px]:gap-[40px] max-[767px]:grid-cols-1">
           {boughtBefore.map((card) => {
             return (
               <Card

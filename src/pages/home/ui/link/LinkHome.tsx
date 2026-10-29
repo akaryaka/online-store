@@ -6,7 +6,10 @@ import Text from "@/shared/ui/text";
 const LinkHome = ({ title, path }: LinkHomeProps) => {
   return (
     <>
-      <Link className="flex gap-[25px]" to={path}>
+      <Link
+        className="flex items-center gap-[25px] max-[767px]:gap-[0]"
+        to={path}
+      >
         <Text size="s" className="text-[#606060]">
           {title}
         </Text>
