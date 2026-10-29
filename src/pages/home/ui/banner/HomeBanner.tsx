@@ -9,14 +9,31 @@ const FirstBanner = () => {
   return (
     <>
       <div
-        className="banner h-[200px] bg-cover bg-center bg-no-repeat"
+        className="banner h-[200px] max-[1300px]:h-[160px] max-[1300px]:items-end bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url('${bannerBg}')` }}
       >
-        <Container>
+        <Container className="max-[1300px]:h-[100%]">
           {/* не по pixelp */}
-          <div className="hero__innner pr-[57px] pl-[47px] flex justify-between items-center">
-            <img src={bannerIcon} alt="hero-icon" />
-            <Title size="l" className=" ">
+          <div className="hero__innner max-[1300px]:h-[100%] pr-[57px] pl-[47px] max-[1300px]:pr-[0] max-[1300px]:pl-[0] max-[1300px]:justify-center flex justify-between items-center">
+            <img
+              className="max-[1300px]:hidden"
+              src={bannerIcon}
+              alt="hero-icon"
+            />
+            <img
+              className="hidden max-[1300px]:block max-[1300px]:self-end max-[767px]:hidden"
+              width={198}
+              height={132}
+              src={bannerIcon}
+              alt="hero-icon"
+            />
+            <Title size="l" className="max-[1300px]:hidden">
+              Доставка бесплатно от 1000 ₽
+            </Title>
+            <Title
+              size="s"
+              className="hidden max-[1300px]:block max-[1300px]:mt-[20px]"
+            >
               Доставка бесплатно от 1000 ₽
             </Title>
           </div>
@@ -41,15 +58,15 @@ const HomeBanner = () => {
   const arrBanner = [FirstBanner, SecondBanner];
   const [banner, setBanner] = useState(arrBanner[0]);
 
-  function bannerAnimation() {
-    setTimeout(() => {
-      setBanner(SecondBanner);
-    }, 3000);
-  }
+  // function bannerAnimation() {
+  //   setTimeout(() => {
+  //     setBanner(SecondBanner);
+  //   }, 3000);
+  // }
 
-  useEffect(() => {
-    bannerAnimation();
-  }, []);
+  // useEffect(() => {
+  //   bannerAnimation();
+  // }, []);
 
   return <>{banner}</>;
 };

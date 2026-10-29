@@ -34,7 +34,7 @@ const Card = ({
     <>
       {loading ? (
         <div className="flex flex-col hover:shadow-[4px_8px_16px_rgba(255,102,51,0.2)] hover:translate-y-[-5px] transition-all cursor-pointer rounded-[10px] bg-[#fff]">
-          <header className="relative">
+          <header className="relative flex justify-center">
             <img src={img} alt="cacke" />
             {type === "balance" && (
               <div className="absolute top-[10px] left-[10px] flex gap-[6px]">

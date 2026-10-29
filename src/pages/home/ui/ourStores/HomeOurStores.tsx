@@ -12,7 +12,10 @@ const HomeOurStores = () => {
   return (
     <>
       <div className="mb-[120px]">
-        <Title size="m" className="mb-[40px]">
+        <Title
+          size="m"
+          className="mb-[40px] max-[1300px]:mb-[32px] max-[991px]:grid-cols-2 max-[991px]:gap-[40px]"
+        >
           Наши магазины
         </Title>
         <div className="flex gap-[24px] mb-[24px]">

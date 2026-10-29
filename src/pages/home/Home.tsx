@@ -13,7 +13,7 @@ const Home = () => {
     <>
       <Layout title="Главная">
         <HomeBanner />
-        <div className="pt-[84px] pb-[80px]">
+        <div className="pt-[84px] pb-[80px] max-[1300px]:pt-[64px] max-[1300px]:pb-[60px]">
           <Container>
             <HomeSales />
             <HomeNewProducts />

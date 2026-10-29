@@ -5,9 +5,9 @@ const Title = ({ children, size, className, ...props }: Props) => {
   const sizesTitle = {
     xs: "text-[18px]",
     s: "text-[24px]",
-    m: "text-[36px]",
+    m: "text-[36px] max-[1300px]:text-[32px]",
     l: "text-[48px]",
-    xl: "text-[64px]",
+    xl: "text-[64px] max-[1300px]:text-[48px]",
   };
   return (
     <>
