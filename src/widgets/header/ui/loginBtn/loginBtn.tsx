@@ -27,19 +27,10 @@ const LoginBtn = () => {
     setModalDisplay("block");
   }
 
-  // function handleKeyClose(event: any) {
-  //   if (event.key === "Escape") {
-  //     alert(1);
-  //   }
-  // }
-
   function modalClose(event: any) {
-    // if (event.target === "") {
-    //   setModalDisplay("hidden");
-    // }
-    console.log(event.target.className);
-
-    setModalDisplay("hidden");
+    if (!event.target.classList.contains("login")) {
+      setModalDisplay("hidden");
+    }
   }
 
   useEffect(() => {
@@ -48,7 +39,15 @@ const LoginBtn = () => {
     } else {
       document.body.classList.remove("overflow-hidden");
     }
-    // handleKeyClose();
+    const handleKeyDown = (event) => {
+      if (event.key === "Escape") {
+        setModalDisplay("hidden");
+      }
+    };
+    if (modalDisplay == "block") {
+      window.addEventListener("keydown", handleKeyDown);
+    }
+
     // Очистка при размонтировании компонента
     return () => document.body.classList.remove("overflow-hidden");
   }, [modalDisplay]);
@@ -65,16 +64,22 @@ const LoginBtn = () => {
         <span className="max-[1300px]:hidden">Вход</span>
       </Button>
       <div
+        onClick={modalClose}
         className={`modal w-[100%] z-[1000] ${modalDisplay} fixed top-[0px] left-[0px] h-[100vh] bg-[#000] flex justify-center bg-[rgba(252,213,186,0.8)] items-center`}
       >
         <div
           className={`login ${loginDisplay} relative p-[72px_80px_40px_80px] bg-[#fff] w-[420px] h-[431px] rounded-[4px]`}
         >
           <button
-            onClick={modalClose}
+            // onClick={modalClose}
             className="btn-close-modal absolute right-[0px] top-[0px] cursor-pointer bg-[#F3F2F1] p-[8px]"
           >
-            <CloseIcon />
+            <div
+              className="pointer-events-none
+"
+            >
+              <CloseIcon />
+            </div>
           </button>
           <h2 className="mb-[32px] text-center font-bold text-[24px] leading-[150% text-[#414141]]">
             Вход
