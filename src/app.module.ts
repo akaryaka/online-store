@@ -1,10 +1,18 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller.js';
-import { AppService } from './app.service.js';
+import { AuthenticationModule } from '@nestjs/authentication';
+import { AuthModule } from './auth/auth.module.js';
+import { UsersModule } from './users/users.module.js';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    AuthenticationModule.forRoot({
+      session: {
+        absoluteTtl: '14d', // signed out after 14 days, however active
+        idleTtl: '3d', // or after 3 days without a request
+      },
+    }),
+    UsersModule,
+    AuthModule,
+  ],
 })
 export class AppModule {}
