@@ -10,8 +10,10 @@ $ npm run start
 
 ```
 
-npm i @prisma/client
-npm i -D prisma
+использовать prisma7
+
+npm install @prisma/client@7
+npm install --save-dev prisma@7
 npx prisma init
 
 ## подключение к серверу бд postgres
