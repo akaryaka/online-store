@@ -1,7 +1,9 @@
+import Counter from "@/shared/ui/counter/Counter";
 import CheckIcon from "@/widgets/icons/CheckIcon";
 import MinusIcon from "@/widgets/icons/MinusIcon";
 import PlusIcon from "@/widgets/icons/PlusIcon";
 import cartItem1 from "@images/cart-item.png";
+// import { useState } from "react";
 
 const ShoppingCartOrders = () => {
   return (
@@ -27,7 +29,8 @@ const ShoppingCartOrders = () => {
               </span>
             </div>
           </div>
-          <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
+          <Counter />
+          {/* <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
             <button className="cursor-pointer">
               <MinusIcon fill="#fff" />
             </button>
@@ -35,7 +38,7 @@ const ShoppingCartOrders = () => {
             <button className="cursor-pointer">
               <PlusIcon fill="#fff" />
             </button>
-          </div>
+          </div> */}
           <div className="text-[#414141] text-[18px] leading-[150%] font-bold mt-[8px] grow text-right">
             89,00 ₽
           </div>
