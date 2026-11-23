@@ -20,6 +20,7 @@ const Card = ({
 }: Props) => {
   const [loading, setLoading] = useState(false);
   const [activeFavorite, setActiveFavorite] = useState(false);
+  const [activeBtnShopping, setActiveBtnShopping] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(true), 1000);
@@ -28,6 +29,11 @@ const Card = ({
 
   function setStatusFavorites() {
     setActiveFavorite(!activeFavorite);
+  }
+
+  function handlerShop() {
+    setActiveBtnShopping(!activeBtnShopping);
+    // console.log(1);
   }
 
   return (
@@ -92,14 +98,18 @@ const Card = ({
               <Text size="s">{title}</Text>
             </Link>
             <Stars className="mb-[8px]" rating={rating} />
-            <Button
-              size="m"
-              type="text-btn"
-              accent="default"
-              className="mt-[auto] flex justify-center items-center w-[100%]"
-            >
-              В корзину
-            </Button>
+            {activeBtnShopping && (
+              <Button
+                onClick={() => handlerShop()}
+                size="m"
+                type="text-btn"
+                accent="default"
+                className="mt-[auto] flex justify-center items-center w-[100%]"
+              >
+                В корзину
+              </Button>
+            )}
+            {/* {!activeBtnShopping && <span>counter</span>} */}
           </div>
         </div>
       ) : (

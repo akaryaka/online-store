@@ -1,9 +1,6 @@
 import Counter from "@/shared/ui/counter/Counter";
 import CheckIcon from "@/widgets/icons/CheckIcon";
-import MinusIcon from "@/widgets/icons/MinusIcon";
-import PlusIcon from "@/widgets/icons/PlusIcon";
 import cartItem1 from "@images/cart-item.png";
-// import { useState } from "react";
 
 const ShoppingCartOrders = () => {
   return (
@@ -30,15 +27,6 @@ const ShoppingCartOrders = () => {
             </div>
           </div>
           <Counter />
-          {/* <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
-            <button className="cursor-pointer">
-              <MinusIcon fill="#fff" />
-            </button>
-            <span className="text-[#fff]">2</span>
-            <button className="cursor-pointer">
-              <PlusIcon fill="#fff" />
-            </button>
-          </div> */}
           <div className="text-[#414141] text-[18px] leading-[150%] font-bold mt-[8px] grow text-right">
             89,00 ₽
           </div>
@@ -78,15 +66,7 @@ const ShoppingCartOrders = () => {
               </span>
             </div>
           </div>
-          <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
-            <button className="cursor-pointer">
-              <MinusIcon fill="#fff" />
-            </button>
-            <span className="text-[#fff]">2</span>
-            <button className="cursor-pointer">
-              <PlusIcon fill="#fff" />
-            </button>
-          </div>
+          <Counter />
           <div className="flex flex-col mt-[8px] grow text-right">
             <span className="text-[#414141] text-[18px] leading-[150%] font-bold ">
               80,10 ₽
@@ -117,15 +97,7 @@ const ShoppingCartOrders = () => {
               </span>
             </div>
           </div>
-          <div className="bg-[#70C05B] mt-[10px] mr-[16px] cursor-pointer flex gap-[8px] justify-center items-center rounded-[4px] w-[100px] h-[40px]">
-            <button className="cursor-pointer">
-              <MinusIcon fill="#fff" />
-            </button>
-            <span className="text-[#fff]">2</span>
-            <button className="cursor-pointer">
-              <PlusIcon fill="#fff" />
-            </button>
-          </div>
+          <Counter />
           <div className="text-[#414141] text-[18px] leading-[150%] font-bold mt-[8px] grow text-right">
             89,00 ₽
           </div>

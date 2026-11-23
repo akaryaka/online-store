@@ -1,5 +1,4 @@
 import Container from "@/widgets/container/Container";
-// import CardSale from "@/widgets/card/CardSale";
 import { salesCards } from "./models/salesCards";
 import Card from "@/widgets/card/Card";
 
