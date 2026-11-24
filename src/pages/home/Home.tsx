@@ -7,48 +7,67 @@ import HomeBoughtBefore from "./ui/bought/HomeBoughtBefore";
 import HomeSprecialOffers from "./ui/specialOffers/HomeSprecialOffers";
 import HomeOurStores from "./ui/ourStores/HomeOurStores";
 import HomeArticles from "./ui/articles/HomeArticles";
+import bannerBg2 from "@images/banner-bg2.png";
+import bannerContent2 from "@images/banner-2-content.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 const slides = [
-  { id: 1, title: "Скидка 50%", bg: "#ff6b6b" },
-  { id: 2, title: "Новая коллекция", bg: "#4ecdc4" },
+  { id: 1, component: <HomeBanner /> },
+  {
+    id: 2,
+    component: (
+      <div style={{ position: "relative", width: "100%", height: "200px" }}>
+        <img
+          style={{ width: "100%", height: "100%" }}
+          src={bannerBg2}
+          alt="bannerBg2"
+        />
+        <img
+          style={{
+            position: "absolute",
+            bottom: "0",
+            left: "50%",
+            transform: "translate(-50%, 0)",
+          }}
+          src={bannerContent2}
+          alt="banner-2-content"
+        />
+      </div>
+    ),
+  },
 ];
 
-const styles = {
-  slide: {
-    height: "100%",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-};
+// const styles = {
+//   slide: {
+//     height: "100%",
+//     display: "flex",
+//     alignItems: "center",
+//     justifyContent: "center",
+//   },
+// };
 
 const Home = () => {
   return (
     <>
       <Layout title="Главная">
-        <HomeBanner />
+        {/* <HomeBanner /> */}
         <Swiper
           modules={[Autoplay, EffectFade]}
           autoplay={{
-            delay: 1000,
-            stopOnLastSlide: true,
-            disableOnInteraction: true,
+            delay: 6500,
+            disableOnInteraction: false,
           }}
-          effect="fade"
+          // effect="fade"
           loop
-          fadeEffect={{ crossFade: true }}
-          style={{ width: "100%", height: 300 }}
+          speed={2000} // обязательно укажите speed
+          // fadeEffect={}
+          style={{ width: "100%" }}
         >
           {slides.map((s) => (
             <SwiperSlide key={s.id}>
-              <div style={{ ...styles.slide, background: s.bg }}>
-                <h2 style={{ color: "#fff" }}>{s.title}</h2>
-              </div>
+              <div>{s.component}</div>
             </SwiperSlide>
           ))}
         </Swiper>
