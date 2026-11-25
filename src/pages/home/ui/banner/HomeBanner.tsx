@@ -1,9 +1,7 @@
 import Container from "@/widgets/container/Container";
 import bannerIcon from "@images/banner-icon.png";
 import bannerBg from "@images/banner-bg.png";
-// import bannerBg2 from "@images/banner-2.png";
 import Title from "@/shared/ui/title";
-import { useState } from "react";
 
 const HomeBanner = () => {
   return (

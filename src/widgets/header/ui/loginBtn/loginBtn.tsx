@@ -27,28 +27,24 @@ const LoginBtn = () => {
     setModalDisplay("block");
   }
 
-  function modalClose(event: React.MouseEvent<HTMLDivElement>) {
+  function modalClose(
+    event: React.MouseEvent<HTMLButtonElement | HTMLDivElement>,
+  ) {
     if (event.target === event.currentTarget) {
       setModalDisplay("hidden");
     }
   }
-  // function modalClose(event: any) {
-  //   if (!event.target.classList.contains("login")) {
-  //     setModalDisplay("hidden");
-  //   }
-  // }
 
   useEffect(() => {
     if (modalDisplay == "block") {
       document.body.classList.add("overflow-hidden");
-      const handleKeyDown = (event) => {
+      const handleKeyDown = (event: any) => {
         if (event.key === "Escape") {
           setModalDisplay("hidden");
         }
       };
-      // if (modalDisplay == "block") {
+
       window.addEventListener("keydown", handleKeyDown);
-      // }
 
       // Очистка при размонтировании компонента
       return () => {
@@ -80,7 +76,6 @@ const LoginBtn = () => {
         >
           <button
             onClick={() => setModalDisplay("hidden")}
-            // onClick={modalClose}
             className="btn-close-modal absolute right-[0px] top-[0px] cursor-pointer bg-[#F3F2F1] p-[8px]"
           >
             <div

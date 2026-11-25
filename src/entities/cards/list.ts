@@ -13,7 +13,7 @@ export const list = [
     store: 10,
     orders: 5,
     sales: false,
-    // favorites: false,
+    favorites: false,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const list = [
     store: 10,
     orders: 5,
     sales: false,
-    // favorites: false,
+    favorites: false,
   },
   {
     id: 3,
@@ -35,7 +35,7 @@ export const list = [
     store: 10,
     orders: 5,
     sales: false,
-    // favorites: false,
+    favorites: false,
   },
   {
     id: 4,
@@ -46,7 +46,7 @@ export const list = [
     store: 10,
     orders: 5,
     sales: false,
-    // favorites: false,
+    favorites: false,
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const list = [
     store: 10,
     orders: 5,
     sales: false,
-    // favorites: false,
+    favorites: false,
   },
   {
     id: 6,
@@ -68,6 +68,6 @@ export const list = [
     store: 10,
     orders: 5,
     sales: false,
-    // favorites: false,
+    favorites: false,
   },
 ];
