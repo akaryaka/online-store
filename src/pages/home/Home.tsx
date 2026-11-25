@@ -39,15 +39,6 @@ const slides = [
   },
 ];
 
-// const styles = {
-//   slide: {
-//     height: "100%",
-//     display: "flex",
-//     alignItems: "center",
-//     justifyContent: "center",
-//   },
-// };
-
 const Home = () => {
   return (
     <>
@@ -59,10 +50,8 @@ const Home = () => {
             delay: 6500,
             disableOnInteraction: false,
           }}
-          // effect="fade"
           loop
-          speed={2000} // обязательно укажите speed
-          // fadeEffect={}
+          speed={2000}
           style={{ width: "100%" }}
         >
           {slides.map((s) => (
