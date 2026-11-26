@@ -4,7 +4,7 @@ export const buttons = [
     text: "п.Щельяюр",
     type: "text-btn",
     size: "s",
-    accent: "secondary",
+    accent: "greyscale",
     btnClass: "text-[12px] leading-[150%] p-[8px_16px]",
   },
   {
